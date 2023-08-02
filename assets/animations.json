@@ -1,0 +1,1568 @@
+{
+    "anims": [
+        {
+            "key": "cherry/cherry",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "atlas",
+                    "frame": "cherry/cherry-1",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "cherry/cherry-2",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "cherry/cherry-3",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "cherry/cherry-4",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "cherry/cherry-5",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "cherry/cherry-6",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "cherry/cherry-7",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 12,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "eagle/eagle-attack",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "atlas",
+                    "frame": "eagle/eagle-attack-1",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "eagle/eagle-attack-2",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "eagle/eagle-attack-3",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "eagle/eagle-attack-4",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 15,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "enemy-death/enemy-death",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "atlas",
+                    "frame": "enemy-death/enemy-death-1",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "enemy-death/enemy-death-2",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "enemy-death/enemy-death-3",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "enemy-death/enemy-death-4",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "enemy-death/enemy-death-5",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "enemy-death/enemy-death-6",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 15,
+            "skipMissedFrames": true,
+            "showBeforeDelay": false,
+            "hideOnComplete": true
+        },
+        {
+            "key": "frog/idle/frog-idle",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "atlas",
+                    "frame": "frog/idle/frog-idle-1",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "frog/idle/frog-idle-2",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "frog/idle/frog-idle-3",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "frog/idle/frog-idle-4",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 15,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "gem/gem",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "atlas",
+                    "frame": "gem/gem-1",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "gem/gem-2",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "gem/gem-3",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "gem/gem-4",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "gem/gem-5",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 15,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "item-feedback/item-feedback",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "atlas",
+                    "frame": "item-feedback/item-feedback-1",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "item-feedback/item-feedback-2",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "item-feedback/item-feedback-3",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "item-feedback/item-feedback-4",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 15,
+            "skipMissedFrames": true,
+            "showBeforeDelay": false,
+            "hideOnComplete": true
+        },
+        {
+            "key": "opossum/opossum",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "atlas",
+                    "frame": "opossum/opossum-1",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "opossum/opossum-2",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "opossum/opossum-3",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "opossum/opossum-4",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "opossum/opossum-5",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "opossum/opossum-6",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 15,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "player/climb/player-climb",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "atlas",
+                    "frame": "player/climb/player-climb-1",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "player/climb/player-climb-2",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "player/climb/player-climb-3",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 15,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "player/crouch/player-crouch",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "atlas",
+                    "frame": "player/crouch/player-crouch-1",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "player/crouch/player-crouch-2",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 15,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "player/hurt/player-hurt",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "atlas",
+                    "frame": "player/hurt/player-hurt-1",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "player/hurt/player-hurt-2",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 15,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "player/idle/player-idle",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "atlas",
+                    "frame": "player/idle/player-idle-1",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "player/idle/player-idle-2",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "player/idle/player-idle-3",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "player/idle/player-idle-4",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 12,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "player/jump/player-jump-1",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "atlas",
+                    "frame": "player/jump/player-jump-1",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 1,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "player/run/player-run",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "atlas",
+                    "frame": "player/run/player-run-1",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "player/run/player-run-2",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "player/run/player-run-3",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "player/run/player-run-4",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "player/run/player-run-5",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "atlas",
+                    "frame": "player/run/player-run-6",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 15,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "player/jump/player-jump-2",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "atlas",
+                    "frame": "player/jump/player-jump-2",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 1,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "frog/frog-jump",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "atlas",
+                    "frame": "frog/jump/frog-jump-1",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "frog/frog-fall",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "atlas",
+                    "frame": "frog/jump/frog-jump-2",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "attack1/skeleton-attack",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "enemies",
+                    "frame": "attack1/skeleton-attack1-1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack1/skeleton-attack1-10.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack1/skeleton-attack1-11.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack1/skeleton-attack1-12.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack1/skeleton-attack1-13.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack1/skeleton-attack1-14.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack1/skeleton-attack1-15.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack1/skeleton-attack1-16.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack1/skeleton-attack1-17.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack1/skeleton-attack1-18.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack1/skeleton-attack1-2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack1/skeleton-attack1-3.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack1/skeleton-attack1-4.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack1/skeleton-attack1-5.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack1/skeleton-attack1-6.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack1/skeleton-attack1-7.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack1/skeleton-attack1-8.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack1/skeleton-attack1-9.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 12,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "attack1/skeleton2-attack",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "enemies",
+                    "frame": "attack1/skeleton2-attack1-1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack1/skeleton2-attack1-10.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack1/skeleton2-attack1-11.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack1/skeleton2-attack1-12.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack1/skeleton2-attack1-13.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack1/skeleton2-attack1-14.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack1/skeleton2-attack1-15.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack1/skeleton2-attack1-16.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack1/skeleton2-attack1-17.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack1/skeleton2-attack1-18.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack1/skeleton2-attack1-19.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack1/skeleton2-attack1-2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack1/skeleton2-attack1-3.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack1/skeleton2-attack1-4.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack1/skeleton2-attack1-5.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack1/skeleton2-attack1-6.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack1/skeleton2-attack1-7.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack1/skeleton2-attack1-8.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack1/skeleton2-attack1-9.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 12,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "attack2/skeleton-attack",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "enemies",
+                    "frame": "attack2/skeleton-attack2-1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack2/skeleton-attack2-10.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack2/skeleton-attack2-11.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack2/skeleton-attack2-12.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack2/skeleton-attack2-13.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack2/skeleton-attack2-2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack2/skeleton-attack2-3.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack2/skeleton-attack2-4.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack2/skeleton-attack2-5.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack2/skeleton-attack2-6.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack2/skeleton-attack2-7.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack2/skeleton-attack2-8.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack2/skeleton-attack2-9.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 12,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "attack2/skeleton2-attack",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "enemies",
+                    "frame": "attack2/skeleton2-attack2-1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack2/skeleton2-attack2-10.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack2/skeleton2-attack2-11.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack2/skeleton2-attack2-12.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack2/skeleton2-attack2-13.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack2/skeleton2-attack2-2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack2/skeleton2-attack2-3.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack2/skeleton2-attack2-4.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack2/skeleton2-attack2-5.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack2/skeleton2-attack2-6.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack2/skeleton2-attack2-7.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack2/skeleton2-attack2-8.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "attack2/skeleton2-attack2-9.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 12,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "block/skeleton2-block",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "enemies",
+                    "frame": "block/skeleton2-block-1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "block/skeleton2-block-2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "block/skeleton2-block-3.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "block/skeleton2-block-4.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "block/skeleton2-block-5.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "block/skeleton2-block-6.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "block/skeleton2-block-7.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "block/skeleton2-block-8.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 12,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "death/skeleton-death",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "enemies",
+                    "frame": "death/skeleton-death-1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "death/skeleton-death-10.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "death/skeleton-death-11.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "death/skeleton-death-12.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "death/skeleton-death-13.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "death/skeleton-death-2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "death/skeleton-death-3.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "death/skeleton-death-4.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "death/skeleton-death-5.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "death/skeleton-death-6.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "death/skeleton-death-7.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "death/skeleton-death-8.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "death/skeleton-death-9.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 12,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "death/skeleton2-death",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "enemies",
+                    "frame": "death/skeleton2-death-1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "death/skeleton2-death-10.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "death/skeleton2-death-11.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "death/skeleton2-death-12.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "death/skeleton2-death-13.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "death/skeleton2-death-2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "death/skeleton2-death-3.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "death/skeleton2-death-4.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "death/skeleton2-death-5.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "death/skeleton2-death-6.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "death/skeleton2-death-7.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "death/skeleton2-death-8.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "death/skeleton2-death-9.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 12,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "hurt/skeleton-hurt",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "enemies",
+                    "frame": "hurt/skeleton-hurt-1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "hurt/skeleton-hurt-2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "hurt/skeleton-hurt-3.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "hurt/skeleton-hurt-4.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "hurt/skeleton-hurt-5.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "hurt/skeleton-hurt-6.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "hurt/skeleton-hurt-7.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "hurt/skeleton-hurt-8.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 12,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "hurt/skeleton2-hurt",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "enemies",
+                    "frame": "hurt/skeleton2-hurt-1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "hurt/skeleton2-hurt-2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "hurt/skeleton2-hurt-3.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "hurt/skeleton2-hurt-4.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "hurt/skeleton2-hurt-5.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "hurt/skeleton2-hurt-6.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "hurt/skeleton2-hurt-7.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "hurt/skeleton2-hurt-8.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 12,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "idle/skeleton-idle",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "enemies",
+                    "frame": "idle/skeleton-idle-1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "idle/skeleton-idle-2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "idle/skeleton-idle-3.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "idle/skeleton-idle-4.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "idle/skeleton-idle-5.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "idle/skeleton-idle-6.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "idle/skeleton-idle-7.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "idle/skeleton-idle-8.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 12,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "idle/skeleton2-idle",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "enemies",
+                    "frame": "idle/skeleton2-idle-1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "idle/skeleton2-idle-2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "idle/skeleton2-idle-3.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "idle/skeleton2-idle-4.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "idle/skeleton2-idle-5.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "idle/skeleton2-idle-6.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "idle/skeleton2-idle-7.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "idle/skeleton2-idle-8.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 12,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "shielddrop/skeleton2-shielddrop",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "enemies",
+                    "frame": "shielddrop/skeleton2-shielddrop-1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "shielddrop/skeleton2-shielddrop-2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "shielddrop/skeleton2-shielddrop-3.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "shielddrop/skeleton2-shielddrop-4.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "shielddrop/skeleton2-shielddrop-5.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "shielddrop/skeleton2-shielddrop-6.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "shielddrop/skeleton2-shielddrop-7.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 12,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "walk/skeleton-walk",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "enemies",
+                    "frame": "walk/skeleton-walk-1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "walk/skeleton-walk-2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "walk/skeleton-walk-3.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "walk/skeleton-walk-4.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "walk/skeleton-walk-5.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "walk/skeleton-walk-6.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "walk/skeleton-walk-7.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "walk/skeleton-walk-8.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 12,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "walk/skeleton2-walk",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "enemies",
+                    "frame": "walk/skeleton2-walk-1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "walk/skeleton2-walk-2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "walk/skeleton2-walk-3.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "walk/skeleton2-walk-4.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "walk/skeleton2-walk-5.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "walk/skeleton2-walk-6.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "walk/skeleton2-walk-7.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "enemies",
+                    "frame": "walk/skeleton2-walk-8.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 12,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        }
+    ],
+    "globalTimeScale": 1,
+    "meta": {
+        "app": "Phaser Editor 2D v3",
+        "contentType": "Phaser v3 Animations"
+    },
+    "settings": {
+        "sourceLang": "JAVA_SCRIPT",
+        "esModule": false,
+        "generateCode": false
+    }
+}

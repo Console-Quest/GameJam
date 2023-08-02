@@ -1,0 +1,3212 @@
+{
+	"textures": [
+		{
+			"image": "enemies.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1014,
+				"h": 709
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "attack1/skeleton-attack1-7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 54,
+						"y": 79,
+						"w": 150,
+						"h": 77
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 150,
+						"h": 77
+					}
+				},
+				{
+					"filename": "attack1/skeleton2-attack1-7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 54,
+						"y": 79,
+						"w": 150,
+						"h": 77
+					},
+					"frame": {
+						"x": 153,
+						"y": 1,
+						"w": 150,
+						"h": 77
+					}
+				},
+				{
+					"filename": "attack1/skeleton-attack1-6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 55,
+						"y": 80,
+						"w": 146,
+						"h": 75
+					},
+					"frame": {
+						"x": 305,
+						"y": 1,
+						"w": 146,
+						"h": 75
+					}
+				},
+				{
+					"filename": "attack1/skeleton2-attack1-6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 55,
+						"y": 80,
+						"w": 146,
+						"h": 75
+					},
+					"frame": {
+						"x": 453,
+						"y": 1,
+						"w": 146,
+						"h": 75
+					}
+				},
+				{
+					"filename": "attack1/skeleton-attack1-5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 52,
+						"y": 80,
+						"w": 143,
+						"h": 71
+					},
+					"frame": {
+						"x": 601,
+						"y": 1,
+						"w": 143,
+						"h": 71
+					}
+				},
+				{
+					"filename": "attack1/skeleton2-attack1-5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 52,
+						"y": 80,
+						"w": 143,
+						"h": 71
+					},
+					"frame": {
+						"x": 746,
+						"y": 1,
+						"w": 143,
+						"h": 71
+					}
+				},
+				{
+					"filename": "attack1/skeleton-attack1-8.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 83,
+						"y": 77,
+						"w": 122,
+						"h": 78
+					},
+					"frame": {
+						"x": 891,
+						"y": 1,
+						"w": 122,
+						"h": 78
+					}
+				},
+				{
+					"filename": "attack1/skeleton2-attack1-8.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 83,
+						"y": 77,
+						"w": 122,
+						"h": 78
+					},
+					"frame": {
+						"x": 601,
+						"y": 74,
+						"w": 122,
+						"h": 78
+					}
+				},
+				{
+					"filename": "death/skeleton2-death-9.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 50,
+						"y": 108,
+						"w": 101,
+						"h": 64
+					},
+					"frame": {
+						"x": 725,
+						"y": 74,
+						"w": 101,
+						"h": 64
+					}
+				},
+				{
+					"filename": "attack1/skeleton-attack1-13.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 109,
+						"y": 102,
+						"w": 49,
+						"h": 47
+					},
+					"frame": {
+						"x": 828,
+						"y": 74,
+						"w": 49,
+						"h": 47
+					}
+				},
+				{
+					"filename": "death/skeleton-death-9.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 50,
+						"y": 108,
+						"w": 97,
+						"h": 64
+					},
+					"frame": {
+						"x": 879,
+						"y": 81,
+						"w": 97,
+						"h": 64
+					}
+				},
+				{
+					"filename": "attack1/skeleton2-attack1-13.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 109,
+						"y": 102,
+						"w": 49,
+						"h": 47
+					},
+					"frame": {
+						"x": 828,
+						"y": 123,
+						"w": 49,
+						"h": 47
+					}
+				},
+				{
+					"filename": "attack1/skeleton2-attack1-4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 53,
+						"y": 81,
+						"w": 91,
+						"h": 68
+					},
+					"frame": {
+						"x": 725,
+						"y": 140,
+						"w": 91,
+						"h": 68
+					}
+				},
+				{
+					"filename": "attack2/skeleton-attack2-5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 59,
+						"y": 100,
+						"w": 108,
+						"h": 57
+					},
+					"frame": {
+						"x": 879,
+						"y": 147,
+						"w": 108,
+						"h": 57
+					}
+				},
+				{
+					"filename": "attack2/skeleton2-attack2-4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 59,
+						"y": 100,
+						"w": 108,
+						"h": 57
+					},
+					"frame": {
+						"x": 818,
+						"y": 206,
+						"w": 108,
+						"h": 57
+					}
+				},
+				{
+					"filename": "attack1/skeleton-attack1-4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 53,
+						"y": 81,
+						"w": 80,
+						"h": 68
+					},
+					"frame": {
+						"x": 928,
+						"y": 206,
+						"w": 80,
+						"h": 68
+					}
+				},
+				{
+					"filename": "death/skeleton2-death-8.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 55,
+						"y": 108,
+						"w": 96,
+						"h": 64
+					},
+					"frame": {
+						"x": 305,
+						"y": 78,
+						"w": 96,
+						"h": 64
+					}
+				},
+				{
+					"filename": "death/skeleton2-death-6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 58,
+						"y": 110,
+						"w": 94,
+						"h": 63
+					},
+					"frame": {
+						"x": 403,
+						"y": 78,
+						"w": 94,
+						"h": 63
+					}
+				},
+				{
+					"filename": "death/skeleton2-death-7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 55,
+						"y": 109,
+						"w": 97,
+						"h": 61
+					},
+					"frame": {
+						"x": 499,
+						"y": 78,
+						"w": 97,
+						"h": 61
+					}
+				},
+				{
+					"filename": "death/skeleton-death-8.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 55,
+						"y": 108,
+						"w": 91,
+						"h": 64
+					},
+					"frame": {
+						"x": 499,
+						"y": 141,
+						"w": 91,
+						"h": 64
+					}
+				},
+				{
+					"filename": "death/skeleton-death-7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 55,
+						"y": 109,
+						"w": 91,
+						"h": 61
+					},
+					"frame": {
+						"x": 403,
+						"y": 143,
+						"w": 91,
+						"h": 61
+					}
+				},
+				{
+					"filename": "attack2/skeleton-attack2-6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 66,
+						"y": 100,
+						"w": 104,
+						"h": 56
+					},
+					"frame": {
+						"x": 592,
+						"y": 154,
+						"w": 104,
+						"h": 56
+					}
+				},
+				{
+					"filename": "attack2/skeleton2-attack2-5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 66,
+						"y": 100,
+						"w": 104,
+						"h": 56
+					},
+					"frame": {
+						"x": 698,
+						"y": 210,
+						"w": 104,
+						"h": 56
+					}
+				},
+				{
+					"filename": "death/skeleton-death-6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 58,
+						"y": 110,
+						"w": 87,
+						"h": 63
+					},
+					"frame": {
+						"x": 804,
+						"y": 265,
+						"w": 87,
+						"h": 63
+					}
+				},
+				{
+					"filename": "attack2/skeleton-attack2-7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 67,
+						"y": 100,
+						"w": 104,
+						"h": 51
+					},
+					"frame": {
+						"x": 893,
+						"y": 276,
+						"w": 104,
+						"h": 51
+					}
+				},
+				{
+					"filename": "attack2/skeleton2-attack2-6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 67,
+						"y": 100,
+						"w": 104,
+						"h": 51
+					},
+					"frame": {
+						"x": 893,
+						"y": 329,
+						"w": 104,
+						"h": 51
+					}
+				},
+				{
+					"filename": "death/skeleton2-death-11.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 47,
+						"y": 126,
+						"w": 111,
+						"h": 46
+					},
+					"frame": {
+						"x": 1,
+						"y": 80,
+						"w": 111,
+						"h": 46
+					}
+				},
+				{
+					"filename": "death/skeleton2-death-10.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 48,
+						"y": 124,
+						"w": 105,
+						"h": 48
+					},
+					"frame": {
+						"x": 114,
+						"y": 80,
+						"w": 105,
+						"h": 48
+					}
+				},
+				{
+					"filename": "idle/skeleton2-idle-7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 62,
+						"y": 101,
+						"w": 82,
+						"h": 52
+					},
+					"frame": {
+						"x": 221,
+						"y": 80,
+						"w": 82,
+						"h": 52
+					}
+				},
+				{
+					"filename": "attack1/skeleton-attack1-16.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 60,
+						"y": 100,
+						"w": 101,
+						"h": 49
+					},
+					"frame": {
+						"x": 1,
+						"y": 128,
+						"w": 101,
+						"h": 49
+					}
+				},
+				{
+					"filename": "attack1/skeleton2-attack1-16.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 60,
+						"y": 100,
+						"w": 101,
+						"h": 49
+					},
+					"frame": {
+						"x": 104,
+						"y": 130,
+						"w": 101,
+						"h": 49
+					}
+				},
+				{
+					"filename": "attack1/skeleton-attack1-15.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 62,
+						"y": 100,
+						"w": 98,
+						"h": 49
+					},
+					"frame": {
+						"x": 1,
+						"y": 179,
+						"w": 98,
+						"h": 49
+					}
+				},
+				{
+					"filename": "attack1/skeleton2-attack1-3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 54,
+						"y": 99,
+						"w": 91,
+						"h": 50
+					},
+					"frame": {
+						"x": 207,
+						"y": 134,
+						"w": 91,
+						"h": 50
+					}
+				},
+				{
+					"filename": "attack1/skeleton2-attack1-9.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 102,
+						"y": 103,
+						"w": 103,
+						"h": 48
+					},
+					"frame": {
+						"x": 101,
+						"y": 181,
+						"w": 103,
+						"h": 48
+					}
+				},
+				{
+					"filename": "attack1/skeleton2-attack1-15.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 62,
+						"y": 100,
+						"w": 98,
+						"h": 49
+					},
+					"frame": {
+						"x": 1,
+						"y": 230,
+						"w": 98,
+						"h": 49
+					}
+				},
+				{
+					"filename": "attack1/skeleton-attack1-9.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 108,
+						"y": 103,
+						"w": 97,
+						"h": 48
+					},
+					"frame": {
+						"x": 300,
+						"y": 144,
+						"w": 97,
+						"h": 48
+					}
+				},
+				{
+					"filename": "idle/skeleton2-idle-6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 57,
+						"y": 102,
+						"w": 87,
+						"h": 52
+					},
+					"frame": {
+						"x": 206,
+						"y": 186,
+						"w": 87,
+						"h": 52
+					}
+				},
+				{
+					"filename": "hurt/skeleton2-hurt-3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 57,
+						"y": 99,
+						"w": 90,
+						"h": 50
+					},
+					"frame": {
+						"x": 101,
+						"y": 231,
+						"w": 90,
+						"h": 50
+					}
+				},
+				{
+					"filename": "attack1/skeleton-attack1-17.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 61,
+						"y": 100,
+						"w": 91,
+						"h": 49
+					},
+					"frame": {
+						"x": 1,
+						"y": 281,
+						"w": 91,
+						"h": 49
+					}
+				},
+				{
+					"filename": "attack1/skeleton2-attack1-17.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 61,
+						"y": 100,
+						"w": 91,
+						"h": 49
+					},
+					"frame": {
+						"x": 295,
+						"y": 194,
+						"w": 91,
+						"h": 49
+					}
+				},
+				{
+					"filename": "hurt/skeleton2-hurt-4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 56,
+						"y": 100,
+						"w": 91,
+						"h": 49
+					},
+					"frame": {
+						"x": 193,
+						"y": 240,
+						"w": 91,
+						"h": 49
+					}
+				},
+				{
+					"filename": "hurt/skeleton2-hurt-6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 55,
+						"y": 100,
+						"w": 90,
+						"h": 49
+					},
+					"frame": {
+						"x": 94,
+						"y": 283,
+						"w": 90,
+						"h": 49
+					}
+				},
+				{
+					"filename": "hurt/skeleton2-hurt-2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 58,
+						"y": 98,
+						"w": 86,
+						"h": 51
+					},
+					"frame": {
+						"x": 1,
+						"y": 332,
+						"w": 86,
+						"h": 51
+					}
+				},
+				{
+					"filename": "shielddrop/skeleton2-shielddrop-2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 58,
+						"y": 98,
+						"w": 86,
+						"h": 51
+					},
+					"frame": {
+						"x": 1,
+						"y": 332,
+						"w": 86,
+						"h": 51
+					}
+				},
+				{
+					"filename": "walk/skeleton2-walk-6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 58,
+						"y": 99,
+						"w": 85,
+						"h": 51
+					},
+					"frame": {
+						"x": 388,
+						"y": 206,
+						"w": 85,
+						"h": 51
+					}
+				},
+				{
+					"filename": "hurt/skeleton2-hurt-5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 56,
+						"y": 100,
+						"w": 88,
+						"h": 49
+					},
+					"frame": {
+						"x": 286,
+						"y": 245,
+						"w": 88,
+						"h": 49
+					}
+				},
+				{
+					"filename": "hurt/skeleton2-hurt-7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 56,
+						"y": 100,
+						"w": 88,
+						"h": 49
+					},
+					"frame": {
+						"x": 186,
+						"y": 291,
+						"w": 88,
+						"h": 49
+					}
+				},
+				{
+					"filename": "walk/skeleton2-walk-7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 58,
+						"y": 99,
+						"w": 84,
+						"h": 51
+					},
+					"frame": {
+						"x": 89,
+						"y": 334,
+						"w": 84,
+						"h": 51
+					}
+				},
+				{
+					"filename": "attack2/skeleton2-attack2-2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 59,
+						"y": 99,
+						"w": 85,
+						"h": 50
+					},
+					"frame": {
+						"x": 1,
+						"y": 385,
+						"w": 85,
+						"h": 50
+					}
+				},
+				{
+					"filename": "death/skeleton2-death-2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 61,
+						"y": 98,
+						"w": 83,
+						"h": 51
+					},
+					"frame": {
+						"x": 475,
+						"y": 207,
+						"w": 83,
+						"h": 51
+					}
+				},
+				{
+					"filename": "hurt/skeleton2-hurt-1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 61,
+						"y": 98,
+						"w": 83,
+						"h": 51
+					},
+					"frame": {
+						"x": 475,
+						"y": 207,
+						"w": 83,
+						"h": 51
+					}
+				},
+				{
+					"filename": "shielddrop/skeleton2-shielddrop-1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 61,
+						"y": 98,
+						"w": 83,
+						"h": 51
+					},
+					"frame": {
+						"x": 475,
+						"y": 207,
+						"w": 83,
+						"h": 51
+					}
+				},
+				{
+					"filename": "hurt/skeleton-hurt-3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 58,
+						"y": 98,
+						"w": 83,
+						"h": 51
+					},
+					"frame": {
+						"x": 376,
+						"y": 259,
+						"w": 83,
+						"h": 51
+					}
+				},
+				{
+					"filename": "idle/skeleton2-idle-5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 58,
+						"y": 102,
+						"w": 86,
+						"h": 49
+					},
+					"frame": {
+						"x": 276,
+						"y": 296,
+						"w": 86,
+						"h": 49
+					}
+				},
+				{
+					"filename": "idle/skeleton-idle-6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 57,
+						"y": 102,
+						"w": 81,
+						"h": 52
+					},
+					"frame": {
+						"x": 175,
+						"y": 342,
+						"w": 81,
+						"h": 52
+					}
+				},
+				{
+					"filename": "hurt/skeleton-hurt-4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 57,
+						"y": 99,
+						"w": 84,
+						"h": 50
+					},
+					"frame": {
+						"x": 88,
+						"y": 387,
+						"w": 84,
+						"h": 50
+					}
+				},
+				{
+					"filename": "walk/skeleton2-walk-5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 59,
+						"y": 100,
+						"w": 84,
+						"h": 50
+					},
+					"frame": {
+						"x": 1,
+						"y": 437,
+						"w": 84,
+						"h": 50
+					}
+				},
+				{
+					"filename": "death/skeleton2-death-13.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 46,
+						"y": 132,
+						"w": 116,
+						"h": 40
+					},
+					"frame": {
+						"x": 560,
+						"y": 212,
+						"w": 116,
+						"h": 40
+					}
+				},
+				{
+					"filename": "death/skeleton2-death-12.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 46,
+						"y": 133,
+						"w": 116,
+						"h": 39
+					},
+					"frame": {
+						"x": 560,
+						"y": 254,
+						"w": 116,
+						"h": 39
+					}
+				},
+				{
+					"filename": "hurt/skeleton-hurt-6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 56,
+						"y": 100,
+						"w": 85,
+						"h": 49
+					},
+					"frame": {
+						"x": 461,
+						"y": 260,
+						"w": 85,
+						"h": 49
+					}
+				},
+				{
+					"filename": "shielddrop/skeleton2-shielddrop-5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 56,
+						"y": 100,
+						"w": 85,
+						"h": 49
+					},
+					"frame": {
+						"x": 461,
+						"y": 260,
+						"w": 85,
+						"h": 49
+					}
+				},
+				{
+					"filename": "attack1/skeleton2-attack1-18.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 60,
+						"y": 100,
+						"w": 84,
+						"h": 49
+					},
+					"frame": {
+						"x": 678,
+						"y": 268,
+						"w": 84,
+						"h": 49
+					}
+				},
+				{
+					"filename": "attack2/skeleton-attack2-9.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 89,
+						"y": 100,
+						"w": 84,
+						"h": 49
+					},
+					"frame": {
+						"x": 548,
+						"y": 295,
+						"w": 84,
+						"h": 49
+					}
+				},
+				{
+					"filename": "attack2/skeleton2-attack2-8.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 89,
+						"y": 100,
+						"w": 84,
+						"h": 49
+					},
+					"frame": {
+						"x": 461,
+						"y": 311,
+						"w": 84,
+						"h": 49
+					}
+				},
+				{
+					"filename": "hurt/skeleton-hurt-5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 56,
+						"y": 100,
+						"w": 84,
+						"h": 49
+					},
+					"frame": {
+						"x": 364,
+						"y": 312,
+						"w": 84,
+						"h": 49
+					}
+				},
+				{
+					"filename": "shielddrop/skeleton2-shielddrop-4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 56,
+						"y": 100,
+						"w": 84,
+						"h": 49
+					},
+					"frame": {
+						"x": 258,
+						"y": 347,
+						"w": 84,
+						"h": 49
+					}
+				},
+				{
+					"filename": "attack1/skeleton-attack1-3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 54,
+						"y": 99,
+						"w": 82,
+						"h": 50
+					},
+					"frame": {
+						"x": 174,
+						"y": 396,
+						"w": 82,
+						"h": 50
+					}
+				},
+				{
+					"filename": "walk/skeleton2-walk-8.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 60,
+						"y": 100,
+						"w": 82,
+						"h": 50
+					},
+					"frame": {
+						"x": 87,
+						"y": 439,
+						"w": 82,
+						"h": 50
+					}
+				},
+				{
+					"filename": "death/skeleton-death-2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 61,
+						"y": 98,
+						"w": 80,
+						"h": 51
+					},
+					"frame": {
+						"x": 1,
+						"y": 489,
+						"w": 80,
+						"h": 51
+					}
+				},
+				{
+					"filename": "hurt/skeleton-hurt-2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 61,
+						"y": 98,
+						"w": 80,
+						"h": 51
+					},
+					"frame": {
+						"x": 1,
+						"y": 489,
+						"w": 80,
+						"h": 51
+					}
+				},
+				{
+					"filename": "idle/skeleton2-idle-4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 59,
+						"y": 101,
+						"w": 85,
+						"h": 48
+					},
+					"frame": {
+						"x": 634,
+						"y": 319,
+						"w": 85,
+						"h": 48
+					}
+				},
+				{
+					"filename": "hurt/skeleton-hurt-7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 55,
+						"y": 100,
+						"w": 83,
+						"h": 49
+					},
+					"frame": {
+						"x": 547,
+						"y": 346,
+						"w": 83,
+						"h": 49
+					}
+				},
+				{
+					"filename": "shielddrop/skeleton2-shielddrop-6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 55,
+						"y": 100,
+						"w": 83,
+						"h": 49
+					},
+					"frame": {
+						"x": 547,
+						"y": 346,
+						"w": 83,
+						"h": 49
+					}
+				},
+				{
+					"filename": "attack2/skeleton2-attack2-3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 60,
+						"y": 98,
+						"w": 79,
+						"h": 51
+					},
+					"frame": {
+						"x": 721,
+						"y": 319,
+						"w": 79,
+						"h": 51
+					}
+				},
+				{
+					"filename": "idle/skeleton2-idle-3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 61,
+						"y": 100,
+						"w": 83,
+						"h": 49
+					},
+					"frame": {
+						"x": 632,
+						"y": 369,
+						"w": 83,
+						"h": 49
+					}
+				},
+				{
+					"filename": "walk/skeleton2-walk-4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 60,
+						"y": 101,
+						"w": 83,
+						"h": 49
+					},
+					"frame": {
+						"x": 450,
+						"y": 362,
+						"w": 83,
+						"h": 49
+					}
+				},
+				{
+					"filename": "attack2/skeleton-attack2-10.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 63,
+						"y": 100,
+						"w": 82,
+						"h": 49
+					},
+					"frame": {
+						"x": 535,
+						"y": 397,
+						"w": 82,
+						"h": 49
+					}
+				},
+				{
+					"filename": "attack2/skeleton2-attack2-9.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 63,
+						"y": 100,
+						"w": 82,
+						"h": 49
+					},
+					"frame": {
+						"x": 802,
+						"y": 330,
+						"w": 82,
+						"h": 49
+					}
+				},
+				{
+					"filename": "attack2/skeleton2-attack2-12.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 62,
+						"y": 100,
+						"w": 82,
+						"h": 49
+					},
+					"frame": {
+						"x": 717,
+						"y": 372,
+						"w": 82,
+						"h": 49
+					}
+				},
+				{
+					"filename": "hurt/skeleton-hurt-8.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 56,
+						"y": 100,
+						"w": 82,
+						"h": 49
+					},
+					"frame": {
+						"x": 619,
+						"y": 420,
+						"w": 82,
+						"h": 49
+					}
+				},
+				{
+					"filename": "shielddrop/skeleton2-shielddrop-7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 56,
+						"y": 100,
+						"w": 82,
+						"h": 49
+					},
+					"frame": {
+						"x": 619,
+						"y": 420,
+						"w": 82,
+						"h": 49
+					}
+				},
+				{
+					"filename": "idle/skeleton2-idle-1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 62,
+						"y": 100,
+						"w": 82,
+						"h": 49
+					},
+					"frame": {
+						"x": 801,
+						"y": 381,
+						"w": 82,
+						"h": 49
+					}
+				},
+				{
+					"filename": "idle/skeleton2-idle-8.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 62,
+						"y": 101,
+						"w": 82,
+						"h": 49
+					},
+					"frame": {
+						"x": 703,
+						"y": 423,
+						"w": 82,
+						"h": 49
+					}
+				},
+				{
+					"filename": "walk/skeleton2-walk-3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 60,
+						"y": 101,
+						"w": 82,
+						"h": 49
+					},
+					"frame": {
+						"x": 344,
+						"y": 363,
+						"w": 82,
+						"h": 49
+					}
+				},
+				{
+					"filename": "walk/skeleton-walk-6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 58,
+						"y": 99,
+						"w": 78,
+						"h": 51
+					},
+					"frame": {
+						"x": 258,
+						"y": 398,
+						"w": 78,
+						"h": 51
+					}
+				},
+				{
+					"filename": "attack1/skeleton2-attack1-2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 64,
+						"y": 100,
+						"w": 81,
+						"h": 49
+					},
+					"frame": {
+						"x": 171,
+						"y": 448,
+						"w": 81,
+						"h": 49
+					}
+				},
+				{
+					"filename": "attack2/skeleton2-attack2-1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 64,
+						"y": 100,
+						"w": 81,
+						"h": 49
+					},
+					"frame": {
+						"x": 83,
+						"y": 491,
+						"w": 81,
+						"h": 49
+					}
+				},
+				{
+					"filename": "attack2/skeleton2-attack2-11.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 63,
+						"y": 100,
+						"w": 81,
+						"h": 49
+					},
+					"frame": {
+						"x": 428,
+						"y": 413,
+						"w": 81,
+						"h": 49
+					}
+				},
+				{
+					"filename": "block/skeleton2-block-7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 62,
+						"y": 100,
+						"w": 81,
+						"h": 49
+					},
+					"frame": {
+						"x": 338,
+						"y": 414,
+						"w": 81,
+						"h": 49
+					}
+				},
+				{
+					"filename": "idle/skeleton-idle-7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 62,
+						"y": 101,
+						"w": 76,
+						"h": 52
+					},
+					"frame": {
+						"x": 254,
+						"y": 451,
+						"w": 76,
+						"h": 52
+					}
+				},
+				{
+					"filename": "block/skeleton2-block-6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 61,
+						"y": 100,
+						"w": 80,
+						"h": 49
+					},
+					"frame": {
+						"x": 166,
+						"y": 499,
+						"w": 80,
+						"h": 49
+					}
+				},
+				{
+					"filename": "idle/skeleton-idle-5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 58,
+						"y": 102,
+						"w": 80,
+						"h": 49
+					},
+					"frame": {
+						"x": 1,
+						"y": 542,
+						"w": 80,
+						"h": 49
+					}
+				},
+				{
+					"filename": "idle/skeleton2-idle-2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 64,
+						"y": 100,
+						"w": 80,
+						"h": 49
+					},
+					"frame": {
+						"x": 83,
+						"y": 542,
+						"w": 80,
+						"h": 49
+					}
+				},
+				{
+					"filename": "shielddrop/skeleton2-shielddrop-3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 57,
+						"y": 99,
+						"w": 78,
+						"h": 50
+					},
+					"frame": {
+						"x": 511,
+						"y": 448,
+						"w": 78,
+						"h": 50
+					}
+				},
+				{
+					"filename": "walk/skeleton-walk-5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 59,
+						"y": 100,
+						"w": 78,
+						"h": 50
+					},
+					"frame": {
+						"x": 421,
+						"y": 464,
+						"w": 78,
+						"h": 50
+					}
+				},
+				{
+					"filename": "attack1/skeleton2-attack1-1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 65,
+						"y": 100,
+						"w": 79,
+						"h": 49
+					},
+					"frame": {
+						"x": 332,
+						"y": 465,
+						"w": 79,
+						"h": 49
+					}
+				},
+				{
+					"filename": "attack1/skeleton2-attack1-19.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 65,
+						"y": 100,
+						"w": 79,
+						"h": 49
+					},
+					"frame": {
+						"x": 248,
+						"y": 505,
+						"w": 79,
+						"h": 49
+					}
+				},
+				{
+					"filename": "attack2/skeleton2-attack2-13.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 65,
+						"y": 100,
+						"w": 79,
+						"h": 49
+					},
+					"frame": {
+						"x": 248,
+						"y": 505,
+						"w": 79,
+						"h": 49
+					}
+				},
+				{
+					"filename": "block/skeleton2-block-8.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 65,
+						"y": 100,
+						"w": 79,
+						"h": 49
+					},
+					"frame": {
+						"x": 248,
+						"y": 505,
+						"w": 79,
+						"h": 49
+					}
+				},
+				{
+					"filename": "death/skeleton2-death-1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 65,
+						"y": 100,
+						"w": 79,
+						"h": 49
+					},
+					"frame": {
+						"x": 248,
+						"y": 505,
+						"w": 79,
+						"h": 49
+					}
+				},
+				{
+					"filename": "hurt/skeleton2-hurt-8.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 65,
+						"y": 100,
+						"w": 79,
+						"h": 49
+					},
+					"frame": {
+						"x": 248,
+						"y": 505,
+						"w": 79,
+						"h": 49
+					}
+				},
+				{
+					"filename": "attack2/skeleton2-attack2-10.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 65,
+						"y": 100,
+						"w": 79,
+						"h": 49
+					},
+					"frame": {
+						"x": 165,
+						"y": 550,
+						"w": 79,
+						"h": 49
+					}
+				},
+				{
+					"filename": "walk/skeleton2-walk-2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 62,
+						"y": 101,
+						"w": 79,
+						"h": 49
+					},
+					"frame": {
+						"x": 1,
+						"y": 593,
+						"w": 79,
+						"h": 49
+					}
+				},
+				{
+					"filename": "walk/skeleton-walk-7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 58,
+						"y": 99,
+						"w": 75,
+						"h": 51
+					},
+					"frame": {
+						"x": 82,
+						"y": 593,
+						"w": 75,
+						"h": 51
+					}
+				},
+				{
+					"filename": "idle/skeleton-idle-4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 59,
+						"y": 101,
+						"w": 79,
+						"h": 48
+					},
+					"frame": {
+						"x": 1,
+						"y": 644,
+						"w": 79,
+						"h": 48
+					}
+				},
+				{
+					"filename": "attack1/skeleton-attack1-18.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 60,
+						"y": 100,
+						"w": 77,
+						"h": 49
+					},
+					"frame": {
+						"x": 591,
+						"y": 471,
+						"w": 77,
+						"h": 49
+					}
+				},
+				{
+					"filename": "idle/skeleton-idle-3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 61,
+						"y": 100,
+						"w": 77,
+						"h": 49
+					},
+					"frame": {
+						"x": 501,
+						"y": 500,
+						"w": 77,
+						"h": 49
+					}
+				},
+				{
+					"filename": "walk/skeleton2-walk-1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 64,
+						"y": 101,
+						"w": 77,
+						"h": 49
+					},
+					"frame": {
+						"x": 329,
+						"y": 516,
+						"w": 77,
+						"h": 49
+					}
+				},
+				{
+					"filename": "attack2/skeleton-attack2-3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 59,
+						"y": 99,
+						"w": 75,
+						"h": 50
+					},
+					"frame": {
+						"x": 246,
+						"y": 556,
+						"w": 75,
+						"h": 50
+					}
+				},
+				{
+					"filename": "block/skeleton2-block-5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 62,
+						"y": 101,
+						"w": 78,
+						"h": 48
+					},
+					"frame": {
+						"x": 159,
+						"y": 601,
+						"w": 78,
+						"h": 48
+					}
+				},
+				{
+					"filename": "idle/skeleton-idle-1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 62,
+						"y": 100,
+						"w": 74,
+						"h": 49
+					},
+					"frame": {
+						"x": 82,
+						"y": 646,
+						"w": 74,
+						"h": 49
+					}
+				},
+				{
+					"filename": "death/skeleton2-death-3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 61,
+						"y": 104,
+						"w": 83,
+						"h": 45
+					},
+					"frame": {
+						"x": 408,
+						"y": 516,
+						"w": 83,
+						"h": 45
+					}
+				},
+				{
+					"filename": "attack2/skeleton-attack2-13.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 62,
+						"y": 100,
+						"w": 76,
+						"h": 49
+					},
+					"frame": {
+						"x": 885,
+						"y": 382,
+						"w": 76,
+						"h": 49
+					}
+				},
+				{
+					"filename": "walk/skeleton-walk-4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 60,
+						"y": 101,
+						"w": 76,
+						"h": 49
+					},
+					"frame": {
+						"x": 787,
+						"y": 432,
+						"w": 76,
+						"h": 49
+					}
+				},
+				{
+					"filename": "death/skeleton-death-12.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 46,
+						"y": 137,
+						"w": 103,
+						"h": 35
+					},
+					"frame": {
+						"x": 670,
+						"y": 474,
+						"w": 103,
+						"h": 35
+					}
+				},
+				{
+					"filename": "death/skeleton-death-13.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 46,
+						"y": 137,
+						"w": 103,
+						"h": 35
+					},
+					"frame": {
+						"x": 670,
+						"y": 474,
+						"w": 103,
+						"h": 35
+					}
+				},
+				{
+					"filename": "idle/skeleton-idle-8.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 62,
+						"y": 101,
+						"w": 74,
+						"h": 49
+					},
+					"frame": {
+						"x": 865,
+						"y": 433,
+						"w": 74,
+						"h": 49
+					}
+				},
+				{
+					"filename": "walk/skeleton-walk-3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 60,
+						"y": 101,
+						"w": 74,
+						"h": 49
+					},
+					"frame": {
+						"x": 775,
+						"y": 483,
+						"w": 74,
+						"h": 49
+					}
+				},
+				{
+					"filename": "attack2/skeleton-attack2-8.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 101,
+						"y": 100,
+						"w": 71,
+						"h": 50
+					},
+					"frame": {
+						"x": 941,
+						"y": 433,
+						"w": 71,
+						"h": 50
+					}
+				},
+				{
+					"filename": "block/skeleton2-block-1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 63,
+						"y": 102,
+						"w": 77,
+						"h": 47
+					},
+					"frame": {
+						"x": 851,
+						"y": 484,
+						"w": 77,
+						"h": 47
+					}
+				},
+				{
+					"filename": "block/skeleton2-block-2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 63,
+						"y": 102,
+						"w": 77,
+						"h": 47
+					},
+					"frame": {
+						"x": 930,
+						"y": 485,
+						"w": 77,
+						"h": 47
+					}
+				},
+				{
+					"filename": "block/skeleton2-block-3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 63,
+						"y": 102,
+						"w": 77,
+						"h": 47
+					},
+					"frame": {
+						"x": 851,
+						"y": 533,
+						"w": 77,
+						"h": 47
+					}
+				},
+				{
+					"filename": "block/skeleton2-block-4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 63,
+						"y": 102,
+						"w": 77,
+						"h": 47
+					},
+					"frame": {
+						"x": 930,
+						"y": 534,
+						"w": 77,
+						"h": 47
+					}
+				},
+				{
+					"filename": "death/skeleton-death-3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 61,
+						"y": 104,
+						"w": 80,
+						"h": 45
+					},
+					"frame": {
+						"x": 670,
+						"y": 511,
+						"w": 80,
+						"h": 45
+					}
+				},
+				{
+					"filename": "attack1/skeleton2-attack1-10.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 102,
+						"y": 103,
+						"w": 78,
+						"h": 46
+					},
+					"frame": {
+						"x": 580,
+						"y": 522,
+						"w": 78,
+						"h": 46
+					}
+				},
+				{
+					"filename": "death/skeleton2-death-4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 61,
+						"y": 106,
+						"w": 83,
+						"h": 43
+					},
+					"frame": {
+						"x": 493,
+						"y": 551,
+						"w": 83,
+						"h": 43
+					}
+				},
+				{
+					"filename": "attack1/skeleton-attack1-1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 65,
+						"y": 100,
+						"w": 73,
+						"h": 49
+					},
+					"frame": {
+						"x": 408,
+						"y": 563,
+						"w": 73,
+						"h": 49
+					}
+				},
+				{
+					"filename": "attack1/skeleton-attack1-2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 64,
+						"y": 100,
+						"w": 73,
+						"h": 49
+					},
+					"frame": {
+						"x": 323,
+						"y": 567,
+						"w": 73,
+						"h": 49
+					}
+				},
+				{
+					"filename": "attack2/skeleton-attack2-1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 65,
+						"y": 100,
+						"w": 73,
+						"h": 49
+					},
+					"frame": {
+						"x": 239,
+						"y": 608,
+						"w": 73,
+						"h": 49
+					}
+				},
+				{
+					"filename": "death/skeleton-death-1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 65,
+						"y": 100,
+						"w": 73,
+						"h": 49
+					},
+					"frame": {
+						"x": 239,
+						"y": 608,
+						"w": 73,
+						"h": 49
+					}
+				},
+				{
+					"filename": "hurt/skeleton-hurt-1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 65,
+						"y": 100,
+						"w": 73,
+						"h": 49
+					},
+					"frame": {
+						"x": 239,
+						"y": 608,
+						"w": 73,
+						"h": 49
+					}
+				},
+				{
+					"filename": "attack2/skeleton-attack2-2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 64,
+						"y": 100,
+						"w": 73,
+						"h": 49
+					},
+					"frame": {
+						"x": 158,
+						"y": 651,
+						"w": 73,
+						"h": 49
+					}
+				},
+				{
+					"filename": "attack2/skeleton-attack2-12.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 63,
+						"y": 100,
+						"w": 73,
+						"h": 49
+					},
+					"frame": {
+						"x": 752,
+						"y": 534,
+						"w": 73,
+						"h": 49
+					}
+				},
+				{
+					"filename": "death/skeleton-death-10.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 48,
+						"y": 137,
+						"w": 101,
+						"h": 35
+					},
+					"frame": {
+						"x": 827,
+						"y": 582,
+						"w": 101,
+						"h": 35
+					}
+				},
+				{
+					"filename": "attack2/skeleton2-attack2-7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 101,
+						"y": 100,
+						"w": 71,
+						"h": 50
+					},
+					"frame": {
+						"x": 930,
+						"y": 583,
+						"w": 71,
+						"h": 50
+					}
+				},
+				{
+					"filename": "idle/skeleton-idle-2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 64,
+						"y": 100,
+						"w": 72,
+						"h": 49
+					},
+					"frame": {
+						"x": 660,
+						"y": 558,
+						"w": 72,
+						"h": 49
+					}
+				},
+				{
+					"filename": "attack2/skeleton-attack2-4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 60,
+						"y": 98,
+						"w": 69,
+						"h": 51
+					},
+					"frame": {
+						"x": 578,
+						"y": 570,
+						"w": 69,
+						"h": 51
+					}
+				},
+				{
+					"filename": "attack1/skeleton2-attack1-11.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 102,
+						"y": 103,
+						"w": 76,
+						"h": 46
+					},
+					"frame": {
+						"x": 483,
+						"y": 596,
+						"w": 76,
+						"h": 46
+					}
+				},
+				{
+					"filename": "walk/skeleton-walk-8.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 60,
+						"y": 100,
+						"w": 70,
+						"h": 50
+					},
+					"frame": {
+						"x": 398,
+						"y": 614,
+						"w": 70,
+						"h": 50
+					}
+				},
+				{
+					"filename": "walk/skeleton-walk-2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 62,
+						"y": 101,
+						"w": 71,
+						"h": 49
+					},
+					"frame": {
+						"x": 314,
+						"y": 618,
+						"w": 71,
+						"h": 49
+					}
+				},
+				{
+					"filename": "attack2/skeleton-attack2-11.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 65,
+						"y": 100,
+						"w": 69,
+						"h": 49
+					},
+					"frame": {
+						"x": 233,
+						"y": 659,
+						"w": 69,
+						"h": 49
+					}
+				},
+				{
+					"filename": "death/skeleton-death-4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 61,
+						"y": 106,
+						"w": 80,
+						"h": 43
+					},
+					"frame": {
+						"x": 734,
+						"y": 585,
+						"w": 80,
+						"h": 43
+					}
+				},
+				{
+					"filename": "attack1/skeleton-attack1-10.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 108,
+						"y": 103,
+						"w": 72,
+						"h": 46
+					},
+					"frame": {
+						"x": 649,
+						"y": 609,
+						"w": 72,
+						"h": 46
+					}
+				},
+				{
+					"filename": "death/skeleton2-death-5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 60,
+						"y": 111,
+						"w": 86,
+						"h": 39
+					},
+					"frame": {
+						"x": 561,
+						"y": 623,
+						"w": 86,
+						"h": 39
+					}
+				},
+				{
+					"filename": "attack1/skeleton2-attack1-12.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 103,
+						"y": 103,
+						"w": 72,
+						"h": 46
+					},
+					"frame": {
+						"x": 470,
+						"y": 644,
+						"w": 72,
+						"h": 46
+					}
+				},
+				{
+					"filename": "death/skeleton-death-11.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 47,
+						"y": 137,
+						"w": 102,
+						"h": 35
+					},
+					"frame": {
+						"x": 304,
+						"y": 669,
+						"w": 102,
+						"h": 35
+					}
+				},
+				{
+					"filename": "walk/skeleton-walk-1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 64,
+						"y": 101,
+						"w": 66,
+						"h": 49
+					},
+					"frame": {
+						"x": 816,
+						"y": 619,
+						"w": 66,
+						"h": 49
+					}
+				},
+				{
+					"filename": "attack1/skeleton-attack1-11.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 108,
+						"y": 103,
+						"w": 70,
+						"h": 46
+					},
+					"frame": {
+						"x": 723,
+						"y": 630,
+						"w": 70,
+						"h": 46
+					}
+				},
+				{
+					"filename": "attack1/skeleton-attack1-14.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 97,
+						"y": 100,
+						"w": 62,
+						"h": 49
+					},
+					"frame": {
+						"x": 649,
+						"y": 657,
+						"w": 62,
+						"h": 49
+					}
+				},
+				{
+					"filename": "death/skeleton-death-5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 60,
+						"y": 111,
+						"w": 82,
+						"h": 39
+					},
+					"frame": {
+						"x": 544,
+						"y": 664,
+						"w": 82,
+						"h": 39
+					}
+				},
+				{
+					"filename": "attack1/skeleton2-attack1-14.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 97,
+						"y": 100,
+						"w": 62,
+						"h": 49
+					},
+					"frame": {
+						"x": 884,
+						"y": 635,
+						"w": 62,
+						"h": 49
+					}
+				},
+				{
+					"filename": "attack1/skeleton-attack1-12.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 220,
+						"h": 220
+					},
+					"spriteSourceSize": {
+						"x": 110,
+						"y": 103,
+						"w": 65,
+						"h": 46
+					},
+					"frame": {
+						"x": 948,
+						"y": 635,
+						"w": 65,
+						"h": 46
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:3e529ca0713f1dab105bbbb5bc256b5a:3c94272216e10d090fed8e8274e1786a:9b2a76c8b2a408b3f0547a4eddda1e06$"
+	}
+}
