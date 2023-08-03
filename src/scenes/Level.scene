@@ -12,209 +12,33 @@
     },
     "displayList": [
         {
-            "type": "Image",
-            "id": "7fd2f0f2-42d8-484d-9088-b487a242e305",
-            "label": "back3",
-            "texture": {
-                "key": "back"
-            },
-            "originX": 0,
-            "originY": 0
-        },
-        {
-            "type": "Image",
-            "id": "84d4de8f-f268-4f7f-a99b-2d5459d96ce0",
-            "label": "back2",
-            "texture": {
-                "key": "back"
-            },
-            "x": 768,
-            "originX": 0,
-            "originY": 0
-        },
-        {
-            "type": "Image",
-            "id": "7b7733f3-d3f6-486c-85a2-c8b3c5ef2fec",
-            "label": "back1",
-            "texture": {
-                "key": "back"
-            },
-            "x": 384,
-            "originX": 0,
-            "originY": 0
-        },
-        {
-            "type": "Image",
-            "id": "c03a01e5-8d0a-427d-a697-6dbe2115a161",
-            "label": "middle5",
-            "texture": {
-                "key": "middle"
-            },
-            "x": 528,
-            "y": 80,
-            "originX": 0,
-            "originY": 0
-        },
-        {
-            "type": "Image",
-            "id": "25a73684-97bb-4b57-8e9b-a973c121beeb",
-            "label": "middle4",
-            "texture": {
-                "key": "middle"
-            },
-            "x": 704,
-            "y": 80,
-            "originX": 0,
-            "originY": 0
-        },
-        {
-            "type": "Image",
-            "id": "3e299a59-734b-41f3-9a0a-daeab478a0db",
-            "label": "middle3",
-            "texture": {
-                "key": "middle"
-            },
-            "x": 880,
-            "y": 80,
-            "originX": 0,
-            "originY": 0
-        },
-        {
-            "type": "Image",
-            "id": "c1e317e4-d5a6-4d91-a321-48979a8892f2",
-            "label": "middle2",
-            "texture": {
-                "key": "middle"
-            },
-            "x": 176,
-            "y": 80,
-            "originX": 0,
-            "originY": 0
-        },
-        {
-            "type": "Image",
-            "id": "1eac1779-0ed0-4b43-8db5-fc6ae1887e6b",
-            "label": "middle1",
-            "texture": {
-                "key": "middle"
-            },
-            "x": 352,
-            "y": 80,
-            "originX": 0,
-            "originY": 0
-        },
-        {
-            "type": "Image",
-            "id": "9216adcc-5483-4217-829f-9712a3247cef",
-            "label": "middle",
-            "texture": {
-                "key": "middle"
-            },
-            "y": 80,
-            "originX": 0,
-            "originY": 0
-        },
-        {
             "type": "TilemapLayer",
-            "id": "c57f7353-17d6-4012-83ac-fda50242ba7b",
+            "id": "a5669069-22fb-4563-b23c-3125c350d009",
             "label": "layer",
             "scope": "CLASS",
-            "tilemapId": "64b3ab7d-c3f8-4f4a-89be-421a17f9d776",
-            "layerName": "Tile Layer 1",
+            "tilemapId": "2bff3b97-2f29-44f0-adc6-33465e4f1ee4",
+            "layerName": "pit",
             "tilesets": [
-                "tileset"
+                "Tileset - wall 1",
+                "Tileset - wall 2",
+                "Tileset-Terrain-old prison",
+                "AutoMap Rules",
+                "blood pool - style2 - with spikes - transparency"
             ]
         },
         {
-            "type": "Image",
-            "id": "bbb36026-9c0c-44a0-a5dc-a5b6b4293084",
-            "label": "tree",
-            "texture": {
-                "key": "atlas-props",
-                "frame": "tree"
-            },
-            "x": 496,
-            "y": 67,
-            "originX": 0,
-            "originY": 0
-        },
-        {
-            "type": "Image",
-            "id": "24150a21-1d84-4fd5-8076-4c7facf9e03f",
-            "label": "bush",
-            "texture": {
-                "key": "atlas-props",
-                "frame": "bush"
-            },
-            "x": 160,
-            "y": 132,
-            "originX": 0,
-            "originY": 0
-        },
-        {
-            "type": "Image",
-            "id": "1a926bab-9455-41fe-9939-e74349dcf352",
-            "label": "sign",
-            "texture": {
-                "key": "atlas-props",
-                "frame": "sign"
-            },
-            "x": 176,
-            "y": 300,
-            "originX": 0,
-            "originY": 0
-        },
-        {
-            "type": "Image",
-            "id": "3110c623-9695-423b-bfdc-83215f668fdc",
-            "label": "skulls",
-            "texture": {
-                "key": "atlas-props",
-                "frame": "skulls"
-            },
-            "x": 240,
-            "y": 310,
-            "originX": 0,
-            "originY": 0
-        },
-        {
-            "type": "Image",
-            "id": "19b8fec1-f047-4e4d-8d81-98dcfb8d8a8f",
-            "label": "face_block",
-            "texture": {
-                "key": "atlas-props",
-                "frame": "face-block"
-            },
-            "x": 368,
-            "y": 304,
-            "originX": 0,
-            "originY": 0
-        },
-        {
-            "type": "Image",
-            "id": "9298bfc8-b8d9-4867-95f0-cb6eb41ed428",
-            "label": "shrooms",
-            "texture": {
-                "key": "atlas-props",
-                "frame": "shrooms"
-            },
-            "x": 448,
-            "y": 320,
-            "originX": 0,
-            "originY": 0
-        },
-        {
-            "type": "Image",
-            "id": "84ca82a5-e95b-4061-b133-45c2a6e417e1",
-            "label": "house",
-            "texture": {
-                "key": "atlas-props",
-                "frame": "house"
-            },
-            "x": 768,
-            "y": 53,
-            "originX": 0,
-            "originY": 0
+            "type": "TilemapLayer",
+            "id": "141caf0f-d4eb-416b-b2f3-efebdbd597a7",
+            "label": "wall",
+            "tilemapId": "2bff3b97-2f29-44f0-adc6-33465e4f1ee4",
+            "layerName": "wall-1",
+            "tilesets": [
+                "Tileset - wall 1",
+                "Tileset - wall 2",
+                "Tileset-Terrain-old prison",
+                "AutoMap Rules",
+                "blood pool - style2 - with spikes - transparency"
+            ]
         },
         {
             "prefabId": "67e1897c-2af2-411f-a5a2-77afe7cd6418",
@@ -451,14 +275,35 @@
                 "flipX",
                 "flipY",
                 "x",
-                "y"
+                "y",
+                "allowGravity"
             ],
             "label": "player",
             "scope": "CLASS",
             "x": 738,
             "y": 121,
             "flipX": true,
-            "flipY": false
+            "flipY": false,
+            "allowGravity": false
+        },
+        {
+            "type": "Rectangle",
+            "id": "536a39d6-c0df-4592-a587-c5f193954b5c",
+            "label": "rectangle_1",
+            "x": 145,
+            "y": 181,
+            "scaleX": 2.247054094517622,
+            "scaleY": 0.1832132564628389,
+            "isFilled": true,
+            "width": 128,
+            "height": 128,
+            "list": [
+                {
+                    "prefabId": "63bd4c20-a9a7-478a-a031-5d0027804b88",
+                    "id": "ed63a6ed-7a7b-4286-b7e2-e03de50af3b9",
+                    "label": "fixedToCameraScript_3"
+                }
+            ]
         },
         {
             "type": "Image",
@@ -548,18 +393,92 @@
             ]
         },
         {
-            "type": "ArcadeSprite",
-            "id": "8ae17399-5f32-45ca-bac0-dac8e7fd3e3f",
-            "label": "attack1_skeleton_attack1_1_png",
-            "scope": "CLASS",
-            "texture": {
-                "key": "enemies",
-                "frame": "attack1/skeleton-attack1-1.png"
-            },
-            "x": 160,
-            "y": 104,
-            "body.width": 220,
-            "body.height": 220
+            "prefabId": "e3ae1e22-0b1e-4681-b99c-e1e030eb4b6f",
+            "id": "1d14fde1-5c87-4854-ba80-001861084f86",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "skeleton",
+            "x": 138,
+            "y": 153,
+            "list": [
+                {
+                    "prefabId": "d27067c0-70b1-478b-9b7c-d2d2f08defa1",
+                    "id": "2d0b9314-87ae-4c68-84e1-db12ff6c1271",
+                    "label": "characterMoveScript_2"
+                }
+            ]
+        },
+        {
+            "type": "TilemapLayer",
+            "id": "cd90d00d-e53a-4463-a5d9-eb90b67a9479",
+            "label": "tile_Layer",
+            "tilemapId": "2bff3b97-2f29-44f0-adc6-33465e4f1ee4",
+            "layerName": "Tile Layer 6",
+            "tilesets": [
+                "Tileset - wall 1",
+                "Tileset - wall 2",
+                "Tileset-Terrain-old prison",
+                "AutoMap Rules",
+                "blood pool - style2 - with spikes - transparency"
+            ]
+        },
+        {
+            "type": "TilemapLayer",
+            "id": "e7106934-4fc7-418f-860c-21aa82b7b562",
+            "label": "spikes_1",
+            "tilemapId": "2bff3b97-2f29-44f0-adc6-33465e4f1ee4",
+            "layerName": "spikes",
+            "tilesets": [
+                "Tileset - wall 1",
+                "Tileset - wall 2",
+                "Tileset-Terrain-old prison",
+                "AutoMap Rules",
+                "blood pool - style2 - with spikes - transparency"
+            ]
+        },
+        {
+            "type": "TilemapLayer",
+            "id": "39a51753-8674-4e5e-8208-4eb69d2aabc1",
+            "label": "wall_1",
+            "tilemapId": "2bff3b97-2f29-44f0-adc6-33465e4f1ee4",
+            "layerName": "wall-2",
+            "tilesets": [
+                "Tileset - wall 1",
+                "Tileset - wall 2",
+                "Tileset-Terrain-old prison",
+                "AutoMap Rules",
+                "blood pool - style2 - with spikes - transparency"
+            ]
+        },
+        {
+            "type": "TilemapLayer",
+            "id": "f1cbb251-0ae2-48e3-99a7-ab0f35dcf10d",
+            "label": "prison_cells_1",
+            "tilemapId": "2bff3b97-2f29-44f0-adc6-33465e4f1ee4",
+            "layerName": "prison cells",
+            "tilesets": [
+                "Tileset - wall 1",
+                "Tileset - wall 2",
+                "Tileset-Terrain-old prison",
+                "AutoMap Rules",
+                "blood pool - style2 - with spikes - transparency"
+            ]
+        },
+        {
+            "type": "TilemapLayer",
+            "id": "3fabac66-ca88-41cc-9ea2-db0ba5101a7e",
+            "label": "worldwalls_1",
+            "tilemapId": "2bff3b97-2f29-44f0-adc6-33465e4f1ee4",
+            "layerName": "worldwalls",
+            "tilesets": [
+                "Tileset - wall 1",
+                "Tileset - wall 2",
+                "Tileset-Terrain-old prison",
+                "AutoMap Rules",
+                "blood pool - style2 - with spikes - transparency"
+            ]
         }
     ],
     "plainObjects": [
@@ -641,6 +560,34 @@
             "type": "Keyboard.Key",
             "label": "downKey",
             "keyCode": "DOWN"
+        },
+        {
+            "id": "2bff3b97-2f29-44f0-adc6-33465e4f1ee4",
+            "type": "Tilemap",
+            "label": "oldPrisonexamplemapV1",
+            "key": "OldPrisonexamplemapV1",
+            "tilesets": [
+                {
+                    "name": "Tileset - wall 1",
+                    "imageKey": "wall-1- 3 tiles tall"
+                },
+                {
+                    "name": "Tileset - wall 2",
+                    "imageKey": "wall-2- 3 tiles tall"
+                },
+                {
+                    "name": "Tileset-Terrain-old prison",
+                    "imageKey": "Tileset-Terrain-old prison"
+                },
+                {
+                    "name": "AutoMap Rules",
+                    "imageKey": "tile guide-1 tile"
+                },
+                {
+                    "name": "blood pool - style2 - with spikes - transparency",
+                    "imageKey": "blood pool - guide"
+                }
+            ]
         }
     ],
     "meta": {
@@ -677,7 +624,8 @@
                 "cb19edd7-d04d-4358-b186-211628ea750a",
                 "10256835-06a3-44a5-a3bf-6eda8c6ad0d7",
                 "13f2667e-4032-4bbc-8a4f-5103d8aaae7d",
-                "27cfe7de-f461-4c93-a157-4a2bf587c728"
+                "27cfe7de-f461-4c93-a157-4a2bf587c728",
+                "1d14fde1-5c87-4854-ba80-001861084f86"
             ]
         }
     ]

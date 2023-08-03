@@ -24,6 +24,51 @@
                 "key": "back"
             },
             {
+                "url": "assets/blood pool - guide.png",
+                "type": "image",
+                "key": "blood pool - guide"
+            },
+            {
+                "url": "assets/blood pool - style2.png",
+                "type": "image",
+                "key": "blood pool - style2"
+            },
+            {
+                "url": "assets/blood pool - style2 - transparency.png",
+                "type": "image",
+                "key": "blood pool - style2 - transparency"
+            },
+            {
+                "url": "assets/blood pool - style2 - with spikes.png",
+                "type": "image",
+                "key": "blood pool - style2 - with spikes"
+            },
+            {
+                "url": "assets/blood pool - style2 - with spikes-transparency.png",
+                "type": "image",
+                "key": "blood pool - style2 - with spikes-transparency"
+            },
+            {
+                "url": "assets/blood pool-standard style.png",
+                "type": "image",
+                "key": "blood pool-standard style"
+            },
+            {
+                "url": "assets/blood pool-standard style - transparency.png",
+                "type": "image",
+                "key": "blood pool-standard style - transparency"
+            },
+            {
+                "url": "assets/blood pool-standard style - with spikes.png",
+                "type": "image",
+                "key": "blood pool-standard style - with spikes"
+            },
+            {
+                "url": "assets/blood pool-standard style - with spikes -transparency.png",
+                "type": "image",
+                "key": "blood pool-standard style - with spikes -transparency"
+            },
+            {
                 "url": "assets/environment/collision.png",
                 "type": "image",
                 "key": "collision"
@@ -75,6 +120,11 @@
                 "key": "middle"
             },
             {
+                "url": "assets/OldPrisonexamplemapV1.json",
+                "type": "tilemapTiledJSON",
+                "key": "OldPrisonexamplemapV1"
+            },
+            {
                 "url": "assets/sprites/press-enter-text.png",
                 "type": "image",
                 "key": "press-enter-text"
@@ -85,14 +135,34 @@
                 "key": "right-button"
             },
             {
+                "url": "assets/tile guide-1 tile.png",
+                "type": "image",
+                "key": "tile guide-1 tile"
+            },
+            {
                 "url": "assets/environment/tileset.png",
                 "type": "image",
                 "key": "tileset"
             },
             {
+                "url": "assets/Tileset-Terrain-old prison.png",
+                "type": "image",
+                "key": "Tileset-Terrain-old prison"
+            },
+            {
                 "url": "assets/sprites/title-screen.png",
                 "type": "image",
                 "key": "title-screen"
+            },
+            {
+                "url": "assets/wall-1- 3 tiles tall.png",
+                "type": "image",
+                "key": "wall-1- 3 tiles tall"
+            },
+            {
+                "url": "assets/wall-2- 3 tiles tall.png",
+                "type": "image",
+                "key": "wall-2- 3 tiles tall"
             }
         ]
     },

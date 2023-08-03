@@ -35,72 +35,19 @@ class Level extends Phaser.Scene {
 		// downKey
 		const downKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.DOWN);
 
-		// back3
-		const back3 = this.add.image(0, 0, "back");
-		back3.setOrigin(0, 0);
-
-		// back2
-		const back2 = this.add.image(768, 0, "back");
-		back2.setOrigin(0, 0);
-
-		// back1
-		const back1 = this.add.image(384, 0, "back");
-		back1.setOrigin(0, 0);
-
-		// middle5
-		const middle5 = this.add.image(528, 80, "middle");
-		middle5.setOrigin(0, 0);
-
-		// middle4
-		const middle4 = this.add.image(704, 80, "middle");
-		middle4.setOrigin(0, 0);
-
-		// middle3
-		const middle3 = this.add.image(880, 80, "middle");
-		middle3.setOrigin(0, 0);
-
-		// middle2
-		const middle2 = this.add.image(176, 80, "middle");
-		middle2.setOrigin(0, 0);
-
-		// middle1
-		const middle1 = this.add.image(352, 80, "middle");
-		middle1.setOrigin(0, 0);
-
-		// middle
-		const middle = this.add.image(0, 80, "middle");
-		middle.setOrigin(0, 0);
+		// oldPrisonexamplemapV1
+		const oldPrisonexamplemapV1 = this.add.tilemap("OldPrisonexamplemapV1");
+		oldPrisonexamplemapV1.addTilesetImage("Tileset - wall 1", "wall-1- 3 tiles tall");
+		oldPrisonexamplemapV1.addTilesetImage("Tileset - wall 2", "wall-2- 3 tiles tall");
+		oldPrisonexamplemapV1.addTilesetImage("Tileset-Terrain-old prison", "Tileset-Terrain-old prison");
+		oldPrisonexamplemapV1.addTilesetImage("AutoMap Rules", "tile guide-1 tile");
+		oldPrisonexamplemapV1.addTilesetImage("blood pool - style2 - with spikes - transparency", "blood pool - guide");
 
 		// layer
-		const layer = map.createLayer("Tile Layer 1", ["tileset"], 0, 0);
+		const layer = oldPrisonexamplemapV1.createLayer("pit", ["Tileset-Terrain-old prison"], 0, 0);
 
-		// tree
-		const tree = this.add.image(496, 67, "atlas-props", "tree");
-		tree.setOrigin(0, 0);
-
-		// bush
-		const bush = this.add.image(160, 132, "atlas-props", "bush");
-		bush.setOrigin(0, 0);
-
-		// sign
-		const sign = this.add.image(176, 300, "atlas-props", "sign");
-		sign.setOrigin(0, 0);
-
-		// skulls
-		const skulls = this.add.image(240, 310, "atlas-props", "skulls");
-		skulls.setOrigin(0, 0);
-
-		// face_block
-		const face_block = this.add.image(368, 304, "atlas-props", "face-block");
-		face_block.setOrigin(0, 0);
-
-		// shrooms
-		const shrooms = this.add.image(448, 320, "atlas-props", "shrooms");
-		shrooms.setOrigin(0, 0);
-
-		// house
-		const house = this.add.image(768, 53, "atlas-props", "house");
-		house.setOrigin(0, 0);
+		// wall
+		oldPrisonexamplemapV1.createLayer("wall-1", ["Tileset - wall 1"], 0, 0);
 
 		// cherry
 		const cherry = new Cherry(this, 480, 80);
@@ -185,6 +132,16 @@ class Level extends Phaser.Scene {
 		this.add.existing(player);
 		player.flipX = true;
 		player.flipY = false;
+		player.body.allowGravity = false;
+
+		// rectangle_1
+		const rectangle_1 = this.add.rectangle(145, 181, 128, 128);
+		rectangle_1.scaleX = 2.247054094517622;
+		rectangle_1.scaleY = 0.1832132564628389;
+		rectangle_1.isFilled = true;
+
+		// fixedToCameraScript_3
+		new FixedToCameraScript(rectangle_1);
 
 		// left_button
 		const left_button = this.add.image(26, 170, "left-button");
@@ -222,13 +179,31 @@ class Level extends Phaser.Scene {
 		// fixedToCameraScript
 		new FixedToCameraScript(jump_button);
 
-		// attack1_skeleton_attack1_1_png
-		const attack1_skeleton_attack1_1_png = this.physics.add.sprite(160, 104, "enemies", "attack1/skeleton-attack1-1.png");
-		attack1_skeleton_attack1_1_png.body.setSize(220, 220, false);
+		// skeleton
+		const skeleton = new Skeleton(this, 138, 153);
+		this.add.existing(skeleton);
+
+		// characterMoveScript_2
+		new CharacterMoveScript(skeleton);
+
+		// tile_Layer
+		oldPrisonexamplemapV1.createLayer("Tile Layer 6", [], 0, 0);
+
+		// spikes_1
+		oldPrisonexamplemapV1.createLayer("spikes", ["Tileset-Terrain-old prison"], 0, 0);
+
+		// wall_1
+		oldPrisonexamplemapV1.createLayer("wall-2", ["Tileset - wall 2"], 0, 0);
+
+		// prison_cells_1
+		oldPrisonexamplemapV1.createLayer("prison cells", ["Tileset-Terrain-old prison"], 0, 0);
+
+		// worldwalls_1
+		oldPrisonexamplemapV1.createLayer("worldwalls", ["Tileset - wall 2"], 0, 0);
 
 		// lists
 		const items = [cherry, cherry_1, cherry_2, cherry_3, cherry_4, cherry_5, gem, gem_1, gem_2, gem_3, gem_1_1, gem_2_1];
-		const enemies = [frog_1, frog, opossum_1, opossum, eagle, eagle_2];
+		const enemies = [frog_1, frog, opossum_1, opossum, eagle, eagle_2, skeleton];
 
 		// colliderPlayerVsLayer
 		const colliderPlayerVsLayer = this.physics.add.collider(player, layer);
@@ -260,13 +235,13 @@ class Level extends Phaser.Scene {
 		this.right_button = right_button;
 		this.controllerJump = controllerJump;
 		this.jump_button = jump_button;
-		this.attack1_skeleton_attack1_1_png = attack1_skeleton_attack1_1_png;
 		this.map = map;
 		this.spaceKey = spaceKey;
 		this.leftKey = leftKey;
 		this.rightKey = rightKey;
 		this.upKey = upKey;
 		this.downKey = downKey;
+		this.oldPrisonexamplemapV1 = oldPrisonexamplemapV1;
 		this.items = items;
 		this.enemies = enemies;
 
@@ -289,8 +264,6 @@ class Level extends Phaser.Scene {
 	controllerJump;
 	/** @type {Phaser.GameObjects.Image} */
 	jump_button;
-	/** @type {Phaser.Physics.Arcade.Sprite} */
-	attack1_skeleton_attack1_1_png;
 	/** @type {Phaser.Tilemaps.Tilemap} */
 	map;
 	/** @type {Phaser.Input.Keyboard.Key} */
@@ -303,9 +276,11 @@ class Level extends Phaser.Scene {
 	upKey;
 	/** @type {Phaser.Input.Keyboard.Key} */
 	downKey;
+	/** @type {Phaser.Tilemaps.Tilemap} */
+	oldPrisonexamplemapV1;
 	/** @type {Array<Cherry|Gem>} */
 	items;
-	/** @type {Array<Frog|Opossum|Eagle>} */
+	/** @type {Array<Frog|Opossum|Eagle|Skeleton>} */
 	enemies;
 
 	/* START-USER-CODE */

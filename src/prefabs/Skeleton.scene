@@ -1,0 +1,46 @@
+{
+    "id": "e3ae1e22-0b1e-4681-b99c-e1e030eb4b6f",
+    "sceneType": "PREFAB",
+    "settings": {
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 288,
+        "borderHeight": 192
+    },
+    "displayList": [
+        {
+            "type": "ArcadeSprite",
+            "id": "d457be6b-b330-4b5a-96c6-c77c132aaab5",
+            "label": "attack2_skeleton2_attack2_1_png",
+            "texture": {
+                "key": "enemies",
+                "frame": "attack2/skeleton2-attack2-1.png"
+            },
+            "scaleX": 0.6,
+            "scaleY": 0.6,
+            "body.width": 80,
+            "body.height": 49,
+            "body.offset.x": 65,
+            "body.offset.y": 100,
+            "list": [
+                {
+                    "prefabId": "61dde64d-6c82-4109-a4a2-c88cb5eb249d",
+                    "id": "70aa4da4-c7f4-41f9-a306-ac0c60dc145a",
+                    "unlock": [
+                        "animationKey"
+                    ],
+                    "label": "startAnimationScript",
+                    "animationKey": "idle/skeleton2-idle"
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 4
+    }
+}
