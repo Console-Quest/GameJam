@@ -588,6 +588,12 @@
                     "imageKey": "blood pool - guide"
                 }
             ]
+        },
+        {
+            "id": "feecf5e2-3f02-4e34-acf6-a2d68c2fe088",
+            "type": "Keyboard.Key",
+            "label": "mKey",
+            "keyCode": "M"
         }
     ],
     "meta": {

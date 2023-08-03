@@ -43,6 +43,9 @@ class Level extends Phaser.Scene {
 		oldPrisonexamplemapV1.addTilesetImage("AutoMap Rules", "tile guide-1 tile");
 		oldPrisonexamplemapV1.addTilesetImage("blood pool - style2 - with spikes - transparency", "blood pool - guide");
 
+		// mKey
+		const mKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.M);
+
 		// layer
 		const layer = oldPrisonexamplemapV1.createLayer("pit", ["Tileset-Terrain-old prison"], 0, 0);
 
@@ -242,6 +245,7 @@ class Level extends Phaser.Scene {
 		this.upKey = upKey;
 		this.downKey = downKey;
 		this.oldPrisonexamplemapV1 = oldPrisonexamplemapV1;
+		this.mKey = mKey;
 		this.items = items;
 		this.enemies = enemies;
 
@@ -278,6 +282,8 @@ class Level extends Phaser.Scene {
 	downKey;
 	/** @type {Phaser.Tilemaps.Tilemap} */
 	oldPrisonexamplemapV1;
+	/** @type {Phaser.Input.Keyboard.Key} */
+	mKey;
 	/** @type {Array<Cherry|Gem>} */
 	items;
 	/** @type {Array<Frog|Opossum|Eagle|Skeleton>} */
@@ -322,62 +328,47 @@ class Level extends Phaser.Scene {
 	}
 
 	movePlayer() {
-
 		if (this.player.hurtFlag) {
-
 			return;
 		}
-
+	
 		const body = this.player.getBody();
-
-		const jumpDown = this.upKey.isDown || this.spaceKey.isDown || this.controllerJump.isDown;
+	
 		const leftDown = this.leftKey.isDown || this.controllerLeft.isDown;
 		const rightDown = this.rightKey.isDown || this.controllerRight.isDown;
-
-		if (jumpDown && body.onFloor()) {
-
-			this.player.body.velocity.y = -170;
-		}
-
+		const upDown = this.upKey.isDown || this.controllerUp.isDown;
+		const downDown = this.downKey.isDown || this.controllerDown.isDown;
+	
 		var vel = 150;
-
+	
 		if (leftDown) {
-
 			this.player.body.velocity.x = -vel;
 			this.player.play("player/run/player-run", true);
 			this.player.flipX = true;
-
 		} else if (rightDown) {
-
 			this.player.body.velocity.x = vel;
 			this.player.play("player/run/player-run", true);
 			this.player.flipX = false;
-
 		} else {
-
 			this.player.body.velocity.x = 0;
-
-			if (this.downKey.isDown) {
-
-				this.player.play("player/crouch/player-crouch", true);
-
-			} else {
-
-				this.player.play("player/idle/player-idle", true);
-			}
 		}
-
-		// jump animation
-
-		if (this.player.body.velocity.y < 0) {
-
-			this.player.play("player/jump/player-jump-1", true);
-
-		} else if (this.player.body.velocity.y > 0) {
-
-			this.player.play("player/jump/player-jump-2", true);
+	
+		if (upDown) {
+			this.player.body.velocity.y = -vel;
+			this.player.play("player/run/player-run", true);
+		} else if (downDown) {
+			this.player.body.velocity.y = vel;
+			this.player.play("player/run/player-run", true);
+		} else {
+			this.player.body.velocity.y = 0;
+		}
+	
+		// Idle animation
+		if (!leftDown && !rightDown && !upDown && !downDown) {
+			this.player.play("player/idle/player-idle", true);
 		}
 	}
+	
 
 	initColliders() {
 
