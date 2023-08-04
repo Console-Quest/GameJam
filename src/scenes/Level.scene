@@ -280,9 +280,9 @@
             ],
             "label": "player",
             "scope": "CLASS",
-            "x": 738,
-            "y": 121,
-            "flipX": true,
+            "x": 388,
+            "y": 160,
+            "flipX": false,
             "flipY": false,
             "allowGravity": false
         },
@@ -441,7 +441,8 @@
         {
             "type": "TilemapLayer",
             "id": "39a51753-8674-4e5e-8208-4eb69d2aabc1",
-            "label": "wall_1",
+            "label": "wall",
+            "scope": "CLASS",
             "tilemapId": "2bff3b97-2f29-44f0-adc6-33465e4f1ee4",
             "layerName": "wall-2",
             "tilesets": [
@@ -483,24 +484,12 @@
     ],
     "plainObjects": [
         {
-            "id": "64b3ab7d-c3f8-4f4a-89be-421a17f9d776",
-            "type": "Tilemap",
-            "label": "map",
-            "key": "map",
-            "tilesets": [
-                {
-                    "name": "tileset",
-                    "imageKey": "tileset"
-                }
-            ]
-        },
-        {
             "id": "42344ac5-f882-4b25-805a-5409091931ab",
             "type": "Collider",
             "label": "colliderPlayerVsLayer",
             "scope": "METHOD",
             "object1": "player",
-            "object2": "layer"
+            "object2": "wall"
         },
         {
             "id": "12bbe5cd-7093-4791-951a-3d27c3207c97",
@@ -508,7 +497,7 @@
             "label": "colliderEnemiesVsLayer",
             "scope": "METHOD",
             "object1": "enemies",
-            "object2": "layer"
+            "object2": "wall"
         },
         {
             "id": "89d53cdc-e0f4-4703-997c-3189b33f192c",

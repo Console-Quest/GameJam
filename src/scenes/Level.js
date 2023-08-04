@@ -16,10 +16,6 @@ class Level extends Phaser.Scene {
 	/** @returns {void} */
 	editorCreate() {
 
-		// map
-		const map = this.add.tilemap("map");
-		map.addTilesetImage("tileset", "tileset");
-
 		// spaceKey
 		const spaceKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
 
@@ -131,9 +127,9 @@ class Level extends Phaser.Scene {
 		this.add.existing(opossum_1);
 
 		// player
-		const player = new Player(this, 738, 121);
+		const player = new Player(this, 388, 160);
 		this.add.existing(player);
-		player.flipX = true;
+		player.flipX = false;
 		player.flipY = false;
 		player.body.allowGravity = false;
 
@@ -195,8 +191,8 @@ class Level extends Phaser.Scene {
 		// spikes_1
 		oldPrisonexamplemapV1.createLayer("spikes", ["Tileset-Terrain-old prison"], 0, 0);
 
-		// wall_1
-		oldPrisonexamplemapV1.createLayer("wall-2", ["Tileset - wall 2"], 0, 0);
+		// wall
+		const wall = oldPrisonexamplemapV1.createLayer("wall-2", ["Tileset - wall 2"], 0, 0);
 
 		// prison_cells_1
 		oldPrisonexamplemapV1.createLayer("prison cells", ["Tileset-Terrain-old prison"], 0, 0);
@@ -209,10 +205,10 @@ class Level extends Phaser.Scene {
 		const enemies = [frog_1, frog, opossum_1, opossum, eagle, eagle_2, skeleton];
 
 		// colliderPlayerVsLayer
-		const colliderPlayerVsLayer = this.physics.add.collider(player, layer);
+		const colliderPlayerVsLayer = this.physics.add.collider(player, wall);
 
 		// colliderEnemiesVsLayer
-		const colliderEnemiesVsLayer = this.physics.add.collider(enemies, layer);
+		const colliderEnemiesVsLayer = this.physics.add.collider(enemies, wall);
 
 		// overlapPlayerVsItems
 		const overlapPlayerVsItems = this.physics.add.overlap(player, items, this.pickItem, undefined, this);
@@ -238,7 +234,7 @@ class Level extends Phaser.Scene {
 		this.right_button = right_button;
 		this.controllerJump = controllerJump;
 		this.jump_button = jump_button;
-		this.map = map;
+		this.wall = wall;
 		this.spaceKey = spaceKey;
 		this.leftKey = leftKey;
 		this.rightKey = rightKey;
@@ -268,8 +264,8 @@ class Level extends Phaser.Scene {
 	controllerJump;
 	/** @type {Phaser.GameObjects.Image} */
 	jump_button;
-	/** @type {Phaser.Tilemaps.Tilemap} */
-	map;
+	/** @type {Phaser.Tilemaps.TilemapLayer} */
+	wall;
 	/** @type {Phaser.Input.Keyboard.Key} */
 	spaceKey;
 	/** @type {Phaser.Input.Keyboard.Key} */
@@ -331,49 +327,46 @@ class Level extends Phaser.Scene {
 		if (this.player.hurtFlag) {
 			return;
 		}
-	
+
 		const body = this.player.getBody();
-	
+
 		const leftDown = this.leftKey.isDown || this.controllerLeft.isDown;
 		const rightDown = this.rightKey.isDown || this.controllerRight.isDown;
-		const upDown = this.upKey.isDown || this.controllerUp.isDown;
-		const downDown = this.downKey.isDown || this.controllerDown.isDown;
-	
+		const upDown = this.upKey.isDown;
+		const downDown = this.downKey.isDown;
+
 		var vel = 150;
-	
+
 		if (leftDown) {
 			this.player.body.velocity.x = -vel;
-			this.player.play("player/run/player-run", true);
-			this.player.flipX = true;
+			this.player.play("playerleft", true);
 		} else if (rightDown) {
 			this.player.body.velocity.x = vel;
-			this.player.play("player/run/player-run", true);
+			this.player.play("playerright", true);
 			this.player.flipX = false;
 		} else {
 			this.player.body.velocity.x = 0;
 		}
-	
+
 		if (upDown) {
 			this.player.body.velocity.y = -vel;
-			this.player.play("player/run/player-run", true);
+			this.player.play("playerup", true);
 		} else if (downDown) {
 			this.player.body.velocity.y = vel;
-			this.player.play("player/run/player-run", true);
+			this.player.play("playerdown", true);
 		} else {
 			this.player.body.velocity.y = 0;
 		}
-	
+
 		// Idle animation
 		if (!leftDown && !rightDown && !upDown && !downDown) {
-			this.player.play("player/idle/player-idle", true);
+			this.player.play("playerdown", true);
 		}
 	}
-	
+
 
 	initColliders() {
 
-		this.map.setCollision([27, 29, 31, 33, 35, 37, 77, 81, 86, 87, 127, 129, 131, 133, 134, 135, 83, 84, 502, 504, 505, 529, 530, 333, 335, 337, 339, 366, 368, 262, 191, 193, 195, 241, 245, 291, 293, 295]);
-		this.setTopCollisionTiles([35, 36, 84, 86, 134, 135, 366, 367, 368, 262]);
 	}
 
 	/**

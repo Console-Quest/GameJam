@@ -1553,6 +1553,1910 @@
             "skipMissedFrames": true,
             "repeat": -1,
             "showBeforeDelay": false
+        },
+        {
+            "key": "monsterbrown-mouse_down",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "brown-mouse_down1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "brown-mouse_down2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "brown-mouse_down3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterbrown-mouse_left",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "brown-mouse_left1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "brown-mouse_left2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "brown-mouse_left3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterbrown-mouse_right",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "brown-mouse_right1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "brown-mouse_right2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "brown-mouse_right3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterbrown-mouse_up",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "brown-mouse_up1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "brown-mouse_up2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "brown-mouse_up3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterghost_down",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "ghost_down1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "ghost_down2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "ghost_down3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterghost_left",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "ghost_left1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "ghost_left2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "ghost_left3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterghost_right",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "ghost_right1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "ghost_right2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "ghost_right3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterghost_up",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "ghost_up1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "ghost_up2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "ghost_up3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterorc-boss_down",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-boss_down1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-boss_down2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-boss_down3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterorc-boss_left",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-boss_left1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-boss_left2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-boss_left3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterorc-boss_right",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-boss_right1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-boss_right2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-boss_right3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterorc-boss_up",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-boss_up1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-boss_up2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-boss_up3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterorc-fighter_down",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-fighter_down1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-fighter_down2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-fighter_down3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterorc-fighter_left",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-fighter_left1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-fighter_left2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-fighter_left3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterorc-fighter_right",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-fighter_right1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-fighter_right2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-fighter_right3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterorc-fighter_up",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-fighter_up1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-fighter_up2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-fighter_up3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterorc-mage_down",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-mage_down1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-mage_down2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-mage_down3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterorc-mage_left",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-mage_left1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-mage_left2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-mage_left3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterorc-mage_right",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-mage_right1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-mage_right2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-mage_right3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterorc-mage_up",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-mage_up1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-mage_up2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-mage_up3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterorc-miniboss_down",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-miniboss_down1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-miniboss_down2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-miniboss_down3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterorc-miniboss_left",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-miniboss_left1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-miniboss_left2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-miniboss_left3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterorc-miniboss_right",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-miniboss_right1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-miniboss_right2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-miniboss_right3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterorc-miniboss_up",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-miniboss_up1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-miniboss_up2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc-miniboss_up3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterorc1_down",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "orc1_down1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc1_down2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc1_down3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterorc1_left",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "orc1_left1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc1_left2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc1_left3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterorc1_right",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "orc1_right1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc1_right2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc1_right3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterorc1_up",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "orc1_up1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc1_up2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc1_up3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterorc2_down",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "orc2_down1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc2_down2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc2_down3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterorc2_left",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "orc2_left1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc2_left2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc2_left3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterorc2_right",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "orc2_right1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc2_right2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc2_right3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterorc2_up",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "orc2_up1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc2_up2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc2_up3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterorc3_down",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "orc3_down1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc3_down2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc3_down3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterorc3_left",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "orc3_left1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc3_left2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc3_left3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterorc3_right",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "orc3_right1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc3_right2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc3_right3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterorc3_up",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "orc3_up1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc3_up2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc3_up3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterorc4_down",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "orc4_down1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc4_down2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc4_down3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterorc4_left",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "orc4_left1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc4_left2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc4_left3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterorc4_right",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "orc4_right1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc4_right2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc4_right3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterorc4_up",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "orc4_up1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc4_up2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "orc4_up3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterpurple-demon_down",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "purple-demon_down1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "purple-demon_down2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "purple-demon_down3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterpurple-demon_left",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "purple-demon_left1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "purple-demon_left2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "purple-demon_left3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterpurple-demon_right",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "purple-demon_right1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "purple-demon_right2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "purple-demon_right3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterpurple-demon_up",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "purple-demon_up1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "purple-demon_up2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "purple-demon_up3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterred-demon_down",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "red-demon_down1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "red-demon_down2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "red-demon_down3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterred-demon_left",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "red-demon_left1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "red-demon_left2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "red-demon_left3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterred-demon_right",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "red-demon_right1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "red-demon_right2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "red-demon_right3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterred-demon_up",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "red-demon_up1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "red-demon_up2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "red-demon_up3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monstersquid_down",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "squid_down1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "squid_down2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "squid_down3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monstersquid_left",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "squid_left1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "squid_left2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "squid_left3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monstersquid_right",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "squid_right1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "squid_right2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "squid_right3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monstersquid_up",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "squid_up1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "squid_up2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "squid_up3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterwhite-mouse_down",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "white-mouse_down1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "white-mouse_down2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "white-mouse_down3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterwhite-mouse_left",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "white-mouse_left1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "white-mouse_left2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "white-mouse_left3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterwhite-mouse_right",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "white-mouse_right1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "white-mouse_right2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "white-mouse_right3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterwhite-mouse_up",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "white-mouse_up1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "white-mouse_up2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "white-mouse_up3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterwhite-zombie_down",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "white-zombie_down1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "white-zombie_down2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "white-zombie_down3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterwhite-zombie_left",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "white-zombie_left1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "white-zombie_left2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "white-zombie_left3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterwhite-zombie_right",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "white-zombie_right1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "white-zombie_right2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "white-zombie_right3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterwhite-zombie_up",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "white-zombie_up1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "white-zombie_up2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "white-zombie_up3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterzombie_down",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "zombie_down1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "zombie_down2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "zombie_down3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterzombie_left",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "zombie_left1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "zombie_left2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "zombie_left3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterzombie_right",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "zombie_right1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "zombie_right2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "zombie_right3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "monsterzombie_up",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "allmonsters",
+                    "frame": "zombie_up1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "zombie_up2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "allmonsters",
+                    "frame": "zombie_up3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "playerdown",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "bluechar",
+                    "frame": "down1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bluechar",
+                    "frame": "down2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bluechar",
+                    "frame": "down3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "playerleft",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "bluechar",
+                    "frame": "left1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bluechar",
+                    "frame": "left2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bluechar",
+                    "frame": "left3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "playerright",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "bluechar",
+                    "frame": "right1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bluechar",
+                    "frame": "right2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bluechar",
+                    "frame": "right3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "playerup",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "bluechar",
+                    "frame": "up1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bluechar",
+                    "frame": "up2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bluechar",
+                    "frame": "up3.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
         }
     ],
     "globalTimeScale": 1,

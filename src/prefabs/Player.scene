@@ -13,10 +13,9 @@
             "type": "Sprite",
             "id": "7510685d-e1b6-4e60-9ac0-d57acec2b000",
             "label": "player_climb_player_climb_1",
-            "components": [],
             "texture": {
-                "key": "atlas",
-                "frame": "player/idle/player-idle-2"
+                "key": "bluechar",
+                "frame": "down1.png"
             },
             "x": 78,
             "y": 37,
@@ -33,10 +32,7 @@
                         "animationKey"
                     ],
                     "label": "startAnimationScript",
-                    "animationKey": "player/idle/player-idle",
-                    "components": [],
-                    "nestedPrefabs": [],
-                    "list": []
+                    "animationKey": "playerdown"
                 }
             ]
         }
@@ -46,6 +42,6 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 4
     }
 }
