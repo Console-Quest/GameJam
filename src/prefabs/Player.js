@@ -6,7 +6,7 @@
 class Player extends Phaser.GameObjects.Sprite {
 
 	constructor(scene, x, y, texture, frame) {
-		super(scene, x ?? 78, y ?? 37, texture || "atlas", frame ?? "player/idle/player-idle-2");
+		super(scene, x ?? 78, y ?? 37, texture || "bluechar", frame ?? "down1.png");
 
 		scene.physics.add.existing(this, false);
 		this.body.setOffset(12, 16);
@@ -16,7 +16,7 @@ class Player extends Phaser.GameObjects.Sprite {
 		const startAnimationScript = new StartAnimationScript(this);
 
 		// startAnimationScript (prefab fields)
-		startAnimationScript.animationKey = "player/idle/player-idle";
+		startAnimationScript.animationKey = "playerdown";
 
 		/* START-USER-CTR-CODE */
 

@@ -2,6 +2,12 @@
     "section1": {
         "files": [
             {
+                "type": "multiatlas",
+                "url": "assets/allmonsters.json",
+                "path": "assets",
+                "key": "allmonsters"
+            },
+            {
                 "url": "assets/animations.json",
                 "type": "animation",
                 "key": "animations"
@@ -67,6 +73,12 @@
                 "url": "assets/blood pool-standard style - with spikes -transparency.png",
                 "type": "image",
                 "key": "blood pool-standard style - with spikes -transparency"
+            },
+            {
+                "type": "multiatlas",
+                "url": "assets/bluechar.json",
+                "path": "assets",
+                "key": "bluechar"
             },
             {
                 "url": "assets/environment/collision.png",
