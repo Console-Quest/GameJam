@@ -42,7 +42,7 @@ class TitleScreen extends Phaser.Scene {
 		const startLevelAction = new StartSceneActionScript(this);
 
 		// startLevelAction (prefab fields)
-		startLevelAction.sceneKey = "Level";
+		startLevelAction.sceneKey = "Arena";
 
 		this.background = background;
 		this.middle = middle;

@@ -16,22 +16,19 @@
             "id": "cfd2799a-9699-4032-972b-78702790f39b",
             "label": "background",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "back"
             },
             "originX": 0,
             "originY": 0,
             "width": 384,
-            "height": 240,
-            "list": []
+            "height": 240
         },
         {
             "type": "TileSprite",
             "id": "40e33168-a717-4144-82d0-1c158f1b0444",
             "label": "middle",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "middle"
             },
@@ -39,8 +36,7 @@
             "originX": 0,
             "originY": 0,
             "width": 384,
-            "height": 368,
-            "list": []
+            "height": 368
         },
         {
             "type": "Image",
@@ -54,8 +50,7 @@
                 "key": "title-screen"
             },
             "x": 144,
-            "y": 90,
-            "list": []
+            "y": 90
         },
         {
             "type": "Image",
@@ -68,8 +63,7 @@
                 "key": "credits-text"
             },
             "x": 144,
-            "y": 174,
-            "list": []
+            "y": 174
         },
         {
             "type": "Image",
@@ -83,22 +77,19 @@
                 "key": "press-enter-text"
             },
             "x": 144,
-            "y": 149,
-            "list": []
+            "y": 149
         },
         {
             "type": "Image",
             "id": "51139584-cf0d-4858-b545-7deae7efbb1d",
             "label": "instructions",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "instructions"
             },
             "x": 144,
             "originY": 0,
-            "visible": false,
-            "list": []
+            "visible": false
         },
         {
             "prefabId": "2d3f9249-6fcd-4c7d-bd2f-77fa616af7e8",
@@ -108,10 +99,7 @@
             ],
             "label": "startLevelAction",
             "scope": "CLASS",
-            "sceneKey": "Level",
-            "components": [],
-            "nestedPrefabs": [],
-            "list": []
+            "sceneKey": "Arena"
         }
     ],
     "plainObjects": [],
@@ -119,6 +107,6 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 4
     }
 }

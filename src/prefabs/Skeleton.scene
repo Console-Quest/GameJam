@@ -19,6 +19,7 @@
             },
             "scaleX": 0.6,
             "scaleY": 0.6,
+            "allowGravity": false,
             "body.width": 80,
             "body.height": 49,
             "body.offset.x": 65,
@@ -32,6 +33,15 @@
                     ],
                     "label": "startAnimationScript",
                     "animationKey": "idle/skeleton2-idle"
+                },
+                {
+                    "prefabId": "a759a142-040c-42c6-8f3e-8eab0e80ccf2",
+                    "id": "21103948-8f54-43e5-8a26-824b353e2597",
+                    "unlock": [
+                        "target"
+                    ],
+                    "label": "attackPlayer",
+                    "target": ""
                 }
             ]
         }
@@ -42,5 +52,27 @@
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
         "version": 4
-    }
+    },
+    "prefabProperties": [
+        {
+            "name": "health",
+            "label": "health",
+            "tooltip": "",
+            "defValue": 10,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        },
+        {
+            "name": "attack",
+            "label": "attack",
+            "tooltip": "Property 1",
+            "defValue": 2,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        }
+    ]
 }

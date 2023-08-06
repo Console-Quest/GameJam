@@ -1,0 +1,74 @@
+{
+    "id": "e38a7a71-8d35-4df1-ba0e-9bb1d96ae9b2",
+    "sceneType": "SCENE",
+    "settings": {
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "Planning",
+        "borderWidth": 288,
+        "borderHeight": 192
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "768bef48-69df-4c8b-97c7-7bc31c0e2253",
+            "label": "rectangle_1",
+            "x": 142,
+            "y": 99,
+            "scaleX": 2.9088980684327215,
+            "scaleY": 1.7226710547810158,
+            "isFilled": true,
+            "fillColor": "#514040",
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Text",
+            "id": "bf54e5ba-80d7-4a4d-8e5c-b703e91f6928",
+            "label": "text_1",
+            "x": 109,
+            "y": 62,
+            "text": "Hit Next\n"
+        },
+        {
+            "prefabId": "23ce7c2c-ec62-441a-bc88-efc65214d3b3",
+            "id": "527ff33b-ad58-4ab3-b9d7-ab2f6a2bcadf",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "nextButton",
+            "scope": "CLASS",
+            "x": 127,
+            "y": 90
+        },
+        {
+            "prefabId": "2d3f9249-6fcd-4c7d-bd2f-77fa616af7e8",
+            "id": "2507f9a3-27f7-479c-9c24-ef8e2c0c8f3a",
+            "unlock": [
+                "sceneKey"
+            ],
+            "label": "startSceneActionScript",
+            "sceneKey": "Arena"
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 4
+    },
+    "prefabProperties": [
+        {
+            "name": "property1",
+            "label": "Property 1",
+            "tooltip": "Property 1",
+            "defValue": 0,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        }
+    ]
+}

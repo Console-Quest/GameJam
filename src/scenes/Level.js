@@ -48,6 +48,18 @@ class Level extends Phaser.Scene {
 		// wall
 		oldPrisonexamplemapV1.createLayer("wall-1", ["Tileset - wall 1"], 0, 0);
 
+		// tile_Layer
+		oldPrisonexamplemapV1.createLayer("Tile Layer 6", [], 0, 0);
+
+		// spikes_1
+		oldPrisonexamplemapV1.createLayer("spikes", ["Tileset-Terrain-old prison"], 0, 0);
+
+		// wall
+		const wall = oldPrisonexamplemapV1.createLayer("wall-2", ["Tileset - wall 2"], 0, 0);
+
+		// prison_cells_1
+		oldPrisonexamplemapV1.createLayer("prison cells", ["Tileset-Terrain-old prison"], 0, 0);
+
 		// cherry
 		const cherry = new Cherry(this, 480, 80);
 		this.add.existing(cherry);
@@ -133,69 +145,12 @@ class Level extends Phaser.Scene {
 		player.flipY = false;
 		player.body.allowGravity = false;
 
-		// rectangle_1
-		const rectangle_1 = this.add.rectangle(145, 181, 128, 128);
-		rectangle_1.scaleX = 2.247054094517622;
-		rectangle_1.scaleY = 0.1832132564628389;
-		rectangle_1.isFilled = true;
-
-		// fixedToCameraScript_3
-		new FixedToCameraScript(rectangle_1);
-
-		// left_button
-		const left_button = this.add.image(26, 170, "left-button");
-		left_button.scaleX = 0.39899614692006335;
-		left_button.scaleY = 0.39899614692006335;
-		left_button.tintTopLeft = 16627125;
-
-		// controllerLeft
-		const controllerLeft = new ControllerButtonScript(left_button);
-
-		// fixedToCameraScript_2
-		new FixedToCameraScript(left_button);
-
-		// right_button
-		const right_button = this.add.image(70, 170, "right-button");
-		right_button.scaleX = 0.39899614692006335;
-		right_button.scaleY = 0.39899614692006335;
-		right_button.tintTopLeft = 16627125;
-
-		// controllerRight
-		const controllerRight = new ControllerButtonScript(right_button);
-
-		// fixedToCameraScript_1
-		new FixedToCameraScript(right_button);
-
-		// jump_button
-		const jump_button = this.add.image(262, 170, "jump-button");
-		jump_button.scaleX = 0.39899614692006335;
-		jump_button.scaleY = 0.39899614692006335;
-		jump_button.tintTopLeft = 16627125;
-
-		// controllerJump
-		const controllerJump = new ControllerButtonScript(jump_button);
-
-		// fixedToCameraScript
-		new FixedToCameraScript(jump_button);
-
 		// skeleton
 		const skeleton = new Skeleton(this, 138, 153);
 		this.add.existing(skeleton);
 
 		// characterMoveScript_2
 		new CharacterMoveScript(skeleton);
-
-		// tile_Layer
-		oldPrisonexamplemapV1.createLayer("Tile Layer 6", [], 0, 0);
-
-		// spikes_1
-		oldPrisonexamplemapV1.createLayer("spikes", ["Tileset-Terrain-old prison"], 0, 0);
-
-		// wall
-		const wall = oldPrisonexamplemapV1.createLayer("wall-2", ["Tileset - wall 2"], 0, 0);
-
-		// prison_cells_1
-		oldPrisonexamplemapV1.createLayer("prison cells", ["Tileset-Terrain-old prison"], 0, 0);
 
 		// worldwalls_1
 		oldPrisonexamplemapV1.createLayer("worldwalls", ["Tileset - wall 2"], 0, 0);
@@ -227,14 +182,8 @@ class Level extends Phaser.Scene {
 		characterMoveScript.duration = 1000;
 
 		this.layer = layer;
-		this.player = player;
-		this.controllerLeft = controllerLeft;
-		this.left_button = left_button;
-		this.controllerRight = controllerRight;
-		this.right_button = right_button;
-		this.controllerJump = controllerJump;
-		this.jump_button = jump_button;
 		this.wall = wall;
+		this.player = player;
 		this.spaceKey = spaceKey;
 		this.leftKey = leftKey;
 		this.rightKey = rightKey;
@@ -250,22 +199,10 @@ class Level extends Phaser.Scene {
 
 	/** @type {Phaser.Tilemaps.TilemapLayer} */
 	layer;
-	/** @type {Player} */
-	player;
-	/** @type {ControllerButtonScript} */
-	controllerLeft;
-	/** @type {Phaser.GameObjects.Image} */
-	left_button;
-	/** @type {ControllerButtonScript} */
-	controllerRight;
-	/** @type {Phaser.GameObjects.Image} */
-	right_button;
-	/** @type {ControllerButtonScript} */
-	controllerJump;
-	/** @type {Phaser.GameObjects.Image} */
-	jump_button;
 	/** @type {Phaser.Tilemaps.TilemapLayer} */
 	wall;
+	/** @type {Player} */
+	player;
 	/** @type {Phaser.Input.Keyboard.Key} */
 	spaceKey;
 	/** @type {Phaser.Input.Keyboard.Key} */
@@ -290,7 +227,28 @@ class Level extends Phaser.Scene {
 	create() {
 
 		this.editorCreate();
+		const layers = [this.wall_1];
+    layers.forEach((layer) => {
+      const tilesets = layer.layer.tilemapLayer.tilemap.tilesets;
+      tilesets.forEach((tileset) => {
+        const tileProperties = tileset.tileProperties;
 
+        // Enable collisions based on tile properties
+        layer.layer.data.forEach((row) => {
+          row.forEach((tile) => {
+            if (tile.index !== -1) {
+              const properties = tileProperties[tile.index - tileset.firstgid];
+              if (
+                properties &&
+                (properties.collide === true || properties.collides === true)
+              ) {
+                layer.setCollision(tile.index, true);
+              }
+            }
+          });
+        });
+      });
+    });
 		this.initColliders();
 
 		this.initCamera();
@@ -330,8 +288,8 @@ class Level extends Phaser.Scene {
 
 		const body = this.player.getBody();
 
-		const leftDown = this.leftKey.isDown || this.controllerLeft.isDown;
-		const rightDown = this.rightKey.isDown || this.controllerRight.isDown;
+		const leftDown = this.leftKey.isDown;
+		const rightDown = this.rightKey.isDown;
 		const upDown = this.upKey.isDown;
 		const downDown = this.downKey.isDown;
 

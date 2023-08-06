@@ -36,6 +36,11 @@ class Player extends Phaser.GameObjects.Sprite {
 		/* END-USER-CTR-CODE */
 	}
 
+	/** @type {number} */
+	health = 100;
+	/** @type {number} */
+	attack = 10;
+
 	/* START-USER-CODE */
 
 	/**

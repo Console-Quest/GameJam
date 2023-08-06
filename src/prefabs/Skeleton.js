@@ -11,19 +11,31 @@ class Skeleton extends Phaser.Physics.Arcade.Sprite {
 		this.scaleX = 0.6;
 		this.scaleY = 0.6;
 		scene.physics.add.existing(this, false);
+		this.body.allowGravity = false;
 		this.body.setOffset(65, 100);
 		this.body.setSize(80, 49, false);
 
 		// startAnimationScript
 		const startAnimationScript = new StartAnimationScript(this);
 
+		// attackPlayer
+		const attackPlayer = new AttackPlayer(this);
+
 		// startAnimationScript (prefab fields)
 		startAnimationScript.animationKey = "idle/skeleton2-idle";
+
+		// attackPlayer (prefab fields)
+		attackPlayer.target;
 
 		/* START-USER-CTR-CODE */
 		// Write your code here.
 		/* END-USER-CTR-CODE */
 	}
+
+	/** @type {number} */
+	health = 10;
+	/** @type {number} */
+	attack = 2;
 
 	/* START-USER-CODE */
 

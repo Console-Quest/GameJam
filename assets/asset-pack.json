@@ -13,6 +13,11 @@
                 "key": "animations"
             },
             {
+                "url": "assets/arena.json",
+                "type": "tilemapTiledJSON",
+                "key": "arena"
+            },
+            {
                 "atlasURL": "assets/atlas/atlas.json",
                 "textureURL": "assets/atlas/atlas.png",
                 "type": "atlas",

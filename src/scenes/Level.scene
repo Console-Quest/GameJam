@@ -41,6 +41,63 @@
             ]
         },
         {
+            "type": "TilemapLayer",
+            "id": "cd90d00d-e53a-4463-a5d9-eb90b67a9479",
+            "label": "tile_Layer",
+            "tilemapId": "2bff3b97-2f29-44f0-adc6-33465e4f1ee4",
+            "layerName": "Tile Layer 6",
+            "tilesets": [
+                "Tileset - wall 1",
+                "Tileset - wall 2",
+                "Tileset-Terrain-old prison",
+                "AutoMap Rules",
+                "blood pool - style2 - with spikes - transparency"
+            ]
+        },
+        {
+            "type": "TilemapLayer",
+            "id": "e7106934-4fc7-418f-860c-21aa82b7b562",
+            "label": "spikes_1",
+            "tilemapId": "2bff3b97-2f29-44f0-adc6-33465e4f1ee4",
+            "layerName": "spikes",
+            "tilesets": [
+                "Tileset - wall 1",
+                "Tileset - wall 2",
+                "Tileset-Terrain-old prison",
+                "AutoMap Rules",
+                "blood pool - style2 - with spikes - transparency"
+            ]
+        },
+        {
+            "type": "TilemapLayer",
+            "id": "39a51753-8674-4e5e-8208-4eb69d2aabc1",
+            "label": "wall",
+            "scope": "CLASS",
+            "tilemapId": "2bff3b97-2f29-44f0-adc6-33465e4f1ee4",
+            "layerName": "wall-2",
+            "tilesets": [
+                "Tileset - wall 1",
+                "Tileset - wall 2",
+                "Tileset-Terrain-old prison",
+                "AutoMap Rules",
+                "blood pool - style2 - with spikes - transparency"
+            ]
+        },
+        {
+            "type": "TilemapLayer",
+            "id": "f1cbb251-0ae2-48e3-99a7-ab0f35dcf10d",
+            "label": "prison_cells_1",
+            "tilemapId": "2bff3b97-2f29-44f0-adc6-33465e4f1ee4",
+            "layerName": "prison cells",
+            "tilesets": [
+                "Tileset - wall 1",
+                "Tileset - wall 2",
+                "Tileset-Terrain-old prison",
+                "AutoMap Rules",
+                "blood pool - style2 - with spikes - transparency"
+            ]
+        },
+        {
             "prefabId": "67e1897c-2af2-411f-a5a2-77afe7cd6418",
             "id": "fcf43ee3-43ab-4672-999d-b0c7587d32e4",
             "unlock": [
@@ -287,112 +344,6 @@
             "allowGravity": false
         },
         {
-            "type": "Rectangle",
-            "id": "536a39d6-c0df-4592-a587-c5f193954b5c",
-            "label": "rectangle_1",
-            "x": 145,
-            "y": 181,
-            "scaleX": 2.247054094517622,
-            "scaleY": 0.1832132564628389,
-            "isFilled": true,
-            "width": 128,
-            "height": 128,
-            "list": [
-                {
-                    "prefabId": "63bd4c20-a9a7-478a-a031-5d0027804b88",
-                    "id": "ed63a6ed-7a7b-4286-b7e2-e03de50af3b9",
-                    "label": "fixedToCameraScript_3"
-                }
-            ]
-        },
-        {
-            "type": "Image",
-            "id": "8ea69e25-13f3-42a9-8536-777c09ee9d13",
-            "label": "left_button",
-            "scope": "CLASS",
-            "components": [
-                "ScrollFactorX"
-            ],
-            "texture": {
-                "key": "left-button"
-            },
-            "x": 26,
-            "y": 170,
-            "scaleX": 0.39899614692006335,
-            "scaleY": 0.39899614692006335,
-            "tintTopLeft": "#fdb5b5",
-            "list": [
-                {
-                    "prefabId": "a3580bf6-919a-468a-addd-4f8f573f9b96",
-                    "id": "4933f3da-7ed9-4edb-a3a7-b6b72a8c8ba9",
-                    "label": "controllerLeft",
-                    "scope": "CLASS"
-                },
-                {
-                    "prefabId": "63bd4c20-a9a7-478a-a031-5d0027804b88",
-                    "id": "5ec03c78-43d5-4a5a-ad01-0c1e4e5e7e1b",
-                    "label": "fixedToCameraScript_2"
-                }
-            ]
-        },
-        {
-            "type": "Image",
-            "id": "072e927f-2f06-44b4-abbb-2e734eef6ccc",
-            "label": "right_button",
-            "scope": "CLASS",
-            "components": [
-                "ScrollFactorX"
-            ],
-            "texture": {
-                "key": "right-button"
-            },
-            "x": 70,
-            "y": 170,
-            "scaleX": 0.39899614692006335,
-            "scaleY": 0.39899614692006335,
-            "tintTopLeft": "#fdb5b5",
-            "list": [
-                {
-                    "prefabId": "a3580bf6-919a-468a-addd-4f8f573f9b96",
-                    "id": "6b36b207-6587-4505-a323-7e1075f17d85",
-                    "label": "controllerRight",
-                    "scope": "CLASS"
-                },
-                {
-                    "prefabId": "63bd4c20-a9a7-478a-a031-5d0027804b88",
-                    "id": "3094bae4-2ca7-409f-933f-0abaa8dc915e",
-                    "label": "fixedToCameraScript_1"
-                }
-            ]
-        },
-        {
-            "type": "Image",
-            "id": "87131438-7363-4eb8-9b9e-391f7cf70d4f",
-            "label": "jump_button",
-            "scope": "CLASS",
-            "texture": {
-                "key": "jump-button"
-            },
-            "x": 262,
-            "y": 170,
-            "scaleX": 0.39899614692006335,
-            "scaleY": 0.39899614692006335,
-            "tintTopLeft": "#fdb5b5",
-            "list": [
-                {
-                    "prefabId": "a3580bf6-919a-468a-addd-4f8f573f9b96",
-                    "id": "08a08d26-2cf6-4018-b1fe-845dc62a4ec7",
-                    "label": "controllerJump",
-                    "scope": "CLASS"
-                },
-                {
-                    "prefabId": "63bd4c20-a9a7-478a-a031-5d0027804b88",
-                    "id": "726b9adc-3485-4944-a302-47b3dbecb0dc",
-                    "label": "fixedToCameraScript"
-                }
-            ]
-        },
-        {
             "prefabId": "e3ae1e22-0b1e-4681-b99c-e1e030eb4b6f",
             "id": "1d14fde1-5c87-4854-ba80-001861084f86",
             "unlock": [
@@ -408,63 +359,6 @@
                     "id": "2d0b9314-87ae-4c68-84e1-db12ff6c1271",
                     "label": "characterMoveScript_2"
                 }
-            ]
-        },
-        {
-            "type": "TilemapLayer",
-            "id": "cd90d00d-e53a-4463-a5d9-eb90b67a9479",
-            "label": "tile_Layer",
-            "tilemapId": "2bff3b97-2f29-44f0-adc6-33465e4f1ee4",
-            "layerName": "Tile Layer 6",
-            "tilesets": [
-                "Tileset - wall 1",
-                "Tileset - wall 2",
-                "Tileset-Terrain-old prison",
-                "AutoMap Rules",
-                "blood pool - style2 - with spikes - transparency"
-            ]
-        },
-        {
-            "type": "TilemapLayer",
-            "id": "e7106934-4fc7-418f-860c-21aa82b7b562",
-            "label": "spikes_1",
-            "tilemapId": "2bff3b97-2f29-44f0-adc6-33465e4f1ee4",
-            "layerName": "spikes",
-            "tilesets": [
-                "Tileset - wall 1",
-                "Tileset - wall 2",
-                "Tileset-Terrain-old prison",
-                "AutoMap Rules",
-                "blood pool - style2 - with spikes - transparency"
-            ]
-        },
-        {
-            "type": "TilemapLayer",
-            "id": "39a51753-8674-4e5e-8208-4eb69d2aabc1",
-            "label": "wall",
-            "scope": "CLASS",
-            "tilemapId": "2bff3b97-2f29-44f0-adc6-33465e4f1ee4",
-            "layerName": "wall-2",
-            "tilesets": [
-                "Tileset - wall 1",
-                "Tileset - wall 2",
-                "Tileset-Terrain-old prison",
-                "AutoMap Rules",
-                "blood pool - style2 - with spikes - transparency"
-            ]
-        },
-        {
-            "type": "TilemapLayer",
-            "id": "f1cbb251-0ae2-48e3-99a7-ab0f35dcf10d",
-            "label": "prison_cells_1",
-            "tilemapId": "2bff3b97-2f29-44f0-adc6-33465e4f1ee4",
-            "layerName": "prison cells",
-            "tilesets": [
-                "Tileset - wall 1",
-                "Tileset - wall 2",
-                "Tileset-Terrain-old prison",
-                "AutoMap Rules",
-                "blood pool - style2 - with spikes - transparency"
             ]
         },
         {
