@@ -1,0 +1,59 @@
+{
+    "id": "f4ba72ec-0a7b-4e3b-9843-d8bb716f692f",
+    "sceneType": "PREFAB",
+    "settings": {
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 288,
+        "borderHeight": 192
+    },
+    "displayList": [
+        {
+            "type": "ArcadeSprite",
+            "id": "e7cacf9e-8023-46ed-8622-551a05878986",
+            "label": "arcadesprite_1",
+            "texture": {
+                "key": "Prison Gate-just the gate",
+                "frame": 0
+            },
+            "moves": false,
+            "allowGravity": false,
+            "allowDrag": false,
+            "pushable": false,
+            "immovable": true,
+            "body.width": 96,
+            "body.height": 96,
+            "list": [
+                {
+                    "prefabId": "61dde64d-6c82-4109-a4a2-c88cb5eb249d",
+                    "id": "553a8c38-4b97-4cac-a48c-6260adb211c6",
+                    "unlock": [
+                        "animationKey"
+                    ],
+                    "label": "startAnimationScript",
+                    "animationKey": "door/Prison Gate-just the gate"
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 4
+    },
+    "prefabProperties": [
+        {
+            "name": "collide",
+            "label": "collide",
+            "tooltip": "",
+            "defValue": true,
+            "customDefinition": false,
+            "type": {
+                "id": "boolean"
+            }
+        }
+    ]
+}

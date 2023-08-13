@@ -16,14 +16,6 @@ class Arena extends Phaser.Scene {
 	/** @returns {void} */
 	editorCreate() {
 
-		// Arena
-		const arena = this.add.tilemap("arena");
-		arena.addTilesetImage("Tileset-Terrain-old prison", "Tileset-Terrain-old prison");
-		arena.addTilesetImage("Tileset - wall 2", "wall-2- 3 tiles tall");
-		arena.addTilesetImage("Tileset - wall 1", "wall-1- 3 tiles tall");
-		arena.addTilesetImage("AutoMap Rules", "tile guide-1 tile");
-		arena.addTilesetImage("blood pool - style2 - with spikes - transparency", "blood pool - style2 - with spikes-transparency");
-
 		// upKey
 		const upKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.UP);
 
@@ -36,18 +28,13 @@ class Arena extends Phaser.Scene {
 		// downKey
 		const downKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.DOWN);
 
-		// background_1
-		arena.createLayer("background", ["Tileset-Terrain-old prison"], 0, 0);
+		// newmap
+		const newmap = this.add.tilemap("newmap");
+		newmap.addTilesetImage("Tileset - wall 2", "wall-2- 3 tiles tall");
+		newmap.addTilesetImage("Tileset-Terrain-old prison", "Tileset-Terrain-old prison");
 
-		// floor_1
-		arena.createLayer("floor", ["Tileset - wall 1"], 0, 0);
-
-		// wall_1
-		const wall_1 = arena.createLayer("wall", ["Tileset-Terrain-old prison","Tileset - wall 2"], 0, 0);
-
-		// player
-		const player = new Player(this, 156, 119);
-		this.add.existing(player);
+		// wall
+		const wall = newmap.createLayer("wall-1", ["Tileset-Terrain-old prison"], 0, 0);
 
 		// skeleton
 		const skeleton = new Skeleton(this, 995, 419);
@@ -57,14 +44,56 @@ class Arena extends Phaser.Scene {
 		const opossum = new Opossum(this, 479, 390);
 		this.add.existing(opossum);
 
-		// spawnZone
-		const spawnZone = this.add.rectangle(407, 403, 128, 128);
-		spawnZone.scaleX = 5.667930178250129;
-		spawnZone.scaleY = 5.558860647392047;
-
 		// eagle
 		const eagle = new Eagle(this, 235, 351);
 		this.add.existing(eagle);
+
+		// wall_1
+		const wall_1 = newmap.createLayer("wall-2", ["Tileset - wall 2"], 0, 0);
+
+		// arcadesprite_1
+		const arcadesprite_1 = new Door(this, 426, 3070);
+		this.add.existing(arcadesprite_1);
+		arcadesprite_1.visible = true;
+
+		// arcadesprite
+		const arcadesprite = new Door(this, 891, 3070);
+		this.add.existing(arcadesprite);
+		arcadesprite.visible = true;
+
+		// arcadesprite_2
+		const arcadesprite_2 = new Door(this, 1376, 3070);
+		this.add.existing(arcadesprite_2);
+		arcadesprite_2.visible = true;
+
+		// arcadesprite_3
+		const arcadesprite_3 = new Door(this, 1819, 3070);
+		this.add.existing(arcadesprite_3);
+		arcadesprite_3.visible = true;
+
+		// arcadesprite_4
+		const arcadesprite_4 = new Door(this, 2250, 3069);
+		this.add.existing(arcadesprite_4);
+		arcadesprite_4.visible = true;
+
+		// arcadesprite_5
+		const arcadesprite_5 = new Door(this, 2776, 3070);
+		this.add.existing(arcadesprite_5);
+		arcadesprite_5.visible = true;
+
+		// arcadesprite_6
+		const arcadesprite_6 = new Door(this, 3299, 3070);
+		this.add.existing(arcadesprite_6);
+		arcadesprite_6.visible = true;
+
+		// arcadesprite_7
+		const arcadesprite_7 = new Door(this, 3753, 3070);
+		this.add.existing(arcadesprite_7);
+		arcadesprite_7.visible = true;
+
+		// player
+		const player = new Player(this, 907, 3266);
+		this.add.existing(player);
 
 		// startSceneActionScript
 		const startSceneActionScript = new StartSceneActionScript(this);
@@ -72,44 +101,74 @@ class Arena extends Phaser.Scene {
 		// lists
 		const enemyTypes = [skeleton, opossum, eagle];
 		const enemies = this.add.group([skeleton, opossum, eagle]);
+		const doorGroup1 = [arcadesprite_1, arcadesprite_7, arcadesprite_6, arcadesprite_5, arcadesprite_4, arcadesprite_3, arcadesprite_2, arcadesprite];
 
 		// playerWall
-		this.physics.add.collider(player, wall_1);
+		const playerWall = this.physics.add.collider(player, wall_1);
 
 		// collider
-		this.physics.add.collider(skeleton, player, this.damage, undefined, this);
+		this.physics.add.collider(enemies, player, this.damage, undefined, this);
 
 		// enemies
 		this.physics.add.collider(enemies, enemies);
 
+		// collider_1
+		const collider_1 = this.physics.add.collider(player, arcadesprite_1);
+
+		// collider_2
+		const collider_2 = this.physics.add.collider(enemies, wall_1);
+
 		// startSceneActionScript (prefab fields)
 		startSceneActionScript.sceneKey = "Planning";
 
-		this.wall_1 = wall_1;
-		this.player = player;
+		this.wall = wall;
 		this.skeleton = skeleton;
-		this.spawnZone = spawnZone;
-		this.arena = arena;
+		this.wall_1 = wall_1;
+		this.arcadesprite_1 = arcadesprite_1;
+		this.arcadesprite = arcadesprite;
+		this.arcadesprite_2 = arcadesprite_2;
+		this.arcadesprite_3 = arcadesprite_3;
+		this.arcadesprite_4 = arcadesprite_4;
+		this.arcadesprite_5 = arcadesprite_5;
+		this.arcadesprite_6 = arcadesprite_6;
+		this.arcadesprite_7 = arcadesprite_7;
+		this.player = player;
 		this.upKey = upKey;
 		this.leftKey = leftKey;
 		this.rightKey = rightKey;
 		this.downKey = downKey;
+		this.newmap = newmap;
 		this.enemyTypes = enemyTypes;
 		this.enemies = enemies;
+		this.doorGroup1 = doorGroup1;
 
 		this.events.emit("scene-awake");
 	}
 
 	/** @type {Phaser.Tilemaps.TilemapLayer} */
-	wall_1;
-	/** @type {Player} */
-	player;
+	wall;
 	/** @type {Skeleton} */
 	skeleton;
-	/** @type {Phaser.GameObjects.Rectangle} */
-	spawnZone;
-	/** @type {Phaser.Tilemaps.Tilemap} */
-	arena;
+	/** @type {Phaser.Tilemaps.TilemapLayer} */
+	wall_1;
+	/** @type {Door} */
+	arcadesprite_1;
+	/** @type {Door} */
+	arcadesprite;
+	/** @type {Door} */
+	arcadesprite_2;
+	/** @type {Door} */
+	arcadesprite_3;
+	/** @type {Door} */
+	arcadesprite_4;
+	/** @type {Door} */
+	arcadesprite_5;
+	/** @type {Door} */
+	arcadesprite_6;
+	/** @type {Door} */
+	arcadesprite_7;
+	/** @type {Player} */
+	player;
 	/** @type {Phaser.Input.Keyboard.Key} */
 	upKey;
 	/** @type {Phaser.Input.Keyboard.Key} */
@@ -118,10 +177,14 @@ class Arena extends Phaser.Scene {
 	rightKey;
 	/** @type {Phaser.Input.Keyboard.Key} */
 	downKey;
+	/** @type {Phaser.Tilemaps.Tilemap} */
+	newmap;
 	/** @type {Array<Skeleton|Opossum|Eagle>} */
 	enemyTypes;
 	/** @type {Array<any>} */
 	enemies;
+	/** @type {Door[]} */
+	doorGroup1;
 
 	/* START-USER-CODE */
 	// Function to spawn enemies
@@ -146,7 +209,7 @@ class Arena extends Phaser.Scene {
 			loop: true
 	});
 	  // Switch to the Planning scene after 1 minute
-    this.time.delayedCall(30000, () => {
+    this.time.delayedCall(60000, () => {
 			this.scene.start('Planning');
 	});
   }
@@ -190,9 +253,12 @@ class Arena extends Phaser.Scene {
 		}
 	}
 
-		initColliders() {
+	initColliders() {
+    // Collider for player and wall_1
+    this.newmap.setCollisionByProperty({ collide: true });
+    // ... add any other necessary colliders here ...
+}
 
-		}
 
 
 

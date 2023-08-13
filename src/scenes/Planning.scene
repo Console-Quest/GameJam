@@ -32,24 +32,23 @@
         },
         {
             "prefabId": "23ce7c2c-ec62-441a-bc88-efc65214d3b3",
-            "id": "527ff33b-ad58-4ab3-b9d7-ab2f6a2bcadf",
+            "id": "19a8ae1d-ecd5-48c7-b49c-f74a79ec0b31",
             "unlock": [
                 "x",
-                "y"
+                "y",
+                "body.offset.x",
+                "body.offset.y",
+                "body.width",
+                "body.height"
             ],
             "label": "nextButton",
             "scope": "CLASS",
-            "x": 127,
-            "y": 90
-        },
-        {
-            "prefabId": "2d3f9249-6fcd-4c7d-bd2f-77fa616af7e8",
-            "id": "2507f9a3-27f7-479c-9c24-ef8e2c0c8f3a",
-            "unlock": [
-                "sceneKey"
-            ],
-            "label": "startSceneActionScript",
-            "sceneKey": "Arena"
+            "x": 129,
+            "y": 101,
+            "body.width": 72,
+            "body.height": 22,
+            "body.offset.x": -16,
+            "body.offset.y": -3
         }
     ],
     "plainObjects": [],

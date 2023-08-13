@@ -30,6 +30,19 @@
                 "key": "atlas-props"
             },
             {
+                "url": "assets/props/atlas-props-old prison.png",
+                "frameConfig": {
+                    "frameWidth": 32,
+                    "frameHeight": 32,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "atlas-props-old prison"
+            },
+            {
                 "url": "assets/environment/back.png",
                 "type": "image",
                 "key": "back"
@@ -137,6 +150,11 @@
                 "key": "middle"
             },
             {
+                "url": "assets/maps/newmap.json",
+                "type": "tilemapTiledJSON",
+                "key": "newmap"
+            },
+            {
                 "url": "assets/OldPrisonexamplemapV1.json",
                 "type": "tilemapTiledJSON",
                 "key": "OldPrisonexamplemapV1"
@@ -147,9 +165,85 @@
                 "key": "press-enter-text"
             },
             {
+                "url": "assets/props/Prison Gate- particles.png",
+                "frameConfig": {
+                    "frameWidth": 96,
+                    "frameHeight": 96,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "Prison Gate- particles"
+            },
+            {
+                "url": "assets/props/Prison Gate-flames.png",
+                "frameConfig": {
+                    "frameWidth": 96,
+                    "frameHeight": 96,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "Prison Gate-flames"
+            },
+            {
+                "url": "assets/props/Prison Gate-just the gate.png",
+                "frameConfig": {
+                    "frameWidth": 96,
+                    "frameHeight": 96,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "Prison Gate-just the gate"
+            },
+            {
+                "url": "assets/props/Prison Gate-vortex.png",
+                "frameConfig": {
+                    "frameWidth": 93,
+                    "frameHeight": 93,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "Prison Gate-vortex"
+            },
+            {
+                "url": "assets/props/Prison Gate-with wall.png",
+                "frameConfig": {
+                    "frameWidth": 96,
+                    "frameHeight": 96,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "Prison Gate-with wall"
+            },
+            {
                 "url": "assets/buttons/right-button.png",
                 "type": "image",
                 "key": "right-button"
+            },
+            {
+                "url": "assets/maps/small.json",
+                "type": "tilemapTiledJSON",
+                "key": "small"
+            },
+            {
+                "type": "multiatlas",
+                "url": "assets/spells.json",
+                "path": "assets",
+                "key": "spells"
             },
             {
                 "url": "assets/tile guide-1 tile.png",

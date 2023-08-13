@@ -3457,6 +3457,932 @@
             "skipMissedFrames": true,
             "repeat": -1,
             "showBeforeDelay": false
+        },
+        {
+            "key": "spells/Earth_Spike",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "spells",
+                    "frame": "Earth_Spike1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Earth_Spike2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Earth_Spike3.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Earth_Spike4.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Earth_Spike5.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Earth_Spike6.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Earth_Spike7.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Earth_Spike8.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Earth_Spike9.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 10,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "spells/Explosion",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "spells",
+                    "frame": "Explosion1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Explosion2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Explosion3.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Explosion4.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Explosion5.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Explosion6.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Explosion7.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 10,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "spells/Fire_Ball",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "spells",
+                    "frame": "Fire_Ball1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Fire_Ball10.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Fire_Ball2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Fire_Ball3.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Fire_Ball4.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Fire_Ball5.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Fire_Ball6.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Fire_Ball7.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Fire_Ball8.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Fire_Ball9.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 10,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "spells/Molten_Spear",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "spells",
+                    "frame": "Molten_Spear1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Molten_Spear10.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Molten_Spear11.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Molten_Spear12.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Molten_Spear2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Molten_Spear3.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Molten_Spear4.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Molten_Spear5.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Molten_Spear6.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Molten_Spear7.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Molten_Spear8.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Molten_Spear9.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 10,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "spells/Portal",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "spells",
+                    "frame": "Portal1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Portal10.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Portal2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Portal3.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Portal4.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Portal5.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Portal6.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Portal7.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Portal8.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Portal9.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 10,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "spells/Rocks",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "spells",
+                    "frame": "Rocks1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Rocks10.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Rocks2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Rocks3.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Rocks4.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Rocks5.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Rocks6.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Rocks7.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Rocks8.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Rocks9.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 10,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "spells/Tornado",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "spells",
+                    "frame": "Tornado1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Tornado2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Tornado3.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Tornado4.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Tornado5.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Tornado6.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Tornado7.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Tornado8.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Tornado9.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 10,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "spells/Water_Geyser",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "spells",
+                    "frame": "Water_Geyser1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Water_Geyser10.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Water_Geyser11.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Water_Geyser12.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Water_Geyser13.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Water_Geyser2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Water_Geyser3.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Water_Geyser4.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Water_Geyser5.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Water_Geyser6.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Water_Geyser7.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Water_Geyser8.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Water_Geyser9.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 10,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "spells/Water",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "spells",
+                    "frame": "Water1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Water10.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Water2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Water3.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Water4.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Water5.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Water6.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Water7.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Water8.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Water9.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 10,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "spells/Wind",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "spells",
+                    "frame": "Wind1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Wind10.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Wind2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Wind3.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Wind4.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Wind5.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Wind6.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Wind7.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Wind8.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Wind9.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 10,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "door/Prison Gate-just the gate",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "Prison Gate-just the gate",
+                    "frame": 0,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Prison Gate-just the gate",
+                    "frame": 1,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Prison Gate-just the gate",
+                    "frame": 2,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Prison Gate-just the gate",
+                    "frame": 3,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Prison Gate-just the gate",
+                    "frame": 4,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Prison Gate-just the gate",
+                    "frame": 5,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Prison Gate-just the gate",
+                    "frame": 6,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Prison Gate-just the gate",
+                    "frame": 7,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Prison Gate-just the gate",
+                    "frame": 8,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Prison Gate-just the gate",
+                    "frame": 9,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Prison Gate-just the gate",
+                    "frame": 10,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Prison Gate-just the gate",
+                    "frame": 11,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Prison Gate-just the gate",
+                    "frame": 12,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Prison Gate-just the gate",
+                    "frame": 13,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Prison Gate-just the gate",
+                    "frame": 14,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Prison Gate-just the gate",
+                    "frame": 15,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Prison Gate-just the gate",
+                    "frame": 16,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Prison Gate-just the gate",
+                    "frame": 17,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Prison Gate-just the gate",
+                    "frame": 18,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Prison Gate-just the gate",
+                    "frame": 19,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Prison Gate-just the gate",
+                    "frame": 20,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Prison Gate-just the gate",
+                    "frame": 21,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Prison Gate-just the gate",
+                    "frame": 22,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Prison Gate-just the gate",
+                    "frame": 23,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Prison Gate-just the gate",
+                    "frame": 24,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Prison Gate-just the gate",
+                    "frame": 25,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Prison Gate-just the gate",
+                    "frame": 26,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Prison Gate-just the gate",
+                    "frame": 27,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Prison Gate-just the gate",
+                    "frame": 28,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Prison Gate-just the gate",
+                    "frame": 29,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Prison Gate-just the gate",
+                    "frame": 30,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Prison Gate-just the gate",
+                    "frame": 31,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Prison Gate-just the gate",
+                    "frame": 32,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Prison Gate-just the gate",
+                    "frame": 33,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Prison Gate-just the gate",
+                    "frame": 34,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Prison Gate-just the gate",
+                    "frame": 35,
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 10,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
         }
     ],
     "globalTimeScale": 1,

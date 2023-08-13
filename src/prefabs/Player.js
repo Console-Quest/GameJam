@@ -75,6 +75,93 @@ class Player extends Phaser.GameObjects.Sprite {
 
 		body.velocity.x = (this.scale.x == 1) ? -100 : 100;
 	}
+	castSpell(spellType, spellDirection) {
+    if (this.hurtFlag) {
+      return;
+    }
+    if (!spellDirection) {
+      return;
+    }
+    const getSpellAudio = (spellType) => {
+      switch (spellType) {
+        case "Fire_Ball":
+          this.fire_cast.play();
+          break;
+        case "Molten_Spear":
+          this.lightning_cast.play();
+          break;
+        case "Water_Geyser":
+          this.water_cast.play();
+          break;
+        case "Tornado":
+          this.magic_cast.play();
+          break;
+      }
+      return;
+    };
+
+    const {
+      x = 0,
+      y = 0,
+      angle = 0,
+      flipX = false,
+      flipY = false,
+    } = spellDirection;
+
+    getSpellAudio(spellType);
+
+    const spell = this.scene.physics.add.sprite(this.x, this.y, spellType, 0);
+    spell.anims.play(spellType, true);
+    spell.damage = this.Damage;
+    spell.setVelocity(x, y);
+    spell.angle = angle;
+    spell.flipX = flipX;
+    spell.flipY = flipY;
+  }
+
+  autoCastSpell(spells) {
+    const playerFacing = this.getPlayerFacing();
+    const spellDirection = this.directions[playerFacing];
+
+    let delay = 0;
+    for (let i = 0; i < spells.length; i++) {
+      const spellType = spells[i];
+      this.scene.time.delayedCall(delay, () => {
+        // Need to add projectiles to player (# of spells cast at once)
+        // for (i in this.projectiles){
+        //   this.castSpell(spellType, spellDirection);
+        // }
+        this.castSpell(spellType, spellDirection);
+      });
+      delay += 100; // Adjust the delay time between spells (in milliseconds) as needed
+    }
+  }
+
+  getPlayerFacing() {
+    if (this.cursors.left.isDown) {
+      if (this.cursors.up.isDown) {
+        return "up-left";
+      } else if (this.cursors.down.isDown) {
+        return "down-left";
+      } else {
+        return "left";
+      }
+    } else if (this.cursors.right.isDown) {
+      if (this.cursors.up.isDown) {
+        return "up-right";
+      } else if (this.cursors.down.isDown) {
+        return "down-right";
+      } else {
+        return "right";
+      }
+    } else if (this.cursors.up.isDown) {
+      return "up";
+    } else if (this.cursors.down.isDown) {
+      return "down";
+    } else {
+      return "idle";
+    }
+  }
 
 	/* END-USER-CODE */
 }

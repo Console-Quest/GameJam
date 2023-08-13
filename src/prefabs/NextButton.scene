@@ -14,13 +14,28 @@
             "id": "ddc66041-8a6c-4bdf-8470-d932cf5b14f9",
             "label": "nextButton",
             "scope": "CLASS",
+            "hitArea.shape": "RECTANGLE",
+            "hitArea.x": -15.758918335310838,
+            "hitArea.y": -2.785901057279915,
+            "hitArea.width": 71.51783667062169,
+            "hitArea.height": 33.785901057279915,
             "x": 119,
             "y": 76,
+            "ArcadeComponent.active": true,
+            "moves": false,
+            "allowGravity": false,
+            "body.width": 72,
+            "body.height": 22,
+            "body.offset.x": -16,
+            "body.offset.y": -3,
             "list": [
                 {
                     "type": "Rectangle",
                     "id": "eeac82cf-e2cb-417e-87b1-67d566b57b23",
                     "label": "rectangle_2",
+                    "hitArea.shape": "RECTANGLE",
+                    "hitArea.width": 128,
+                    "hitArea.height": 128,
                     "x": 20,
                     "y": 8,
                     "scaleX": 0.5587330989892318,
@@ -28,7 +43,18 @@
                     "isFilled": true,
                     "fillColor": "#208614",
                     "width": 128,
-                    "height": 128
+                    "height": 128,
+                    "list": [
+                        {
+                            "prefabId": "a06ed60b-79f1-4444-bf35-89046f71f954",
+                            "id": "2c555edc-2922-48d3-96ae-8aa535048277",
+                            "unlock": [
+                                "eventEmitter"
+                            ],
+                            "label": "onPointerDownScript",
+                            "eventEmitter": "scene.events"
+                        }
+                    ]
                 },
                 {
                     "type": "Text",
@@ -39,6 +65,15 @@
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "Next\n"
+                },
+                {
+                    "prefabId": "2d3f9249-6fcd-4c7d-bd2f-77fa616af7e8",
+                    "id": "72a1fa94-4112-466b-92b0-dda70bb2bdc1",
+                    "unlock": [
+                        "sceneKey"
+                    ],
+                    "label": "startSceneActionScript",
+                    "sceneKey": "Arena"
                 }
             ]
         }
@@ -49,5 +84,17 @@
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
         "version": 4
-    }
+    },
+    "prefabProperties": [
+        {
+            "name": "arenaScene",
+            "label": "arenaScene",
+            "tooltip": "",
+            "defValue": "Arena",
+            "customDefinition": false,
+            "type": {
+                "id": "scene-key"
+            }
+        }
+    ]
 }

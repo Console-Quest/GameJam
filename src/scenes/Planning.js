@@ -9,7 +9,6 @@ class Planning extends Phaser.Scene {
 		super("Planning");
 
 		/* START-USER-CTR-CODE */
-		console.log("nextButton", NextButton);
 		// Write your code here.
 		/* END-USER-CTR-CODE */
 	}
@@ -29,15 +28,10 @@ class Planning extends Phaser.Scene {
 		text_1.text = "Hit Next\n";
 
 		// nextButton
-		console.log("nextButton", NextButton);
-		const nextButton = new NextButton(this, 127, 90);
+		const nextButton = new NextButton(this, 129, 101);
 		this.add.existing(nextButton);
-
-		// startSceneActionScript
-		const startSceneActionScript = new StartSceneActionScript(this);
-
-		// startSceneActionScript (prefab fields)
-		startSceneActionScript.sceneKey = "Arena";
+		nextButton.body.setOffset(-16, -3);
+		nextButton.body.setSize(72, 22, false);
 
 		this.nextButton = nextButton;
 
@@ -52,15 +46,16 @@ class Planning extends Phaser.Scene {
 	// Write your code here
 
 	create() {
-
-		this.editorCreate();
-		this.nextButton.setInteractive();
+    this.editorCreate();
+        // Make the text object interactive
+       // Make the nextButton interactive
+    this.nextButton.setInteractive();
 
     // Add a pointer down listener to the nextButton
     this.nextButton.on('pointerdown', () => {
         this.scene.start('Arena'); // Switch to the Arena scene
     });
-	}
+}
 
 	/* END-USER-CODE */
 }

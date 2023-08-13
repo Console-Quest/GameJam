@@ -11,58 +11,15 @@
     "displayList": [
         {
             "type": "TilemapLayer",
-            "id": "ffc58eb6-4e51-41fe-bcf1-a10ff952c076",
-            "label": "background_1",
-            "tilemapId": "1c2c11f0-6d85-446d-b526-7e85c73b9b71",
-            "layerName": "background",
-            "tilesets": [
-                "Tileset-Terrain-old prison",
-                "Tileset - wall 2",
-                "Tileset - wall 1",
-                "AutoMap Rules",
-                "blood pool - style2 - with spikes - transparency"
-            ]
-        },
-        {
-            "type": "TilemapLayer",
-            "id": "f8b0b62d-6e73-4e95-a0d2-ec69ec8a380b",
-            "label": "floor_1",
-            "tilemapId": "1c2c11f0-6d85-446d-b526-7e85c73b9b71",
-            "layerName": "floor",
-            "tilesets": [
-                "Tileset-Terrain-old prison",
-                "Tileset - wall 2",
-                "Tileset - wall 1",
-                "AutoMap Rules",
-                "blood pool - style2 - with spikes - transparency"
-            ]
-        },
-        {
-            "type": "TilemapLayer",
-            "id": "51fc22ee-5eda-4221-9057-dd5231f865f0",
-            "label": "wall_1",
+            "id": "0ed3ab32-386b-4f96-9395-41fdc9ea59c2",
+            "label": "wall",
             "scope": "CLASS",
-            "tilemapId": "1c2c11f0-6d85-446d-b526-7e85c73b9b71",
-            "layerName": "wall",
+            "tilemapId": "fdf63718-c76f-4418-a9d1-6b90d3187ce8",
+            "layerName": "wall-1",
             "tilesets": [
-                "Tileset-Terrain-old prison",
                 "Tileset - wall 2",
-                "Tileset - wall 1",
-                "AutoMap Rules",
-                "blood pool - style2 - with spikes - transparency"
+                "Tileset-Terrain-old prison"
             ]
-        },
-        {
-            "prefabId": "2bdd30b0-e379-4943-9d6b-ed6cb2ba5b0a",
-            "id": "740fdd40-b33d-44aa-9e00-9fe63cbdba9b",
-            "unlock": [
-                "x",
-                "y"
-            ],
-            "label": "player",
-            "scope": "CLASS",
-            "x": 156,
-            "y": 119
         },
         {
             "prefabId": "e3ae1e22-0b1e-4681-b99c-e1e030eb4b6f",
@@ -88,18 +45,6 @@
             "y": 390
         },
         {
-            "type": "Rectangle",
-            "id": "a24850d6-3414-443f-94cf-1287eb0bfc36",
-            "label": "spawnZone",
-            "scope": "CLASS",
-            "x": 407,
-            "y": 403,
-            "scaleX": 5.667930178250129,
-            "scaleY": 5.558860647392047,
-            "width": 128,
-            "height": 128
-        },
-        {
             "prefabId": "8a59bab4-8eb8-4fde-b4c7-2b77253af9f7",
             "id": "1250f559-0f4c-4e31-b9da-3ec077f2234a",
             "unlock": [
@@ -109,6 +54,142 @@
             "label": "eagle",
             "x": 235,
             "y": 351
+        },
+        {
+            "type": "TilemapLayer",
+            "id": "6f67dc01-d1ef-4110-840c-9c78f118c50e",
+            "label": "wall_1",
+            "scope": "CLASS",
+            "tilemapId": "fdf63718-c76f-4418-a9d1-6b90d3187ce8",
+            "layerName": "wall-2",
+            "tilesets": [
+                "Tileset - wall 2",
+                "Tileset-Terrain-old prison"
+            ]
+        },
+        {
+            "prefabId": "f4ba72ec-0a7b-4e3b-9843-d8bb716f692f",
+            "id": "c593cb78-9e25-468d-89fc-573d0c16de64",
+            "unlock": [
+                "x",
+                "y",
+                "visible"
+            ],
+            "label": "arcadesprite_1",
+            "scope": "CLASS",
+            "x": 426,
+            "y": 3070,
+            "visible": true
+        },
+        {
+            "prefabId": "f4ba72ec-0a7b-4e3b-9843-d8bb716f692f",
+            "id": "4b46a7ce-af30-4ada-9b7c-9d194d5ee714",
+            "unlock": [
+                "x",
+                "y",
+                "visible"
+            ],
+            "label": "arcadesprite",
+            "scope": "CLASS",
+            "x": 891,
+            "y": 3070,
+            "visible": true
+        },
+        {
+            "prefabId": "f4ba72ec-0a7b-4e3b-9843-d8bb716f692f",
+            "id": "5ac3008c-d107-4412-8898-f20ce7441cc0",
+            "unlock": [
+                "x",
+                "y",
+                "visible"
+            ],
+            "label": "arcadesprite_2",
+            "scope": "CLASS",
+            "x": 1376,
+            "y": 3070,
+            "visible": true
+        },
+        {
+            "prefabId": "f4ba72ec-0a7b-4e3b-9843-d8bb716f692f",
+            "id": "e3f00a1a-d320-45b6-b9ac-1ea1f984ca6e",
+            "unlock": [
+                "x",
+                "y",
+                "visible"
+            ],
+            "label": "arcadesprite_3",
+            "scope": "CLASS",
+            "x": 1819,
+            "y": 3070,
+            "visible": true
+        },
+        {
+            "prefabId": "f4ba72ec-0a7b-4e3b-9843-d8bb716f692f",
+            "id": "553d4ceb-1a9d-44c1-a3dd-9c8aaf8f5626",
+            "unlock": [
+                "x",
+                "y",
+                "visible"
+            ],
+            "label": "arcadesprite_4",
+            "scope": "CLASS",
+            "x": 2250,
+            "y": 3069,
+            "visible": true
+        },
+        {
+            "prefabId": "f4ba72ec-0a7b-4e3b-9843-d8bb716f692f",
+            "id": "08049d5f-3ab8-4a8d-9224-293c72236960",
+            "unlock": [
+                "x",
+                "y",
+                "visible"
+            ],
+            "label": "arcadesprite_5",
+            "scope": "CLASS",
+            "x": 2776,
+            "y": 3070,
+            "visible": true
+        },
+        {
+            "prefabId": "f4ba72ec-0a7b-4e3b-9843-d8bb716f692f",
+            "id": "88c14424-f645-4737-ab05-cf7dadd02270",
+            "unlock": [
+                "x",
+                "y",
+                "visible"
+            ],
+            "label": "arcadesprite_6",
+            "scope": "CLASS",
+            "x": 3299,
+            "y": 3070,
+            "visible": true
+        },
+        {
+            "prefabId": "f4ba72ec-0a7b-4e3b-9843-d8bb716f692f",
+            "id": "0b157f6f-a067-4a6d-81f1-1ca12a3c16d7",
+            "unlock": [
+                "x",
+                "y",
+                "visible"
+            ],
+            "label": "arcadesprite_7",
+            "scope": "CLASS",
+            "x": 3753,
+            "y": 3070,
+            "visible": true
+        },
+        {
+            "prefabId": "2bdd30b0-e379-4943-9d6b-ed6cb2ba5b0a",
+            "id": "740fdd40-b33d-44aa-9e00-9fe63cbdba9b",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "player",
+            "scope": "CLASS",
+            "x": 907,
+            "y": 3266
         },
         {
             "prefabId": "2d3f9249-6fcd-4c7d-bd2f-77fa616af7e8",
@@ -121,34 +202,6 @@
         }
     ],
     "plainObjects": [
-        {
-            "id": "1c2c11f0-6d85-446d-b526-7e85c73b9b71",
-            "type": "Tilemap",
-            "label": "Arena",
-            "key": "arena",
-            "tilesets": [
-                {
-                    "name": "Tileset-Terrain-old prison",
-                    "imageKey": "Tileset-Terrain-old prison"
-                },
-                {
-                    "name": "Tileset - wall 2",
-                    "imageKey": "wall-2- 3 tiles tall"
-                },
-                {
-                    "name": "Tileset - wall 1",
-                    "imageKey": "wall-1- 3 tiles tall"
-                },
-                {
-                    "name": "AutoMap Rules",
-                    "imageKey": "tile guide-1 tile"
-                },
-                {
-                    "name": "blood pool - style2 - with spikes - transparency",
-                    "imageKey": "blood pool - style2 - with spikes-transparency"
-                }
-            ]
-        },
         {
             "id": "0612b134-c75e-407d-99bd-20f2536adfb4",
             "type": "Keyboard.Key",
@@ -177,7 +230,7 @@
             "id": "7dc62e01-edf4-4080-81d9-6befb92ace97",
             "type": "Collider",
             "label": "playerWall",
-            "scope": "LOCAL",
+            "scope": "METHOD",
             "object1": "player",
             "object2": "wall_1"
         },
@@ -186,7 +239,7 @@
             "type": "Collider",
             "label": "collider",
             "scope": "LOCAL",
-            "object1": "skeleton",
+            "object1": "enemies",
             "object2": "player",
             "collideCallback": "this.damage",
             "callbackContext": "this"
@@ -198,6 +251,38 @@
             "scope": "LOCAL",
             "object1": "enemies",
             "object2": "enemies"
+        },
+        {
+            "id": "fdf63718-c76f-4418-a9d1-6b90d3187ce8",
+            "type": "Tilemap",
+            "label": "newmap",
+            "key": "newmap",
+            "tilesets": [
+                {
+                    "name": "Tileset - wall 2",
+                    "imageKey": "wall-2- 3 tiles tall"
+                },
+                {
+                    "name": "Tileset-Terrain-old prison",
+                    "imageKey": "Tileset-Terrain-old prison"
+                }
+            ]
+        },
+        {
+            "id": "e493b99d-415a-4d5b-bbb8-8a0f090de228",
+            "type": "Collider",
+            "label": "collider_1",
+            "scope": "METHOD",
+            "object1": "player",
+            "object2": "arcadesprite_1"
+        },
+        {
+            "id": "dbfcb854-4e29-43c6-8746-f2516d4caf8f",
+            "type": "Collider",
+            "label": "collider_2",
+            "scope": "METHOD",
+            "object1": "enemies",
+            "object2": "wall_1"
         }
     ],
     "meta": {
@@ -219,6 +304,20 @@
         {
             "id": "f8aea12b-f4b1-476b-8a30-b942ba83b90e",
             "label": "enemies"
+        },
+        {
+            "id": "d4a3fc46-10c6-4150-88ee-2fed222c4730",
+            "label": "doorGroup1",
+            "objectIds": [
+                "c593cb78-9e25-468d-89fc-573d0c16de64",
+                "0b157f6f-a067-4a6d-81f1-1ca12a3c16d7",
+                "88c14424-f645-4737-ab05-cf7dadd02270",
+                "08049d5f-3ab8-4a8d-9224-293c72236960",
+                "553d4ceb-1a9d-44c1-a3dd-9c8aaf8f5626",
+                "e3f00a1a-d320-45b6-b9ac-1ea1f984ca6e",
+                "5ac3008c-d107-4412-8898-f20ce7441cc0",
+                "4b46a7ce-af30-4ada-9b7c-9d194d5ee714"
+            ]
         }
     ]
 }
