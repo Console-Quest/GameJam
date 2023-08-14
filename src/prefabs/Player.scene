@@ -20,10 +20,10 @@
             "x": 78,
             "y": 37,
             "ArcadeComponent.active": true,
-            "body.width": 8,
-            "body.height": 16,
-            "body.offset.x": 12,
-            "body.offset.y": 16,
+            "body.width": 17,
+            "body.height": 27,
+            "body.offset.x": 4,
+            "body.offset.y": 6,
             "list": [
                 {
                     "prefabId": "61dde64d-6c82-4109-a4a2-c88cb5eb249d",

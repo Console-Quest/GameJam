@@ -12,47 +12,38 @@
         {
             "type": "ScriptNode",
             "id": "1b5225f0-ea98-4481-a557-0a2a4d91b0ca",
-            "label": "scriptnode_1",
-            "components": [],
-            "list": []
+            "label": "scriptnode_1"
         }
     ],
-    "plainObjects": [],
+    "plainObjects": [
+        {
+            "id": "622f5f69-f5e9-431d-ae35-2310a2e61c57",
+            "type": "Keyboard.Key",
+            "label": "leftKey",
+            "keyCode": "LEFT"
+        },
+        {
+            "id": "743af866-accd-4e84-b564-fd8dab419709",
+            "type": "Keyboard.Key",
+            "label": "rightKey"
+        }
+    ],
     "meta": {
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 4
     },
     "prefabProperties": [
         {
-            "name": "deltaX",
-            "label": "Delta X",
-            "tooltip": "Delta X",
-            "defValue": 0,
+            "name": "player",
+            "label": "player",
+            "tooltip": "",
+            "defValue": "Player",
             "customDefinition": false,
             "type": {
-                "id": "number"
-            }
-        },
-        {
-            "name": "deltaY",
-            "label": "Delta Y",
-            "tooltip": "Delta Y",
-            "defValue": 0,
-            "customDefinition": false,
-            "type": {
-                "id": "number"
-            }
-        },
-        {
-            "name": "duration",
-            "label": "Duration",
-            "tooltip": "Duration",
-            "defValue": 0,
-            "customDefinition": false,
-            "type": {
-                "id": "number"
+                "id": "constructor",
+                "expressionType": "any"
             }
         }
     ]

@@ -29,7 +29,7 @@ class TitleScreen extends Phaser.Scene {
 		// rectangle_2
 		const rectangle_2 = new LoginButton(this, 115.46115152137911, 108);
 		this.add.existing(rectangle_2);
-		rectangle_2.visible = false;
+		rectangle_2.visible = true;
 
 		// startLevelAction
 		const startLevelAction = new StartSceneActionScript(this);
@@ -59,7 +59,6 @@ class TitleScreen extends Phaser.Scene {
 		this.input.keyboard.on("keydown-ENTER", this.enterPressed, this);
 		this.input.on("pointerdown", this.enterPressed, this);
 
-		this.blinkText();
 	}
 
 	enterPressed() {
@@ -68,16 +67,7 @@ class TitleScreen extends Phaser.Scene {
 
 	}
 
-	blinkText() {
 
-		this.time.addEvent({
-			repeat: -1,
-			delay: 1000,
-			callback: () => {
-				this.press_enter_text.visible = !this.press_enter_text.visible;
-			}
-		});
-	}
 
 	update() {
 

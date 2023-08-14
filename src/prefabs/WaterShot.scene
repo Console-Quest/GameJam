@@ -1,5 +1,5 @@
 {
-    "id": "6f88c82e-f9c9-4ca2-9c2f-bf3b4e048061",
+    "id": "f71c7d32-e663-434a-80dd-35acb7225dea",
     "sceneType": "PREFAB",
     "settings": {
         "preloadMethodName": "",
@@ -11,34 +11,19 @@
     "displayList": [
         {
             "type": "ArcadeSprite",
-            "id": "7fc9f2cc-483c-413a-b819-9f124b8821e5",
-            "label": "arcadesprite_1",
-            "hitArea.shape": "CIRCLE",
-            "hitArea.x": 32,
-            "hitArea.y": 32,
-            "hitArea.radius": 32,
+            "id": "007777d8-fce3-4757-bbed-6463be5513cc",
+            "label": "image_1",
             "texture": {
                 "key": "spells",
-                "frame": "Fire_Ball1.png"
+                "frame": "Water1.png"
             },
-            "x": 29,
-            "y": 28,
+            "x": 35,
+            "y": 33,
             "allowGravity": false,
-            "body.width": 57,
-            "body.height": 32,
-            "body.offset.x": 7,
-            "body.offset.y": 17,
-            "list": [
-                {
-                    "prefabId": "61dde64d-6c82-4109-a4a2-c88cb5eb249d",
-                    "id": "509f9f4d-bbde-491c-a891-90686d666697",
-                    "unlock": [
-                        "animationKey"
-                    ],
-                    "label": "startAnimationScript",
-                    "animationKey": "TravelingFire_Ball"
-                }
-            ]
+            "body.width": 29,
+            "body.height": 19,
+            "body.offset.x": 34,
+            "body.offset.y": 23
         }
     ],
     "plainObjects": [],
@@ -53,7 +38,7 @@
             "name": "traveling",
             "label": "traveling",
             "tooltip": "",
-            "defValue": "TravelingFire_Ball",
+            "defValue": "TravelingWater",
             "customDefinition": false,
             "type": {
                 "id": "animation-key"
@@ -63,7 +48,7 @@
             "name": "hitting",
             "label": "hitting",
             "tooltip": "",
-            "defValue": "HittingFire_Ball",
+            "defValue": "HittingWater",
             "customDefinition": false,
             "type": {
                 "id": "animation-key"

@@ -27,19 +27,8 @@ class Planning extends Phaser.Scene {
 		const text_1 = this.add.text(109, 62, "", {});
 		text_1.text = "Hit Next\n";
 
-		// nextButton
-		const nextButton = new NextButton(this, 129, 101);
-		this.add.existing(nextButton);
-		nextButton.body.setOffset(-16, -3);
-		nextButton.body.setSize(72, 22, false);
-
-		this.nextButton = nextButton;
-
 		this.events.emit("scene-awake");
 	}
-
-	/** @type {NextButton} */
-	nextButton;
 
 	/* START-USER-CODE */
 

@@ -1,0 +1,71 @@
+{
+    "id": "0a608d2e-cda9-43f8-9f57-8b3d4b35368e",
+    "sceneType": "PREFAB",
+    "settings": {
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 288,
+        "borderHeight": 192
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "030589e2-f39d-4584-af0e-687bb4c93c6f",
+            "label": "container_1",
+            "x": null,
+            "y": null,
+            "list": [
+                {
+                    "prefabId": "6f88c82e-f9c9-4ca2-9c2f-bf3b4e048061",
+                    "id": "2dfb50fc-c91a-4d2f-a25b-7bd40d212146",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "fireball",
+                    "scope": "NESTED_PREFAB",
+                    "x": null,
+                    "y": null
+                },
+                {
+                    "prefabId": "f71c7d32-e663-434a-80dd-35acb7225dea",
+                    "id": "adae1c58-c5f0-48e6-83ac-ab26e0087b04",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "watershot",
+                    "scope": "NESTED_PREFAB",
+                    "x": 63,
+                    "y": 4
+                },
+                {
+                    "type": "ScriptNode",
+                    "id": "1698bbdf-d36e-4b0d-8a10-d263d9a9ef24",
+                    "label": "spellCastScript"
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 4
+    },
+    "prefabProperties": [
+        {
+            "name": "player",
+            "label": "player",
+            "tooltip": "",
+            "defValue": "Player",
+            "customDefinition": false,
+            "type": {
+                "id": "constructor",
+                "expressionType": "any"
+            }
+        }
+    ]
+}

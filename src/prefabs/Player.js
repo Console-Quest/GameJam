@@ -9,8 +9,8 @@ class Player extends Phaser.GameObjects.Sprite {
 		super(scene, x ?? 78, y ?? 37, texture || "bluechar", frame ?? "down1.png");
 
 		scene.physics.add.existing(this, false);
-		this.body.setOffset(12, 16);
-		this.body.setSize(8, 16, false);
+		this.body.setOffset(4, 6);
+		this.body.setSize(17, 27, false);
 
 		// startAnimationScript
 		const startAnimationScript = new StartAnimationScript(this);

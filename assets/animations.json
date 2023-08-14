@@ -4463,6 +4463,80 @@
             "skipMissedFrames": true,
             "repeat": -1,
             "showBeforeDelay": false
+        },
+        {
+            "key": "TravelingWater",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "spells",
+                    "frame": "Water1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Water2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Water3.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Water5.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 10,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "HittingWater",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "spells",
+                    "frame": "Water10.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Water6.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Water7.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Water8.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Water9.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 10,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
         }
     ],
     "globalTimeScale": 1,
