@@ -15,7 +15,7 @@ class Preloader extends Phaser.Scene {
 
 	/** @returns {void} */
 	editorPreload() {
-
+		this.load.html('nameform', 'assets/text/nameform.html');
 		this.load.pack("asset-pack", "assets/asset-pack.json");
 	}
 

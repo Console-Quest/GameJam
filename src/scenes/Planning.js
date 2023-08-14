@@ -24,8 +24,8 @@ class Planning extends Phaser.Scene {
 		rectangle_1.fillColor = 5324864;
 
 		// text_1
-		const text_1 = this.add.text(109, 62, "", {});
-		text_1.text = "Hit Next\n";
+		//const text_1 = this.add.text(109, 62, "", {});
+		//text_1.text = "Hit Next\n";
 
 		// nextButton
 		const nextButton = new NextButton(this, 129, 101);
