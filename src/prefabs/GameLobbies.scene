@@ -1,0 +1,54 @@
+{
+    "id": "45be92dc-7620-44ab-baae-984d5af93842",
+    "sceneType": "PREFAB",
+    "settings": {
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 288,
+        "borderHeight": 192
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "4785ca9f-84b4-47d1-8207-9fa8d0d6c76e",
+            "label": "container_1",
+            "list": [
+                {
+                    "type": "Rectangle",
+                    "id": "dc1aa57f-3e9a-4361-a705-e94c54df2091",
+                    "label": "rectangle_3",
+                    "scaleX": 1.2723676012847889,
+                    "scaleY": 0.907775406702872,
+                    "isFilled": true,
+                    "fillColor": "#908ef4",
+                    "fillAlpha": 0.8,
+                    "strokeColor": "#000000",
+                    "lineWidth": 2,
+                    "isStroked": true,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "prefabId": "28521afb-4790-41f6-a6bb-b12c281e3d65",
+                    "id": "21e03e7f-be45-4665-82c5-7e11a050fbe9",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "lobbyRoom",
+                    "scope": "NESTED_PREFAB",
+                    "x": -39,
+                    "y": -46
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 4
+    }
+}

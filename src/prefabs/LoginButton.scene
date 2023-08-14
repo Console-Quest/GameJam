@@ -1,0 +1,78 @@
+{
+    "id": "8da820f0-3dd8-4ba2-a1e7-cb9613d47d77",
+    "sceneType": "PREFAB",
+    "settings": {
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 288,
+        "borderHeight": 192
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "cd09980b-a6bc-472c-8f3f-6a70d88f0aa5",
+            "label": "container_1",
+            "x": -3.332493037078166e-7,
+            "list": [
+                {
+                    "type": "Rectangle",
+                    "id": "c7b95247-6e87-4eaf-8371-c39c2ccf6ae2",
+                    "label": "rectangle_2",
+                    "hitArea.shape": "RECTANGLE",
+                    "hitArea.width": 128,
+                    "hitArea.height": 128,
+                    "x": 27.551797971494544,
+                    "scaleX": 0.9964910892041315,
+                    "scaleY": 0.12790489208476796,
+                    "ArcadeComponent.active": true,
+                    "moves": false,
+                    "allowGravity": false,
+                    "body.width": 128,
+                    "body.height": 128,
+                    "isFilled": true,
+                    "fillAlpha": 0.6,
+                    "strokeColor": "#000000",
+                    "lineWidth": 2,
+                    "isStroked": true,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Text",
+                    "id": "2e59348f-276b-4450-b476-562c2954779c",
+                    "label": "text_2",
+                    "x": 4.982440739139815,
+                    "y": -7,
+                    "scaleX": 0.16842803904742332,
+                    "scaleY": 0.16842803904742332,
+                    "text": "LOGIN",
+                    "align": "center",
+                    "fontFamily": "Comic Sans",
+                    "fontSize": "86px",
+                    "color": "#000000ff"
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 4
+    },
+    "prefabProperties": [
+        {
+            "name": "property",
+            "label": "Property",
+            "tooltip": "",
+            "defValue": "",
+            "customDefinition": true,
+            "type": {
+                "id": "expression",
+                "expressionType": "any"
+            }
+        }
+    ]
+}

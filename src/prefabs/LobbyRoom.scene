@@ -1,0 +1,126 @@
+{
+    "id": "28521afb-4790-41f6-a6bb-b12c281e3d65",
+    "sceneType": "PREFAB",
+    "settings": {
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 288,
+        "borderHeight": 192
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "42ed2852-b34a-41d7-9c62-e5b08ebb2c6c",
+            "label": "container_1",
+            "x": -1.4210854715202004e-14,
+            "y": 51,
+            "list": [
+                {
+                    "type": "Rectangle",
+                    "id": "9877ab6c-6ccb-4ce6-a448-eb659fdd49ec",
+                    "label": "rectangle",
+                    "x": 39,
+                    "y": -5.213664497703329,
+                    "scaleX": 1.2723676012847889,
+                    "scaleY": 0.09,
+                    "isFilled": true,
+                    "fillColor": "#ffffff",
+                    "fillAlpha": 0.3,
+                    "strokeColor": "#000000",
+                    "lineWidth": 2,
+                    "isStroked": true,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Text",
+                    "id": "aa4be736-27d2-4c19-bc62-3385ac2a819c",
+                    "label": "displayedRoomName",
+                    "scope": "CLASS",
+                    "x": -38,
+                    "y": -10.94658387557417,
+                    "scaleX": 0.4985147285105078,
+                    "scaleY": 0.4985147285105078,
+                    "text": "New text",
+                    "fontSize": "24px"
+                },
+                {
+                    "type": "Text",
+                    "id": "fb64cd80-3f6f-448d-8820-9e629e298e50",
+                    "label": "displayedCurrentPlayer",
+                    "scope": "CLASS",
+                    "x": 96,
+                    "y": -11,
+                    "scaleX": 0.4985147285105078,
+                    "scaleY": 0.4985147285105078,
+                    "text": "0",
+                    "fontSize": "24px"
+                },
+                {
+                    "type": "Text",
+                    "id": "5b9d2e8d-1027-42b2-8b8a-667437cd7a9f",
+                    "label": "displayedMaxPlayer",
+                    "scope": "CLASS",
+                    "x": 109,
+                    "y": -11,
+                    "scaleX": 0.4985147285105078,
+                    "scaleY": 0.4985147285105078,
+                    "text": "0",
+                    "fontSize": "24px"
+                },
+                {
+                    "type": "Text",
+                    "id": "87991d95-99c4-4256-845a-88dd739ed9bb",
+                    "label": "slash",
+                    "scope": "CLASS",
+                    "x": 103,
+                    "y": -11,
+                    "scaleX": 0.4985147285105078,
+                    "scaleY": 0.4985147285105078,
+                    "text": "/",
+                    "fontSize": "24px"
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 4
+    },
+    "prefabProperties": [
+        {
+            "name": "roomName",
+            "label": "roomName",
+            "tooltip": "",
+            "defValue": "",
+            "customDefinition": false,
+            "type": {
+                "id": "string"
+            }
+        },
+        {
+            "name": "maxPlayers",
+            "label": "maxPlayers",
+            "tooltip": "",
+            "defValue": 4,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        },
+        {
+            "name": "currentPlayers",
+            "label": "currentPlayers",
+            "tooltip": "",
+            "defValue": 0,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        }
+    ]
+}

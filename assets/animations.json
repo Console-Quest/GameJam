@@ -4383,6 +4383,86 @@
             "skipMissedFrames": true,
             "repeat": -1,
             "showBeforeDelay": false
+        },
+        {
+            "key": "TravelingFire_Ball",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "spells",
+                    "frame": "Fire_Ball1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Fire_Ball2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Fire_Ball3.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Fire_Ball4.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Fire_Ball5.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 10,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
+        },
+        {
+            "key": "HittingFire_Ball",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "spells",
+                    "frame": "Fire_Ball10.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Fire_Ball6.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Fire_Ball7.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Fire_Ball8.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "spells",
+                    "frame": "Fire_Ball9.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 10,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showBeforeDelay": false
         }
     ],
     "globalTimeScale": 1,

@@ -12,83 +12,39 @@
     },
     "displayList": [
         {
-            "type": "TileSprite",
-            "id": "cfd2799a-9699-4032-972b-78702790f39b",
-            "label": "background",
-            "scope": "CLASS",
-            "texture": {
-                "key": "back"
-            },
-            "originX": 0,
-            "originY": 0,
-            "width": 384,
-            "height": 240
-        },
-        {
-            "type": "TileSprite",
-            "id": "40e33168-a717-4144-82d0-1c158f1b0444",
-            "label": "middle",
-            "scope": "CLASS",
-            "texture": {
-                "key": "middle"
-            },
-            "y": 80,
-            "originX": 0,
-            "originY": 0,
-            "width": 384,
-            "height": 368
-        },
-        {
             "type": "Image",
-            "id": "3e8695cf-7feb-4e2b-843b-afe60af4fa46",
-            "label": "title_screen",
-            "scope": "CLASS",
-            "components": [
-                "ScrollFactorX"
+            "id": "7ed163b2-f434-4423-8b8b-9f202097ea18",
+            "label": "image_1",
+            "texture": {
+                "key": "goodpudding_A_cover_art_for_an_online_video_game_that_is_a_co-o_b676c53a-dd52-43b7-964a-81cb7077177f"
+            },
+            "x": 142.64988550778247,
+            "y": 73,
+            "scaleX": 0.30640166559099435,
+            "scaleY": 0.30640166559099435
+        },
+        {
+            "type": "Text",
+            "id": "18f43e3e-bfd3-4167-a2c4-c3a299c696d1",
+            "label": "text_1",
+            "x": 10.149885507782471,
+            "y": 2,
+            "text": "Boundless Breakout: \nPhaser's Portal",
+            "align": "center",
+            "fontSize": "24px",
+            "fontStyle": "bold"
+        },
+        {
+            "prefabId": "8da820f0-3dd8-4ba2-a1e7-cb9613d47d77",
+            "id": "601d524d-ff84-4858-89b5-a3142930934c",
+            "unlock": [
+                "x",
+                "y",
+                "visible"
             ],
-            "texture": {
-                "key": "title-screen"
-            },
-            "x": 144,
-            "y": 90
-        },
-        {
-            "type": "Image",
-            "id": "13131b77-e903-498e-9dcd-d5ec2927ea55",
-            "label": "credits_text",
-            "components": [
-                "ScrollFactorX"
-            ],
-            "texture": {
-                "key": "credits-text"
-            },
-            "x": 144,
-            "y": 174
-        },
-        {
-            "type": "Image",
-            "id": "8e6a1b7b-5c56-4392-896b-19189a236559",
-            "label": "press_enter_text",
-            "scope": "CLASS",
-            "components": [
-                "ScrollFactorX"
-            ],
-            "texture": {
-                "key": "press-enter-text"
-            },
-            "x": 144,
-            "y": 149
-        },
-        {
-            "type": "Image",
-            "id": "51139584-cf0d-4858-b545-7deae7efbb1d",
-            "label": "instructions",
-            "scope": "CLASS",
-            "texture": {
-                "key": "instructions"
-            },
-            "x": 144,
-            "originY": 0,
+            "label": "rectangle_2",
+            "x": 115.46115152137911,
+            "y": 108,
             "visible": false
         },
         {
@@ -108,5 +64,14 @@
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
         "version": 4
-    }
+    },
+    "lists": [
+        {
+            "id": "58ff6a75-370a-4b04-b49f-e914b1f9643b",
+            "label": "login",
+            "objectIds": [
+                "601d524d-ff84-4858-89b5-a3142930934c"
+            ]
+        }
+    ]
 }

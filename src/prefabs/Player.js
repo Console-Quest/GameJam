@@ -34,12 +34,17 @@ class Player extends Phaser.GameObjects.Sprite {
 		this.scene.events.on("update", () => this.updatePlayer());
 
 		/* END-USER-CTR-CODE */
+
+		// custom definition props
+		this.playerId = "sessionId";
 	}
 
 	/** @type {number} */
 	health = 100;
 	/** @type {number} */
 	attack = 10;
+	/** @type {number} */
+	round = 0;
 
 	/* START-USER-CODE */
 

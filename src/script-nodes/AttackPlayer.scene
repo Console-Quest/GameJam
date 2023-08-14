@@ -33,6 +33,16 @@
                 "id": "object-var",
                 "expressionType": "Phaser.GameObjects.GameObject"
             }
+        },
+        {
+            "name": "active",
+            "label": "active",
+            "tooltip": "",
+            "defValue": true,
+            "customDefinition": false,
+            "type": {
+                "id": "boolean"
+            }
         }
     ]
 }

@@ -1,0 +1,94 @@
+{
+    "id": "6f88c82e-f9c9-4ca2-9c2f-bf3b4e048061",
+    "sceneType": "PREFAB",
+    "settings": {
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 288,
+        "borderHeight": 192
+    },
+    "displayList": [
+        {
+            "type": "ArcadeSprite",
+            "id": "7fc9f2cc-483c-413a-b819-9f124b8821e5",
+            "label": "arcadesprite_1",
+            "hitArea.shape": "CIRCLE",
+            "hitArea.x": 32,
+            "hitArea.y": 32,
+            "hitArea.radius": 32,
+            "texture": {
+                "key": "spells",
+                "frame": "Fire_Ball1.png"
+            },
+            "x": 650,
+            "y": 258,
+            "allowGravity": false,
+            "body.width": 57,
+            "body.height": 32,
+            "body.offset.x": 7,
+            "body.offset.y": 17,
+            "list": [
+                {
+                    "prefabId": "61dde64d-6c82-4109-a4a2-c88cb5eb249d",
+                    "id": "509f9f4d-bbde-491c-a891-90686d666697",
+                    "unlock": [
+                        "animationKey"
+                    ],
+                    "label": "startAnimationScript",
+                    "animationKey": "TravelingFire_Ball"
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 4
+    },
+    "prefabProperties": [
+        {
+            "name": "traveling",
+            "label": "traveling",
+            "tooltip": "",
+            "defValue": "TravelingFire_Ball",
+            "customDefinition": false,
+            "type": {
+                "id": "animation-key"
+            }
+        },
+        {
+            "name": "hitting",
+            "label": "hitting",
+            "tooltip": "",
+            "defValue": "HittingFire_Ball",
+            "customDefinition": false,
+            "type": {
+                "id": "animation-key"
+            }
+        },
+        {
+            "name": "active",
+            "label": "Property",
+            "tooltip": "",
+            "defValue": true,
+            "customDefinition": false,
+            "type": {
+                "id": "boolean"
+            }
+        },
+        {
+            "name": "player",
+            "label": "player",
+            "tooltip": "",
+            "defValue": "Player",
+            "customDefinition": false,
+            "type": {
+                "id": "constructor",
+                "expressionType": "any"
+            }
+        }
+    ]
+}

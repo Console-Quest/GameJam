@@ -1,0 +1,57 @@
+{
+    "id": "569132cf-d4bc-48f8-ac7d-bc8987fbeb1b",
+    "sceneType": "PREFAB",
+    "settings": {
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 288,
+        "borderHeight": 192
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "070ae3c5-8ed2-4cc6-a8f4-7fc29b7adc6b",
+            "label": "container_1",
+            "x": 0.0946818124022677,
+            "y": -15.930854678924106,
+            "list": [
+                {
+                    "type": "Rectangle",
+                    "id": "d6f57824-0e92-45fc-95fe-be9d450815e0",
+                    "label": "joinGameButton",
+                    "x": 7.094681812402271,
+                    "y": -8.930855123290755,
+                    "scaleX": 1.2723676012847889,
+                    "scaleY": 0.1394488487887552,
+                    "isFilled": true,
+                    "fillColor": "#908ef4",
+                    "fillAlpha": 0.8,
+                    "strokeColor": "#1e1e1e",
+                    "isStroked": true,
+                    "width": 46,
+                    "height": 128
+                },
+                {
+                    "type": "Text",
+                    "id": "9a0cae54-a6e0-49a2-83eb-e0b3648504ea",
+                    "label": "text_3",
+                    "x": -16.473409062011342,
+                    "y": -15.326216466096458,
+                    "scaleX": 0.2368652349187298,
+                    "scaleY": 0.2368652349187298,
+                    "text": "join game",
+                    "fontFamily": "Courie",
+                    "fontSize": "50px"
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 4
+    }
+}

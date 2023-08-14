@@ -2,6 +2,11 @@
     "section1": {
         "files": [
             {
+                "url": "assets/environment/goodpudding_A_cover_art_for_an_online_video_game_that_is_a_co-o_b676c53a-dd52-43b7-964a-81cb7077177f.png",
+                "type": "image",
+                "key": "goodpudding_A_cover_art_for_an_online_video_game_that_is_a_co-o_b676c53a-dd52-43b7-964a-81cb7077177f"
+            },
+            {
                 "url": "assets/sprites/loading.png",
                 "type": "image",
                 "key": "loading"

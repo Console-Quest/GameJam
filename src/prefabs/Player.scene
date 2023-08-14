@@ -64,6 +64,26 @@
             "type": {
                 "id": "number"
             }
+        },
+        {
+            "name": "round",
+            "label": "round",
+            "tooltip": "",
+            "defValue": 0,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        },
+        {
+            "name": "playerId",
+            "label": "playerId",
+            "tooltip": "",
+            "defValue": "sessionId",
+            "customDefinition": true,
+            "type": {
+                "id": "string"
+            }
         }
     ]
 }

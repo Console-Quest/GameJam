@@ -283,6 +283,11 @@
             "scope": "METHOD",
             "object1": "enemies",
             "object2": "wall_1"
+        },
+        {
+            "id": "982986b8-ae90-4a2f-b275-68dc943d6b1f",
+            "type": "Keyboard.Key",
+            "label": "spaceKey"
         }
     ],
     "meta": {

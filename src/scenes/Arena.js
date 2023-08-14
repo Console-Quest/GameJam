@@ -33,6 +33,9 @@ class Arena extends Phaser.Scene {
 		newmap.addTilesetImage("Tileset - wall 2", "wall-2- 3 tiles tall");
 		newmap.addTilesetImage("Tileset-Terrain-old prison", "Tileset-Terrain-old prison");
 
+		// spaceKey
+		const spaceKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
+
 		// wall
 		const wall = newmap.createLayer("wall-1", ["Tileset-Terrain-old prison"], 0, 0);
 
@@ -100,7 +103,7 @@ class Arena extends Phaser.Scene {
 
 		// lists
 		const enemyTypes = [skeleton, opossum, eagle];
-		const enemies = this.add.group([skeleton, opossum, eagle]);
+		const enemies = this.add.group(enemyTypes);
 		const doorGroup1 = [arcadesprite_1, arcadesprite_7, arcadesprite_6, arcadesprite_5, arcadesprite_4, arcadesprite_3, arcadesprite_2, arcadesprite];
 
 		// playerWall
@@ -138,6 +141,7 @@ class Arena extends Phaser.Scene {
 		this.rightKey = rightKey;
 		this.downKey = downKey;
 		this.newmap = newmap;
+		this.spaceKey = spaceKey;
 		this.enemyTypes = enemyTypes;
 		this.enemies = enemies;
 		this.doorGroup1 = doorGroup1;
@@ -179,6 +183,8 @@ class Arena extends Phaser.Scene {
 	downKey;
 	/** @type {Phaser.Tilemaps.Tilemap} */
 	newmap;
+	/** @type {Phaser.Input.Keyboard.Key} */
+	spaceKey;
 	/** @type {Array<Skeleton|Opossum|Eagle>} */
 	enemyTypes;
 	/** @type {Array<any>} */
@@ -188,13 +194,13 @@ class Arena extends Phaser.Scene {
 
 	/* START-USER-CODE */
 	// Function to spawn enemies
-
-
 	// Write your code here
 
 	EnemyTypes = this.enemyTypes;
 	create() {
     this.editorCreate();
+		this.spaceKey.on('down', this.Fireball, this);
+
     this.initColliders();
 
     // Make the camera follow the player
@@ -284,51 +290,101 @@ class Arena extends Phaser.Scene {
 	}
 
 	movePlayer() {
-		// if (this.player.hurtFlag) {
-		// 	return;
-		// }
+    const body = this.player.getBody();
+    const speed = 150;
 
-		const body = this.player.getBody();
+    let horizontalDirection = '';
+    let verticalDirection = '';
 
-		const leftDown = this.leftKey.isDown;
-		const rightDown = this.rightKey.isDown;
-		const upDown = this.upKey.isDown;
-		const downDown = this.downKey.isDown;
+    if (this.leftKey.isDown) {
+        body.velocity.x = -speed;
+        horizontalDirection = 'left';
+    } else if (this.rightKey.isDown) {
+        body.velocity.x = speed;
+        horizontalDirection = 'right';
+    } else {
+        body.velocity.x = 0;
+    }
 
-		var vel = 150;
+    if (this.upKey.isDown) {
+        body.velocity.y = -speed;
+        verticalDirection = 'up';
+    } else if (this.downKey.isDown) {
+        body.velocity.y = speed;
+        verticalDirection = 'down';
+    } else {
+        body.velocity.y = 0;
+    }
 
-		if (leftDown) {
-			this.player.body.velocity.x = -vel;
-			this.player.play("playerleft", true);
-		} else if (rightDown) {
-			this.player.body.velocity.x = vel;
-			this.player.play("playerright", true);
-			this.player.flipX = false;
-		} else {
-			this.player.body.velocity.x = 0;
-		}
-
-		if (upDown) {
-			this.player.body.velocity.y = -vel;
-			this.player.play("playerup", true);
-		} else if (downDown) {
-			this.player.body.velocity.y = vel;
-			this.player.play("playerdown", true);
-		} else {
-			this.player.body.velocity.y = 0;
-		}
-
-		// Idle animation
-		if (!leftDown && !rightDown && !upDown && !downDown) {
-			this.player.play("playerdown", true);
-		}
-	}
+    this.player.lastDirection = verticalDirection + (verticalDirection && horizontalDirection ? '-' : '') + horizontalDirection;
+}
 
 damage() {
 	console.log("damage");
 }
+Fireball() {
+	let fireball = this.physics.add.sprite(this.player.x, this.player.y, 'Fire_Ball1');
+	fireball.play('TravelingFire_Ball');
+	fireball.body.setAllowGravity(false);
+
+	let fireballSpeed = 300;
+
+	switch (this.player.lastDirection) {
+			case 'up':
+					fireball.setVelocityY(-fireballSpeed);
+					fireball.setAngle(-90);  // Point upward
+					break;
+			case 'down':
+					fireball.setVelocityY(fireballSpeed);
+					fireball.setAngle(90);  // Point downward
+					break;
+			case 'left':
+					fireball.setVelocityX(-fireballSpeed);
+					fireball.setFlipX(true);  // Flip horizontally
+					break;
+			case 'right':
+					fireball.setVelocityX(fireballSpeed);
+					break;
+			case 'up-left':
+					fireball.setVelocityY(-fireballSpeed/Math.sqrt(2));
+					fireball.setVelocityX(-fireballSpeed/Math.sqrt(2));
+					fireball.setAngle(-135);  // Point upward-left
+					break;
+			case 'up-right':
+					fireball.setVelocityY(-fireballSpeed/Math.sqrt(2));
+					fireball.setVelocityX(fireballSpeed/Math.sqrt(2));
+					fireball.setAngle(-45);  // Point upward-right
+					break;
+			case 'down-left':
+					fireball.setVelocityY(fireballSpeed/Math.sqrt(2));
+					fireball.setVelocityX(-fireballSpeed/Math.sqrt(2));
+					fireball.setAngle(135);  // Point downward-left
+					break;
+			case 'down-right':
+					fireball.setVelocityY(fireballSpeed/Math.sqrt(2));
+					fireball.setVelocityX(fireballSpeed/Math.sqrt(2));
+					fireball.setAngle(45);  // Point downward-right
+					break;
+	}
+
+	// Collision check for fireball with walls and enemies.
+	this.physics.add.collider(fireball, this.wall_1, this.fireballHit, null, this);
+	this.physics.add.collider(fireball, this.enemies, this.fireballHitEnemy, null, this);
+}
 
 
+fireballHit(fireball, object) {
+	fireball.play('HittingFire_Ball');
+	fireball.setVelocity(0); // Stops the fireball
+
+	fireball.once('animationcomplete', () => {  // Listen for animation completion
+			fireball.destroy();  // Destroy the fireball sprite
+	});
+}
+fireballHitEnemy(fireball, enemy) {
+	fireball.destroy();
+	enemy.destroy();
+}
 	/* END-USER-CODE */
 }
 
