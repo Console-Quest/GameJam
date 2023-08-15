@@ -31,8 +31,6 @@ window.addEventListener("load", function () {
 	game.scene.add("Preloader", Preloader);
 	game.scene.add("TitleScreen", TitleScreen);
 	game.scene.add("Arena", Arena);
-	game.scene.add("Planning", Planning);
-	game.scene.add("Level", Level);
 });
 
 class Boot extends Phaser.Scene {

@@ -199,6 +199,12 @@
             ],
             "label": "startSceneActionScript",
             "sceneKey": "Planning"
+        },
+        {
+            "prefabId": "0a608d2e-cda9-43f8-9f57-8b3d4b35368e",
+            "id": "c2a0cf94-c11d-46a4-93bf-c5c60a7529b4",
+            "label": "spellCastScript",
+            "scope": "CLASS"
         }
     ],
     "plainObjects": [
@@ -271,16 +277,16 @@
         {
             "id": "e493b99d-415a-4d5b-bbb8-8a0f090de228",
             "type": "Collider",
-            "label": "collider_1",
-            "scope": "METHOD",
+            "label": "playerVsDoor",
+            "scope": "LOCAL",
             "object1": "player",
             "object2": "arcadesprite_1"
         },
         {
             "id": "dbfcb854-4e29-43c6-8746-f2516d4caf8f",
             "type": "Collider",
-            "label": "collider_2",
-            "scope": "METHOD",
+            "label": "enemiesVsWalls",
+            "scope": "LOCAL",
             "object1": "enemies",
             "object2": "wall_1"
         },
@@ -288,6 +294,15 @@
             "id": "982986b8-ae90-4a2f-b275-68dc943d6b1f",
             "type": "Keyboard.Key",
             "label": "spaceKey"
+        },
+        {
+            "id": "e7268299-4b2a-46d9-9a4a-22bef0582ad2",
+            "type": "Collider",
+            "label": "spellVsEnemies",
+            "scope": "LOCAL",
+            "object1": "spells",
+            "object2": "enemies",
+            "collideCallback": "this.hit"
         }
     ],
     "meta": {
@@ -323,6 +338,10 @@
                 "5ac3008c-d107-4412-8898-f20ce7441cc0",
                 "4b46a7ce-af30-4ada-9b7c-9d194d5ee714"
             ]
+        },
+        {
+            "id": "c844d966-ba77-404b-85f9-b2f41edbddec",
+            "label": "spells"
         }
     ]
 }

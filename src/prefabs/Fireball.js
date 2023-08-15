@@ -6,7 +6,7 @@
 class Fireball extends Phaser.Physics.Arcade.Sprite {
 
 	constructor(scene, x, y, texture, frame) {
-		super(scene, x ?? 29, y ?? 28, texture || "spells", frame ?? "Fire_Ball1.png");
+		super(scene, x ?? 0, y ?? 0, texture || "spells", frame ?? "Fire_Ball1.png");
 
 		this.setInteractive(new Phaser.Geom.Circle(32, 32, 32), Phaser.Geom.Circle.Contains);
 		scene.physics.add.existing(this, false);

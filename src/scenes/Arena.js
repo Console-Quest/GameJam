@@ -1,4 +1,3 @@
-
 // You can write more code here
 
 /* START OF COMPILED CODE */
@@ -9,8 +8,8 @@ class Arena extends Phaser.Scene {
 		super("Arena");
 
 		/* START-USER-CTR-CODE */
-		// Write your code here.
-		/* END-USER-CTR-CODE */
+    // Write your code here.
+    /* END-USER-CTR-CODE */
 	}
 
 	/** @returns {void} */
@@ -101,10 +100,14 @@ class Arena extends Phaser.Scene {
 		// startSceneActionScript
 		const startSceneActionScript = new StartSceneActionScript(this);
 
+		// spellCastScript
+		const spellCastScript = new SpellCastScript(this);
+
 		// lists
 		const enemyTypes = [skeleton, opossum, eagle];
-		const enemies = this.add.group(enemyTypes);
+		const enemies = [];
 		const doorGroup1 = [arcadesprite_1, arcadesprite_7, arcadesprite_6, arcadesprite_5, arcadesprite_4, arcadesprite_3, arcadesprite_2, arcadesprite];
+		const spells = [];
 
 		// playerWall
 		const playerWall = this.physics.add.collider(player, wall_1);
@@ -115,11 +118,14 @@ class Arena extends Phaser.Scene {
 		// enemies
 		this.physics.add.collider(enemies, enemies);
 
-		// collider_1
-		const collider_1 = this.physics.add.collider(player, arcadesprite_1);
+		// playerVsDoor
+		this.physics.add.collider(player, arcadesprite_1);
 
-		// collider_2
-		const collider_2 = this.physics.add.collider(enemies, wall_1);
+		// enemiesVsWalls
+		this.physics.add.collider(enemies, wall_1);
+
+		// spellVsEnemies
+		this.physics.add.collider(spells, enemies, this.hit);
 
 		// startSceneActionScript (prefab fields)
 		startSceneActionScript.sceneKey = "Planning";
@@ -136,6 +142,7 @@ class Arena extends Phaser.Scene {
 		this.arcadesprite_6 = arcadesprite_6;
 		this.arcadesprite_7 = arcadesprite_7;
 		this.player = player;
+		this.spellCastScript = spellCastScript;
 		this.upKey = upKey;
 		this.leftKey = leftKey;
 		this.rightKey = rightKey;
@@ -145,6 +152,7 @@ class Arena extends Phaser.Scene {
 		this.enemyTypes = enemyTypes;
 		this.enemies = enemies;
 		this.doorGroup1 = doorGroup1;
+		this.spells = spells;
 
 		this.events.emit("scene-awake");
 	}
@@ -173,6 +181,8 @@ class Arena extends Phaser.Scene {
 	arcadesprite_7;
 	/** @type {Player} */
 	player;
+	/** @type {SpellCastScript} */
+	spellCastScript;
 	/** @type {Phaser.Input.Keyboard.Key} */
 	upKey;
 	/** @type {Phaser.Input.Keyboard.Key} */
@@ -191,15 +201,19 @@ class Arena extends Phaser.Scene {
 	enemies;
 	/** @type {Door[]} */
 	doorGroup1;
+	/** @type {Array<any>} */
+	spells;
 
 	/* START-USER-CODE */
-	// Function to spawn enemies
-	// Write your code here
+  // Function to spawn enemies
+  // Write your code here
 
-	EnemyTypes = this.enemyTypes;
-	create() {
+  EnemyTypes = this.enemyTypes;
+  create() {
     this.editorCreate();
-		this.spaceKey.on('down', this.Fireball, this);
+    let castingSpell = "fireball";
+    this.spaceKey.on("down", () => this.spellCastScript.cast(castingSpell, this.player));
+    // this.spaceKey.on("down", () => this.castSpell(castingSpell));
 
     this.initColliders();
 
@@ -207,185 +221,341 @@ class Arena extends Phaser.Scene {
     this.cameras.main.startFollow(this.player);
 
     // Spawn 10 enemies
-		this.spawnEnemy();
-		this.time.addEvent({
-			delay: 10000, // 10 seconds in milliseconds
-			callback: this.spawnEnemy,
-			callbackScope: this,
-			loop: true
-	});
-	  // Switch to the Planning scene after 1 minute
+    this.spawnEnemy();
+    this.time.addEvent({
+      delay: 10000, // 10 seconds in milliseconds
+      callback: this.spawnEnemy,
+      callbackScope: this,
+      loop: true,
+    });
+    // Switch to the Planning scene after 1 minute
     this.time.delayedCall(60000, () => {
-			this.scene.start('Planning');
-	});
+      this.scene.start("Planning");
+    });
   }
-	spawnEnemy() {
+  spawnEnemy() {
     const cam = this.cameras.main;
-    for (let i = 0; i < 6; i++) {
-        // Determine the side of the camera to spawn the enemy (top, bottom, left, right)
-        const side = Phaser.Math.RND.pick(['top', 'bottom', 'left', 'right']);
-        let x, y;
+    for (let i = 0; i < 1; i++) {
+      // Determine the side of the camera to spawn the enemy (top, bottom, left, right)
+      const side = Phaser.Math.RND.pick(["top", "bottom", "left", "right"]);
+      let x, y; 
 
-        switch (side) {
-            case 'top':
-                x = Phaser.Math.Between(cam.scrollX, cam.scrollX + cam.width);
-                y = cam.scrollY - 50; // 50 pixels above the camera view
-                break;
-            case 'bottom':
-                x = Phaser.Math.Between(cam.scrollX, cam.scrollX + cam.width);
-                y = cam.scrollY + cam.height + 50; // 50 pixels below the camera view
-                break;
-            case 'left':
-                x = cam.scrollX - 50; // 50 pixels to the left of the camera view
-                y = Phaser.Math.Between(cam.scrollY, cam.scrollY + cam.height);
-                break;
-            case 'right':
-                x = cam.scrollX + cam.width + 50; // 50 pixels to the right of the camera view
-                y = Phaser.Math.Between(cam.scrollY, cam.scrollY + cam.height);
-                break;
-        }
+      switch (side) {
+        case "top":
+          x = Phaser.Math.Between(cam.scrollX, cam.scrollX + cam.width);
+          y = cam.scrollY - 50; // 50 pixels above the camera view
+          break;
+        case "bottom":
+          x = Phaser.Math.Between(cam.scrollX, cam.scrollX + cam.width);
+          y = cam.scrollY + cam.height + 50; // 50 pixels below the camera view
+          break;
+        case "left":
+          x = cam.scrollX - 50; // 50 pixels to the left of the camera view
+          y = Phaser.Math.Between(cam.scrollY, cam.scrollY + cam.height);
+          break;
+        case "right":
+          x = cam.scrollX + cam.width + 50; // 50 pixels to the right of the camera view
+          y = Phaser.Math.Between(cam.scrollY, cam.scrollY + cam.height);
+          break;
+      }
 
-				const enemyType = Phaser.Math.RND.pick([Skeleton, Opossum, Eagle]); // Randomly pick an enemy class
-				const enemy = new enemyType(this, x, y); // Instantiate the chosen enemy class
-				this.add.existing(enemy);
-				console.log(this.enemies);
-				this.enemies.add(enemy); // Add enemy to the group
-				this.physics.add.collider(enemy, this.wall_1);
-				this.physics.add.collider(enemy, this.player, this.damage, undefined, this);
+      const enemyType = Phaser.Math.RND.pick([Skeleton, Opossum, Eagle]); // Randomly pick an enemy class
+      const enemy = new enemyType(this, x, y); // Instantiate the chosen enemy class
+      this.add.existing(enemy);
+      enemy.isEnemy = true;
+      this.enemies.push(enemy); // Add enemy to the group
+      this.physics.add.collider(enemy, this.wall_1);
+      this.physics.add.collider(
+        enemy,
+        this.player,
+        this.damage,
+        undefined,
+        this
+      );
 
-        // Add the AttackPlayer behavior to the new enemy
-        const attackPlayer = new AttackPlayer(enemy);
-        attackPlayer.target = this.player;
-		}
-	}
+      // Add the AttackPlayer behavior to the new enemy
+      const attackPlayer = new AttackPlayer(enemy);
+      attackPlayer.target = this.player;
+    }
+  }
 
-	initColliders() {
+  initColliders() {
     // Collider for player and wall_1
     this.newmap.setCollisionByProperty({ collide: true });
     // ... add any other necessary colliders here ...
-}
+  }
 
+  update() {
+    this.movePlayer();
+  }
 
-
-
-
-		update() {
-
-		this.movePlayer();
-
-		// fix player position
-
-		this.player.x = Math.floor(this.player.x);
-
-		// fix camera position
-
-		const cam = this.cameras.main;
-
-		// camera X follows the player
-		cam.scrollX = Math.floor(this.player.x - cam.width / 2);
-
-		// cameras Y moves to a sector of the world
-		const row = Math.floor(this.player.y / cam.height);
-		cam.scrollY = row * cam.height;
-	}
-
-	movePlayer() {
+  movePlayer() {
     const body = this.player.getBody();
     const speed = 150;
 
-    let horizontalDirection = '';
-    let verticalDirection = '';
+    let horizontalDirection = "";
+    let verticalDirection = "";
 
     if (this.leftKey.isDown) {
-        body.velocity.x = -speed;
-        horizontalDirection = 'left';
+      body.velocity.x = -speed;
+      horizontalDirection = "left";
     } else if (this.rightKey.isDown) {
-        body.velocity.x = speed;
-        horizontalDirection = 'right';
+      body.velocity.x = speed;
+      horizontalDirection = "right";
     } else {
-        body.velocity.x = 0;
+      body.velocity.x = 0;
     }
 
     if (this.upKey.isDown) {
-        body.velocity.y = -speed;
-        verticalDirection = 'up';
+      body.velocity.y = -speed;
+      verticalDirection = "up";
     } else if (this.downKey.isDown) {
-        body.velocity.y = speed;
-        verticalDirection = 'down';
+      body.velocity.y = speed;
+      verticalDirection = "down";
     } else {
-        body.velocity.y = 0;
+      body.velocity.y = 0;
     }
 
-    this.player.lastDirection = verticalDirection + (verticalDirection && horizontalDirection ? '-' : '') + horizontalDirection;
-}
+    this.player.lastDirection =
+      verticalDirection +
+      (verticalDirection && horizontalDirection ? "-" : "") +
+      horizontalDirection;
+  }
 
-damage() {
-	console.log("damage");
-}
-Fireball() {
-	let fireball = this.physics.add.sprite(this.player.x, this.player.y, 'Fire_Ball1');
-	fireball.play('TravelingFire_Ball');
-	fireball.body.setAllowGravity(false);
+  damage() {
+		this.player.health -= 1;
+    console.log("Player health: " + this.player.health);
+  }
+  
+  castSpell(spellType) {
+    let spell;
+    const spellSpeed = 300;
 
-	let fireballSpeed = 300;
+    switch (spellType) {
+      case "Fireball":
+        spell = this.physics.add.sprite(
+          this.player.x,
+          this.player.y,
+          "Fire_Ball1"
+        );
+        spell.play("TravelingFire_Ball");
+        spell.body.setAllowGravity(false);
+        //... Any other fireball-specific code...
 
-	switch (this.player.lastDirection) {
-			case 'up':
-					fireball.setVelocityY(-fireballSpeed);
-					fireball.setAngle(-90);  // Point upward
-					break;
-			case 'down':
-					fireball.setVelocityY(fireballSpeed);
-					fireball.setAngle(90);  // Point downward
-					break;
-			case 'left':
-					fireball.setVelocityX(-fireballSpeed);
-					fireball.setFlipX(true);  // Flip horizontally
-					break;
-			case 'right':
-					fireball.setVelocityX(fireballSpeed);
-					break;
-			case 'up-left':
-					fireball.setVelocityY(-fireballSpeed/Math.sqrt(2));
-					fireball.setVelocityX(-fireballSpeed/Math.sqrt(2));
-					fireball.setAngle(-135);  // Point upward-left
-					break;
-			case 'up-right':
-					fireball.setVelocityY(-fireballSpeed/Math.sqrt(2));
-					fireball.setVelocityX(fireballSpeed/Math.sqrt(2));
-					fireball.setAngle(-45);  // Point upward-right
-					break;
-			case 'down-left':
-					fireball.setVelocityY(fireballSpeed/Math.sqrt(2));
-					fireball.setVelocityX(-fireballSpeed/Math.sqrt(2));
-					fireball.setAngle(135);  // Point downward-left
-					break;
-			case 'down-right':
-					fireball.setVelocityY(fireballSpeed/Math.sqrt(2));
-					fireball.setVelocityX(fireballSpeed/Math.sqrt(2));
-					fireball.setAngle(45);  // Point downward-right
-					break;
-	}
+        break;
+      case "WaterShot":
+        spell = this.physics.add.sprite(
+          this.player.x,
+          this.player.y,
+          "WaterShot1"
+        );
+        spell.play("TravelingWater");
+        spell.body.setAllowGravity(false);
+        // //... Any other watershot-specific code...
+        // const newWidth = 30; // Width of the new hitbox
+        // const newHeight = 20; // Height of the new hitbox
+        // const xOffset = (100 - 60) / 2; // Offset from the left (for a centered hitbox)
+        // const yOffset = (100 - 60) / 2; // Offset from the top (for a centered hitbox)
 
-	// Collision check for fireball with walls and enemies.
-	this.physics.add.collider(fireball, this.wall_1, this.fireballHit, null, this);
-	this.physics.add.collider(fireball, this.enemies, this.fireballHitEnemy, null, this);
-}
+        spell.body.setSize(newWidth, newHeight);
+        spell.body.setOffset(xOffset, yOffset);
+
+        break;
+      default:
+        console.warn("Unknown spell type:", spellType);
+        return;
+    }
+
+    // Apply movement based on player's last direction:
+    switch (this.player.lastDirection) {
+      case "up":
+        spell.setVelocityY(-spellSpeed);
+        spell.setAngle(-90); // Point upward
+        break;
+      case "down":
+        spell.setVelocityY(spellSpeed);
+        spell.setAngle(90); // Point downward
+        break;
+      case "left":
+        spell.setVelocityX(-spellSpeed);
+        spell.setFlipX(true); // Flip horizontally
+        break;
+      case "right":
+        spell.setVelocityX(spellSpeed);
+        break;
+      case "up-left":
+        spell.setVelocityY(-spellSpeed / Math.sqrt(2));
+        spell.setVelocityX(-spellSpeed / Math.sqrt(2));
+        spell.setAngle(-135); // Point upward-left
+        break;
+      case "up-right":
+        spell.setVelocityY(-spellSpeed / Math.sqrt(2));
+        spell.setVelocityX(spellSpeed / Math.sqrt(2));
+        spell.setAngle(-45); // Point upward-right
+        break;
+      case "down-left":
+        spell.setVelocityY(spellSpeed / Math.sqrt(2));
+        spell.setVelocityX(-spellSpeed / Math.sqrt(2));
+        spell.setAngle(135); // Point downward-left
+        break;
+      case "down-right":
+        spell.setVelocityY(spellSpeed / Math.sqrt(2));
+        spell.setVelocityX(spellSpeed / Math.sqrt(2));
+        spell.setAngle(45); // Point downward-right
+        break;
+      //... Handle the rest of the directions...
+    }
+
+    // Any common code for all spell types after this...
+
+    this.spells.push(spell); // Add the spell to your spells array or group.
+  }
 
 
-fireballHit(fireball, object) {
-	fireball.play('HittingFire_Ball');
-	fireball.setVelocity(0); // Stops the fireball
+  hit(projectile, object) {
+    let castingSpell = this.player;
+    console.log(this);
+    const spell = this.spellCastScript.getSpellBySpriteKey(projectile.anims.currentAnim.key);
+    if (!spell) return;
+  
+    // Always play the hit animation for the projectile.
+    projectile.play(spell.hitAnimation);
+    projectile.setVelocity(0);
+  
+    // Destroy the enemy immediately if the object is of type Enemy.
+    if (object.isEnemy) {
+      object.destroy();
+    }
+  
+    // After the hit animation completes, destroy the projectile.
+    projectile.once('animationcomplete', () => {
+        projectile.destroy();
+    });
+  }
+  spellHit(spell, object, spellType) {
+    switch (spellType) {
+      case "Fireball":
+        spell.play("HittingFire_Ball");
+        spell.setVelocity(0); // Stops the spell
 
-	fireball.once('animationcomplete', () => {  // Listen for animation completion
-			fireball.destroy();  // Destroy the fireball sprite
-	});
-}
-fireballHitEnemy(fireball, enemy) {
-	fireball.destroy();
-	enemy.destroy();
-}
-	/* END-USER-CODE */
+        spell.once("animationcomplete", () => {
+          spell.destroy(); // Destroy the spell sprite
+        });
+        break;
+
+      case "WaterShot":
+        spell.play("HittingWater");
+        spell.setVelocity(0); // Stops the spell
+
+        spell.once("animationcomplete", () => {
+          spell.destroy(); // Destroy the spell sprite
+        });
+        break;
+      default:
+        console.warn("Unknown spell type for spellHit:", spellType);
+        return;
+    }
+  }
+
+  spellHitEnemy(spell, enemy, spellType) {
+    switch (spellType) {
+      case "Fireball":
+        // Add any special effects for when fireball hits an enemy
+        spell.destroy();
+        enemy.destroy();
+        break;
+
+      case "WaterShot":
+        // Add any special effects for when watershot hits an enemy
+        spell.destroy();
+        enemy.destroy();
+        break;
+
+      default:
+        console.warn("Unknown spell type for spellHitEnemy:", spellType);
+        return;
+    }
+  }
+  Fireball() {
+    let fireball = this.physics.add.sprite(
+      this.player.x,
+      this.player.y,
+      "Fire_Ball1"
+    );
+    fireball.play("TravelingFire_Ball");
+    fireball.body.setAllowGravity(false);
+
+    let spellSpeed = 300;
+
+    switch (this.player.lastDirection) {
+      case "up":
+        fireball.setVelocityY(-fireballSpeed);
+        fireball.setAngle(-90); // Point upward
+        break;
+      case "down":
+        fireball.setVelocityY(fireballSpeed);
+        fireball.setAngle(90); // Point downward
+        break;
+      case "left":
+        fireball.setVelocityX(-fireballSpeed);
+        fireball.setFlipX(true); // Flip horizontally
+        break;
+      case "right":
+        fireball.setVelocityX(fireballSpeed);
+        break;
+      case "up-left":
+        fireball.setVelocityY(-fireballSpeed / Math.sqrt(2));
+        fireball.setVelocityX(-fireballSpeed / Math.sqrt(2));
+        fireball.setAngle(-135); // Point upward-left
+        break;
+      case "up-right":
+        fireball.setVelocityY(-fireballSpeed / Math.sqrt(2));
+        fireball.setVelocityX(fireballSpeed / Math.sqrt(2));
+        fireball.setAngle(-45); // Point upward-right
+        break;
+      case "down-left":
+        fireball.setVelocityY(fireballSpeed / Math.sqrt(2));
+        fireball.setVelocityX(-fireballSpeed / Math.sqrt(2));
+        fireball.setAngle(135); // Point downward-left
+        break;
+      case "down-right":
+        fireball.setVelocityY(fireballSpeed / Math.sqrt(2));
+        fireball.setVelocityX(fireballSpeed / Math.sqrt(2));
+        fireball.setAngle(45); // Point downward-right
+        break;
+    }
+
+    // Collision check for fireball with walls and enemies.
+    this.physics.add.collider(
+      fireball,
+      this.wall_1,
+      this.fireballHit,
+      null,
+      this
+    );
+    this.physics.add.collider(
+      fireball,
+      this.enemies,
+      this.fireballHitEnemy,
+      null,
+      this
+    );
+  }
+
+  fireballHit(fireball, object) {
+    fireball.play("HittingFire_Ball");
+    fireball.setVelocity(0); // Stops the fireball
+
+    fireball.once("animationcomplete", () => {
+      // Listen for animation completion
+      fireball.destroy(); // Destroy the fireball sprite
+    });
+  }
+  fireballHitEnemy(fireball, enemy) {
+    fireball.destroy();
+    enemy.destroy();
+  }
+  /* END-USER-CODE */
 }
 
 /* END OF COMPILED CODE */

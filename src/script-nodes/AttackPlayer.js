@@ -16,10 +16,10 @@ class AttackPlayer extends ScriptNode {
 		/* END-USER-CTR-CODE */
 	}
 
-	/** @type {Phaser.GameObjects.GameObject} */
-	target;
 	/** @type {boolean} */
 	active = true;
+	/** @type {any} */
+	target = Player;
 
 	/* START-USER-CODE */
 

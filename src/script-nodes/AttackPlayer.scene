@@ -24,17 +24,6 @@
     },
     "prefabProperties": [
         {
-            "name": "target",
-            "label": "target",
-            "tooltip": "Property 1",
-            "defValue": "",
-            "customDefinition": false,
-            "type": {
-                "id": "object-var",
-                "expressionType": "Phaser.GameObjects.GameObject"
-            }
-        },
-        {
             "name": "active",
             "label": "active",
             "tooltip": "",
@@ -42,6 +31,17 @@
             "customDefinition": false,
             "type": {
                 "id": "boolean"
+            }
+        },
+        {
+            "name": "target",
+            "label": "target",
+            "tooltip": "",
+            "defValue": "Player",
+            "customDefinition": false,
+            "type": {
+                "id": "constructor",
+                "expressionType": "any"
             }
         }
     ]

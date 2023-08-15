@@ -9,6 +9,7 @@ class Player extends Phaser.GameObjects.Sprite {
 		super(scene, x ?? 78, y ?? 37, texture || "bluechar", frame ?? "down1.png");
 
 		scene.physics.add.existing(this, false);
+		this.body.allowGravity = false;
 		this.body.setOffset(4, 6);
 		this.body.setSize(17, 27, false);
 
@@ -70,77 +71,70 @@ class Player extends Phaser.GameObjects.Sprite {
 			return;
 		}
 
-		this.hurtFlag = true;
-
 		//this.hurtTimer.start();
 
-		const body = this.getBody();
-
-		body.velocity.y = -100;
-
-		body.velocity.x = (this.scale.x == 1) ? -100 : 100;
 	}
-	castSpell(spellType, spellDirection) {
-    if (this.hurtFlag) {
-      return;
-    }
-    if (!spellDirection) {
-      return;
-    }
-    const getSpellAudio = (spellType) => {
-      switch (spellType) {
-        case "Fire_Ball":
-          this.fire_cast.play();
-          break;
-        case "Molten_Spear":
-          this.lightning_cast.play();
-          break;
-        case "Water_Geyser":
-          this.water_cast.play();
-          break;
-        case "Tornado":
-          this.magic_cast.play();
-          break;
-      }
-      return;
-    };
+	// castSpell(spellType, spellDirection) {
+  //   if (this.hurtFlag) {
+  //     return;
+  //   }
+  //   if (!spellDirection) {
+  //     return;
+  //   }
+  //   const getSpellAudio = (spellType) => {
+  //     switch (spellType) {
+  //       case "Fire_Ball":
+  //         this.fire_cast.play();
+  //         break;
+  //       case "Molten_Spear":
+  //         this.lightning_cast.play();
+  //         break;
+  //       case "Water_Geyser":
+  //         this.water_cast.play();
+  //         break;
+  //       case "Tornado":
+  //         this.magic_cast.play();
+  //         break;
+  //     }
+  //     return;
+  //   };
 
-    const {
-      x = 0,
-      y = 0,
-      angle = 0,
-      flipX = false,
-      flipY = false,
-    } = spellDirection;
+  //   const {
+  //     x = 0,
+  //     y = 0,
+  //     angle = 0,
+  //     flipX = false,
+  //     flipY = false,
+  //   } = spellDirection;
 
-    getSpellAudio(spellType);
+  //   getSpellAudio(spellType);
 
-    const spell = this.scene.physics.add.sprite(this.x, this.y, spellType, 0);
-    spell.anims.play(spellType, true);
-    spell.damage = this.Damage;
-    spell.setVelocity(x, y);
-    spell.angle = angle;
-    spell.flipX = flipX;
-    spell.flipY = flipY;
-  }
+  //   const spell = this.scene.physics.add.sprite(this.x, this.y, spellType, 0);
+  //   spell.anims.play(spellType, true);
+  //   spell.damage = this.Damage;
+  //   spell.setVelocity(x, y);
+  //   spell.angle = angle;
+  //   spell.flipX = flipX;
+  //   spell.flipY = flipY;
+  // }
 
-  autoCastSpell(spells) {
-    const playerFacing = this.getPlayerFacing();
-    const spellDirection = this.directions[playerFacing];
+  // autoCastSpell(spells) {
+  //   const playerFacing = this.getPlayerFacing();
+  //   const spellDirection = this.directions[playerFacing];
 
-    let delay = 0;
-    for (let i = 0; i < spells.length; i++) {
-      const spellType = spells[i];
-      this.scene.time.delayedCall(delay, () => {
-        // Need to add projectiles to player (# of spells cast at once)
-        // for (i in this.projectiles){
-        //   this.castSpell(spellType, spellDirection);
-        // }
-        this.castSpell(spellType, spellDirection);
-      });
-      delay += 100; // Adjust the delay time between spells (in milliseconds) as needed
-    }
-  }
+  //   let delay = 0;
+  //   for (let i = 0; i < spells.length; i++) {
+  //     const spellType = spells[i];
+  //     this.scene.time.delayedCall(delay, () => {
+  //       // Need to add projectiles to player (# of spells cast at once)
+  //       // for (i in this.projectiles){
+  //       //   this.castSpell(spellType, spellDirection);
+  //       // }
+  //       this.castSpell(spellType, spellDirection);
+  //     });
+  //     delay += 100; // Adjust the delay time between spells (in milliseconds) as needed
+  //   }
+  // }
 
   getPlayerFacing() {
     if (this.cursors.left.isDown) {

@@ -6,7 +6,7 @@
 class WaterShot extends Phaser.Physics.Arcade.Sprite {
 
 	constructor(scene, x, y, texture, frame) {
-		super(scene, x ?? 35, y ?? 33, texture || "spells", frame ?? "Water1.png");
+		super(scene, x ?? 0, y ?? 0, texture || "spells", frame ?? "Water1.png");
 
 		scene.physics.add.existing(this, false);
 		this.body.allowGravity = false;

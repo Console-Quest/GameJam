@@ -17,8 +17,6 @@
                 "key": "spells",
                 "frame": "Water1.png"
             },
-            "x": 35,
-            "y": 33,
             "allowGravity": false,
             "body.width": 29,
             "body.height": 19,

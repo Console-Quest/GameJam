@@ -20,6 +20,7 @@
             "x": 78,
             "y": 37,
             "ArcadeComponent.active": true,
+            "allowGravity": false,
             "body.width": 17,
             "body.height": 27,
             "body.offset.x": 4,

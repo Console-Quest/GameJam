@@ -21,8 +21,6 @@
                 "key": "spells",
                 "frame": "Fire_Ball1.png"
             },
-            "x": 29,
-            "y": 28,
             "allowGravity": false,
             "body.width": 57,
             "body.height": 32,
