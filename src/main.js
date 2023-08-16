@@ -1,3 +1,4 @@
+import { HathoraPhaser, HathoraConnection } from 'hathora-phaser';
 
 window.addEventListener("load", function () {
 
@@ -24,6 +25,16 @@ window.addEventListener("load", function () {
 		},
 		input: {
 			activePointers: 3
+		},
+		plugins: {
+			scene: [
+				{
+					key: 'HathoraPhaser',
+					mapping: 'HathoraPhaser',
+					plugin: HathoraPhaser,
+					start: true
+				}
+			]
 		}
 	});
 
@@ -31,6 +42,7 @@ window.addEventListener("load", function () {
 	game.scene.add("Preloader", Preloader);
 	game.scene.add("TitleScreen", TitleScreen);
 	game.scene.add("Arena", Arena);
+
 });
 
 class Boot extends Phaser.Scene {
@@ -43,5 +55,18 @@ class Boot extends Phaser.Scene {
 	create() {
 
 		this.scene.start("Preloader");
+
+		this.HathoraPhaser.initialize(
+			'app-79608ab3-d8df-4210-bf26-817a750aa728',
+			(connection) => {
+				this.scene.start('Preloader', {
+					connection
+				})
+			},
+			(error) => {
+				console.warn(error)
+			},
+			true
+		)
 	}
 }
