@@ -10,7 +10,7 @@
     },
     "displayList": [
         {
-            "type": "Sprite",
+            "type": "ArcadeSprite",
             "id": "7510685d-e1b6-4e60-9ac0-d57acec2b000",
             "label": "player_climb_player_climb_1",
             "texture": {
@@ -84,6 +84,16 @@
             "customDefinition": true,
             "type": {
                 "id": "string"
+            }
+        },
+        {
+            "name": "maxHealth",
+            "label": "maxHealth",
+            "tooltip": "",
+            "defValue": 100,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
             }
         }
     ]

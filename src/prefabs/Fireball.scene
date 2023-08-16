@@ -14,18 +14,16 @@
             "id": "7fc9f2cc-483c-413a-b819-9f124b8821e5",
             "label": "arcadesprite_1",
             "hitArea.shape": "CIRCLE",
-            "hitArea.x": 32,
-            "hitArea.y": 32,
-            "hitArea.radius": 32,
+            "hitArea.x": 47,
+            "hitArea.y": 34,
+            "hitArea.radius": 15.856443859897759,
             "texture": {
                 "key": "spells",
                 "frame": "Fire_Ball1.png"
             },
             "allowGravity": false,
-            "body.width": 57,
-            "body.height": 32,
-            "body.offset.x": 7,
-            "body.offset.y": 17,
+            "body.width": 64,
+            "body.height": 64,
             "list": [
                 {
                     "prefabId": "61dde64d-6c82-4109-a4a2-c88cb5eb249d",
@@ -106,6 +104,16 @@
             "customDefinition": false,
             "type": {
                 "id": "number"
+            }
+        },
+        {
+            "name": "spellName",
+            "label": "spellName",
+            "tooltip": "",
+            "defValue": "Fireball",
+            "customDefinition": false,
+            "type": {
+                "id": "string"
             }
         }
     ]

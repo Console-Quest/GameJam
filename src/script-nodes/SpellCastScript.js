@@ -15,10 +15,10 @@ class SpellCastScript extends ScriptNode {
 				speed: 300,
 				colliders: [{
 					target: this.parent.scene.scene.wall_1,
-					// callback: this.hit.bind(this)
+					callback: this.hit.bind(this)
 				}, {
 					target: this.parent.scene.scene.enemies,
-					// callback: this.hit.bind(this)
+					callback: this.hit.bind(this)
 				}]
 			},
 			'watershot': {
@@ -81,9 +81,10 @@ class SpellCastScript extends ScriptNode {
         return;
     }
     const projectile = this.parent.scene.scene.physics.add.sprite(body.x, body.y, spell.spriteKey);
+		console.log(projectile)
     projectile.play(spell.travelAnimation);
     projectile.body.setAllowGravity(false);
-		// projectile.body.setOffset(0, -20)
+		projectile.body.setOffset(0, -20)
 		projectile.body.setCircle(12, 0, 20);
 
     let xVelocity = 0;
@@ -138,7 +139,7 @@ class SpellCastScript extends ScriptNode {
 		// Adjust hitbox based on the direction
 		this.adjustHitboxBasedOnDirection(projectile, this.parent.player.lastDirection);
 		this.parent.scene.scene.spells.push(projectile);
-    // Dynamically set up colliders based on spell properties
+		console.log(this.parent.scene.scene.spells)    // Dynamically set up colliders based on spell properties
 		spell.colliders.forEach(collider => {
 			if(Array.isArray(collider.target)) {
 					collider.target.forEach(singleTarget => {
@@ -152,25 +153,25 @@ class SpellCastScript extends ScriptNode {
 	
 }
 
-// hit(projectile, object) {
-// 	console.log('hit', projectile, object);
-// 	const spell = this.getSpellBySpriteKey(projectile.texture.key);
-// 	if (!spell) return;
+hit(projectile, object) {
+	console.log('hit', projectile, object);
+	const spell = this.getSpellBySpriteKey(projectile.texture.key);
+	if (!spell) return;
 
-// 	// Always play the hit animation for the projectile.
-// 	projectile.play(spell.hitAnimation);
-// 	projectile.setVelocity(0);
+	// Always play the hit animation for the projectile.
+	projectile.play(spell.hitAnimation);
+	projectile.setVelocity(0);
 
-// 	// Destroy the enemy immediately if the object is of type Enemy.
-// 	if (object.isEnemy) {
-// 		object.destroy();
-// 	}
+	// Destroy the enemy immediately if the object is of type Enemy.
+	if (object.isEnemy) {
+		object.destroy();
+	}
 
-// 	// After the hit animation completes, destroy the projectile.
-// 	projectile.once('animationcomplete', () => {
-// 			projectile.destroy();
-// 	});
-// }
+	// After the hit animation completes, destroy the projectile.
+	projectile.once('animationcomplete', () => {
+			projectile.destroy();
+	});
+}
 
 	getSpellBySpriteKey(spriteKey) {
 		return Object.values(this.spells).find(spell => spell.spriteKey === spriteKey);

@@ -1,5 +1,5 @@
 {
-    "id": "63bd4c20-a9a7-478a-a031-5d0027804b88",
+    "id": "b314af66-fb8b-468c-8de3-d68e0e561daf",
     "sceneType": "PREFAB",
     "settings": {
         "preloadMethodName": "",
@@ -11,7 +11,7 @@
     "displayList": [
         {
             "type": "ScriptNode",
-            "id": "b1bd7f68-e421-4229-883d-1b0816df4802",
+            "id": "dd5c4f8e-eba5-4343-b19b-7da48710e5aa",
             "label": "scriptnode_1"
         }
     ],

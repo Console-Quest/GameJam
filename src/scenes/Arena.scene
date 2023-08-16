@@ -192,6 +192,68 @@
             "y": 3266
         },
         {
+            "type": "Rectangle",
+            "id": "620d9b6a-748f-4ac7-95b0-295da6a615ea",
+            "label": "playerHealthBackground",
+            "x": 9.5,
+            "y": 20.5,
+            "scaleY": 0.08945459224238518,
+            "originX": 0,
+            "isFilled": true,
+            "fillColor": "#000000",
+            "strokeColor": "#000000",
+            "lineWidth": 3,
+            "isStroked": true,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Rectangle",
+            "id": "2b278810-68d3-49fd-bc58-98a8edf9ac35",
+            "label": "playerHealth",
+            "scope": "CLASS",
+            "x": 9.5,
+            "y": 20.5,
+            "scaleY": 0.08945459224238518,
+            "originX": 0,
+            "isFilled": true,
+            "fillColor": "#5af709",
+            "strokeColor": "#000000",
+            "lineWidth": 3,
+            "isStroked": true,
+            "width": 128,
+            "height": 128,
+            "list": [
+                {
+                    "prefabId": "63bd4c20-a9a7-478a-a031-5d0027804b88",
+                    "id": "c0783663-81b2-4002-9239-b6e8e65c447e",
+                    "label": "fixedToCameraScript"
+                }
+            ]
+        },
+        {
+            "type": "Text",
+            "id": "a307a72c-49b6-40a3-b960-d22a6a50ab54",
+            "label": "displayTimer",
+            "scope": "CLASS",
+            "x": 144,
+            "y": 12,
+            "text": "60",
+            "list": [
+                {
+                    "prefabId": "63bd4c20-a9a7-478a-a031-5d0027804b88",
+                    "id": "0730e542-8e28-42c8-8d1f-aba54a29d8aa",
+                    "label": "fixedToCameraScript_1"
+                }
+            ]
+        },
+        {
+            "prefabId": "0a608d2e-cda9-43f8-9f57-8b3d4b35368e",
+            "id": "c2a0cf94-c11d-46a4-93bf-c5c60a7529b4",
+            "label": "spellCastScript",
+            "scope": "CLASS"
+        },
+        {
             "prefabId": "2d3f9249-6fcd-4c7d-bd2f-77fa616af7e8",
             "id": "ed92b14f-e137-4779-bdda-285875a4fc50",
             "unlock": [
@@ -201,9 +263,9 @@
             "sceneKey": "Planning"
         },
         {
-            "prefabId": "0a608d2e-cda9-43f8-9f57-8b3d4b35368e",
-            "id": "c2a0cf94-c11d-46a4-93bf-c5c60a7529b4",
-            "label": "spellCastScript",
+            "prefabId": "b314af66-fb8b-468c-8de3-d68e0e561daf",
+            "id": "59976454-47fd-47d5-b424-eb9efea713cf",
+            "label": "endRoundScript",
             "scope": "CLASS"
         }
     ],
@@ -302,7 +364,8 @@
             "scope": "LOCAL",
             "object1": "spells",
             "object2": "enemies",
-            "collideCallback": "this.hit"
+            "collideCallback": "this.hit",
+            "callbackContext": "this"
         }
     ],
     "meta": {
@@ -312,15 +375,6 @@
         "version": 4
     },
     "lists": [
-        {
-            "id": "cfa4f5bb-2827-4d32-8a4a-c2d5768d1130",
-            "label": "enemyTypes",
-            "objectIds": [
-                "24ba1262-2c4a-4308-8ece-7be115742297",
-                "f868eeed-b72d-4fdd-9259-5cd1f2743ed8",
-                "1250f559-0f4c-4e31-b9da-3ec077f2234a"
-            ]
-        },
         {
             "id": "f8aea12b-f4b1-476b-8a30-b942ba83b90e",
             "label": "enemies"

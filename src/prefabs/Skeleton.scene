@@ -10,7 +10,7 @@
     },
     "displayList": [
         {
-            "type": "ArcadeSprite",
+            "type": "Sprite",
             "id": "d457be6b-b330-4b5a-96c6-c77c132aaab5",
             "label": "attack2_skeleton2_attack2_1_png",
             "texture": {
@@ -19,11 +19,6 @@
             },
             "scaleX": 0.6,
             "scaleY": 0.6,
-            "allowGravity": false,
-            "body.width": 80,
-            "body.height": 49,
-            "body.offset.x": 65,
-            "body.offset.y": 100,
             "list": [
                 {
                     "prefabId": "61dde64d-6c82-4109-a4a2-c88cb5eb249d",

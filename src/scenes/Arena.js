@@ -9,6 +9,8 @@ class Arena extends Phaser.Scene {
 
 		/* START-USER-CTR-CODE */
     // Write your code here.
+    this.remainingTime = 60; // This is in seconds
+
     /* END-USER-CTR-CODE */
 	}
 
@@ -97,14 +99,46 @@ class Arena extends Phaser.Scene {
 		const player = new Player(this, 907, 3266);
 		this.add.existing(player);
 
-		// startSceneActionScript
-		const startSceneActionScript = new StartSceneActionScript(this);
+		// playerHealthBackground
+		const playerHealthBackground = this.add.rectangle(9.5, 20.5, 128, 128);
+		playerHealthBackground.scaleY = 0.08945459224238518;
+		playerHealthBackground.setOrigin(0, 0.5);
+		playerHealthBackground.isFilled = true;
+		playerHealthBackground.fillColor = 0;
+		playerHealthBackground.isStroked = true;
+		playerHealthBackground.strokeColor = 0;
+		playerHealthBackground.lineWidth = 3;
+
+		// playerHealth
+		const playerHealth = this.add.rectangle(9.5, 20.5, 128, 128);
+		playerHealth.scaleY = 0.08945459224238518;
+		playerHealth.setOrigin(0, 0.5);
+		playerHealth.isFilled = true;
+		playerHealth.fillColor = 5961481;
+		playerHealth.isStroked = true;
+		playerHealth.strokeColor = 0;
+		playerHealth.lineWidth = 3;
+
+		// fixedToCameraScript
+		new FixedToCameraScript(playerHealth);
+
+		// displayTimer
+		const displayTimer = this.add.text(144, 12, "", {});
+		displayTimer.text = "60";
+
+		// fixedToCameraScript_1
+		new FixedToCameraScript(displayTimer);
 
 		// spellCastScript
 		const spellCastScript = new SpellCastScript(this);
 
+		// startSceneActionScript
+		const startSceneActionScript = new StartSceneActionScript(this);
+
+		// endRoundScript
+		const endRoundScript = new EndRoundScript(this);
+
 		// lists
-		const enemyTypes = [skeleton, opossum, eagle];
 		const enemies = [];
 		const doorGroup1 = [arcadesprite_1, arcadesprite_7, arcadesprite_6, arcadesprite_5, arcadesprite_4, arcadesprite_3, arcadesprite_2, arcadesprite];
 		const spells = [];
@@ -125,7 +159,7 @@ class Arena extends Phaser.Scene {
 		this.physics.add.collider(enemies, wall_1);
 
 		// spellVsEnemies
-		this.physics.add.collider(spells, enemies, this.hit);
+		this.physics.add.collider(spells, enemies, this.hit, undefined, this);
 
 		// startSceneActionScript (prefab fields)
 		startSceneActionScript.sceneKey = "Planning";
@@ -142,14 +176,16 @@ class Arena extends Phaser.Scene {
 		this.arcadesprite_6 = arcadesprite_6;
 		this.arcadesprite_7 = arcadesprite_7;
 		this.player = player;
+		this.playerHealth = playerHealth;
+		this.displayTimer = displayTimer;
 		this.spellCastScript = spellCastScript;
+		this.endRoundScript = endRoundScript;
 		this.upKey = upKey;
 		this.leftKey = leftKey;
 		this.rightKey = rightKey;
 		this.downKey = downKey;
 		this.newmap = newmap;
 		this.spaceKey = spaceKey;
-		this.enemyTypes = enemyTypes;
 		this.enemies = enemies;
 		this.doorGroup1 = doorGroup1;
 		this.spells = spells;
@@ -181,8 +217,14 @@ class Arena extends Phaser.Scene {
 	arcadesprite_7;
 	/** @type {Player} */
 	player;
+	/** @type {Phaser.GameObjects.Rectangle} */
+	playerHealth;
+	/** @type {Phaser.GameObjects.Text} */
+	displayTimer;
 	/** @type {SpellCastScript} */
 	spellCastScript;
+	/** @type {EndRoundScript} */
+	endRoundScript;
 	/** @type {Phaser.Input.Keyboard.Key} */
 	upKey;
 	/** @type {Phaser.Input.Keyboard.Key} */
@@ -195,8 +237,6 @@ class Arena extends Phaser.Scene {
 	newmap;
 	/** @type {Phaser.Input.Keyboard.Key} */
 	spaceKey;
-	/** @type {Array<Skeleton|Opossum|Eagle>} */
-	enemyTypes;
 	/** @type {Array<any>} */
 	enemies;
 	/** @type {Door[]} */
@@ -211,11 +251,13 @@ class Arena extends Phaser.Scene {
   EnemyTypes = this.enemyTypes;
   create() {
     this.editorCreate();
-    let castingSpell = "fireball";
-    this.spaceKey.on("down", () => this.spellCastScript.cast(castingSpell, this.player));
-    // this.spaceKey.on("down", () => this.castSpell(castingSpell));
+    let castingSpell = "WaterShot";
+    // this.spaceKey.on("down", () => this.spellCastScript.cast(castingSpell, this.player));
+    this.spaceKey.on("down", () => this.castSpell(castingSpell));
+    // this.spaceKey.on("down", () => this.Fireball());
 
     this.initColliders();
+    console.log(this.remainingTime);
 
     // Make the camera follow the player
     this.cameras.main.startFollow(this.player);
@@ -229,8 +271,11 @@ class Arena extends Phaser.Scene {
       loop: true,
     });
     // Switch to the Planning scene after 1 minute
-    this.time.delayedCall(60000, () => {
-      this.scene.start("Planning");
+    this.time.addEvent({
+      delay: 1000, // 1 second
+      callback: this.updateTimer,
+      callbackScope: this,
+      loop: true,
     });
   }
   spawnEnemy() {
@@ -287,6 +332,7 @@ class Arena extends Phaser.Scene {
 
   update() {
     this.movePlayer();
+
   }
 
   movePlayer() {
@@ -324,9 +370,36 @@ class Arena extends Phaser.Scene {
 
   damage() {
 		this.player.health -= 1;
-    console.log("Player health: " + this.player.health);
+    this.updateHealthBar();
+
   }
-  
+  updateTimer() {
+    this.remainingTime--;
+    console.log(this.remainingTime);
+    console.log(this.timer);
+    // Update the displayed timer
+    this.displayTimer.text = `${this.remainingTime}`;
+
+    // Optional: take action when timer hits zero
+    if (this.remainingTime <= 0) {
+      // Do something, e.g., end game or switch scenes
+      // this.scene.start("GameOverScene"); // As an example
+      this.endRoundScript.endRound();
+    }
+  }
+
+  updateHealthBar() {
+    const healthBarWidthPerPoint = 1.28;  // which is 128/100
+    this.playerHealth.width = this.player.health * healthBarWidthPerPoint;
+
+    // Optional: Change color based on health. For instance, if health is less than 30%.
+    if (this.player.health <= 0.3 * this.player.maxHealth) {
+        this.playerHealth.fillColor = 0xFF0000;  // red color
+    } else {
+        this.playerHealth.fillColor = 5961481;  // original color
+    }
+}
+
   castSpell(spellType) {
     let spell;
     const spellSpeed = 300;
@@ -341,6 +414,20 @@ class Arena extends Phaser.Scene {
         spell.play("TravelingFire_Ball");
         spell.body.setAllowGravity(false);
         //... Any other fireball-specific code...
+        this.physics.add.collider(
+          spell,
+          this.wall_1,
+          this.spellHit,
+          null,
+          this
+      );
+      this.physics.add.collider(
+          spell,
+          this.enemies,
+          this.spellHit,
+          null,
+          this
+      );
 
         break;
       case "WaterShot":
@@ -357,8 +444,22 @@ class Arena extends Phaser.Scene {
         // const xOffset = (100 - 60) / 2; // Offset from the left (for a centered hitbox)
         // const yOffset = (100 - 60) / 2; // Offset from the top (for a centered hitbox)
 
-        spell.body.setSize(newWidth, newHeight);
-        spell.body.setOffset(xOffset, yOffset);
+        // spell.body.setSize(newWidth, newHeight);
+        // spell.body.setOffset(xOffset, yOffset);
+        this.physics.add.collider(
+          spell,
+          this.wall_1,
+          this.spellHit,
+          null,
+          this
+      );
+      this.physics.add.collider(
+          spell,
+          this.enemies,
+          this.spellHit,
+          null,
+          this
+      );
 
         break;
       default:
@@ -412,149 +513,42 @@ class Arena extends Phaser.Scene {
   }
 
 
-  hit(projectile, object) {
-    let castingSpell = this.player;
-    console.log(this);
-    const spell = this.spellCastScript.getSpellBySpriteKey(projectile.anims.currentAnim.key);
-    if (!spell) return;
-  
-    // Always play the hit animation for the projectile.
-    projectile.play(spell.hitAnimation);
-    projectile.setVelocity(0);
-  
-    // Destroy the enemy immediately if the object is of type Enemy.
-    if (object.isEnemy) {
-      object.destroy();
+
+  spellHit(spell, target) {
+    switch (spell.texture.key) {
+        case "Fire_Ball1":
+            spell.play("HittingFire_Ball");
+            spell.setVelocity(0); // Stops the spell
+
+            spell.once("animationcomplete", () => {
+                spell.destroy(); // Destroy the spell sprite
+            });
+
+            if (target.isEnemy) {
+                target.destroy();
+            }
+            break;
+
+        case "WaterShot1":
+            spell.play("HittingWater");
+            spell.setVelocity(0); // Stops the spell
+
+            spell.once("animationcomplete", () => {
+                spell.destroy(); // Destroy the spell sprite
+            });
+
+            if (target.isEnemy) {
+                target.destroy();
+            }
+            break;
+
+        default:
+            console.warn("Unknown spell for spellHit:", spell.texture);
+            return;
     }
-  
-    // After the hit animation completes, destroy the projectile.
-    projectile.once('animationcomplete', () => {
-        projectile.destroy();
-    });
-  }
-  spellHit(spell, object, spellType) {
-    switch (spellType) {
-      case "Fireball":
-        spell.play("HittingFire_Ball");
-        spell.setVelocity(0); // Stops the spell
+}
 
-        spell.once("animationcomplete", () => {
-          spell.destroy(); // Destroy the spell sprite
-        });
-        break;
 
-      case "WaterShot":
-        spell.play("HittingWater");
-        spell.setVelocity(0); // Stops the spell
-
-        spell.once("animationcomplete", () => {
-          spell.destroy(); // Destroy the spell sprite
-        });
-        break;
-      default:
-        console.warn("Unknown spell type for spellHit:", spellType);
-        return;
-    }
-  }
-
-  spellHitEnemy(spell, enemy, spellType) {
-    switch (spellType) {
-      case "Fireball":
-        // Add any special effects for when fireball hits an enemy
-        spell.destroy();
-        enemy.destroy();
-        break;
-
-      case "WaterShot":
-        // Add any special effects for when watershot hits an enemy
-        spell.destroy();
-        enemy.destroy();
-        break;
-
-      default:
-        console.warn("Unknown spell type for spellHitEnemy:", spellType);
-        return;
-    }
-  }
-  Fireball() {
-    let fireball = this.physics.add.sprite(
-      this.player.x,
-      this.player.y,
-      "Fire_Ball1"
-    );
-    fireball.play("TravelingFire_Ball");
-    fireball.body.setAllowGravity(false);
-
-    let spellSpeed = 300;
-
-    switch (this.player.lastDirection) {
-      case "up":
-        fireball.setVelocityY(-fireballSpeed);
-        fireball.setAngle(-90); // Point upward
-        break;
-      case "down":
-        fireball.setVelocityY(fireballSpeed);
-        fireball.setAngle(90); // Point downward
-        break;
-      case "left":
-        fireball.setVelocityX(-fireballSpeed);
-        fireball.setFlipX(true); // Flip horizontally
-        break;
-      case "right":
-        fireball.setVelocityX(fireballSpeed);
-        break;
-      case "up-left":
-        fireball.setVelocityY(-fireballSpeed / Math.sqrt(2));
-        fireball.setVelocityX(-fireballSpeed / Math.sqrt(2));
-        fireball.setAngle(-135); // Point upward-left
-        break;
-      case "up-right":
-        fireball.setVelocityY(-fireballSpeed / Math.sqrt(2));
-        fireball.setVelocityX(fireballSpeed / Math.sqrt(2));
-        fireball.setAngle(-45); // Point upward-right
-        break;
-      case "down-left":
-        fireball.setVelocityY(fireballSpeed / Math.sqrt(2));
-        fireball.setVelocityX(-fireballSpeed / Math.sqrt(2));
-        fireball.setAngle(135); // Point downward-left
-        break;
-      case "down-right":
-        fireball.setVelocityY(fireballSpeed / Math.sqrt(2));
-        fireball.setVelocityX(fireballSpeed / Math.sqrt(2));
-        fireball.setAngle(45); // Point downward-right
-        break;
-    }
-
-    // Collision check for fireball with walls and enemies.
-    this.physics.add.collider(
-      fireball,
-      this.wall_1,
-      this.fireballHit,
-      null,
-      this
-    );
-    this.physics.add.collider(
-      fireball,
-      this.enemies,
-      this.fireballHitEnemy,
-      null,
-      this
-    );
-  }
-
-  fireballHit(fireball, object) {
-    fireball.play("HittingFire_Ball");
-    fireball.setVelocity(0); // Stops the fireball
-
-    fireball.once("animationcomplete", () => {
-      // Listen for animation completion
-      fireball.destroy(); // Destroy the fireball sprite
-    });
-  }
-  fireballHitEnemy(fireball, enemy) {
-    fireball.destroy();
-    enemy.destroy();
-  }
   /* END-USER-CODE */
 }
 

@@ -3,7 +3,7 @@
 
 /* START OF COMPILED CODE */
 
-class Player extends Phaser.GameObjects.Sprite {
+class Player extends Phaser.Physics.Arcade.Sprite {
 
 	constructor(scene, x, y, texture, frame) {
 		super(scene, x ?? 78, y ?? 37, texture || "bluechar", frame ?? "down1.png");
@@ -46,6 +46,8 @@ class Player extends Phaser.GameObjects.Sprite {
 	attack = 10;
 	/** @type {number} */
 	round = 0;
+	/** @type {number} */
+	maxHealth = 100;
 
 	/* START-USER-CODE */
 
@@ -71,70 +73,12 @@ class Player extends Phaser.GameObjects.Sprite {
 			return;
 		}
 
+		this.hurtFlag = true;
+
 		//this.hurtTimer.start();
 
 	}
-	// castSpell(spellType, spellDirection) {
-  //   if (this.hurtFlag) {
-  //     return;
-  //   }
-  //   if (!spellDirection) {
-  //     return;
-  //   }
-  //   const getSpellAudio = (spellType) => {
-  //     switch (spellType) {
-  //       case "Fire_Ball":
-  //         this.fire_cast.play();
-  //         break;
-  //       case "Molten_Spear":
-  //         this.lightning_cast.play();
-  //         break;
-  //       case "Water_Geyser":
-  //         this.water_cast.play();
-  //         break;
-  //       case "Tornado":
-  //         this.magic_cast.play();
-  //         break;
-  //     }
-  //     return;
-  //   };
 
-  //   const {
-  //     x = 0,
-  //     y = 0,
-  //     angle = 0,
-  //     flipX = false,
-  //     flipY = false,
-  //   } = spellDirection;
-
-  //   getSpellAudio(spellType);
-
-  //   const spell = this.scene.physics.add.sprite(this.x, this.y, spellType, 0);
-  //   spell.anims.play(spellType, true);
-  //   spell.damage = this.Damage;
-  //   spell.setVelocity(x, y);
-  //   spell.angle = angle;
-  //   spell.flipX = flipX;
-  //   spell.flipY = flipY;
-  // }
-
-  // autoCastSpell(spells) {
-  //   const playerFacing = this.getPlayerFacing();
-  //   const spellDirection = this.directions[playerFacing];
-
-  //   let delay = 0;
-  //   for (let i = 0; i < spells.length; i++) {
-  //     const spellType = spells[i];
-  //     this.scene.time.delayedCall(delay, () => {
-  //       // Need to add projectiles to player (# of spells cast at once)
-  //       // for (i in this.projectiles){
-  //       //   this.castSpell(spellType, spellDirection);
-  //       // }
-  //       this.castSpell(spellType, spellDirection);
-  //     });
-  //     delay += 100; // Adjust the delay time between spells (in milliseconds) as needed
-  //   }
-  // }
 
   getPlayerFacing() {
     if (this.cursors.left.isDown) {
