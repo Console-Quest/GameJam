@@ -94,7 +94,7 @@ class Arena extends Phaser.Scene {
 		arcadesprite_7.visible = true;
 
 		// player
-		const player = new Player(this, 907, 3266);
+		const player = new Player(this, 2058, 823);
 		this.add.existing(player);
 
 		// startSceneActionScript
@@ -104,9 +104,9 @@ class Arena extends Phaser.Scene {
 		const spellCastScript = new SpellCastScript(this);
 
 		// lists
-		const enemyTypes = [skeleton, opossum, eagle];
+		const enemyTypes = [opossum, eagle];
 		const enemies = [];
-		const doorGroup1 = [arcadesprite_1, arcadesprite_7, arcadesprite_6, arcadesprite_5, arcadesprite_4, arcadesprite_3, arcadesprite_2, arcadesprite];
+		const doorGroup1 = [];
 		const spells = [];
 
 		// playerWall
@@ -125,7 +125,7 @@ class Arena extends Phaser.Scene {
 		this.physics.add.collider(enemies, wall_1);
 
 		// spellVsEnemies
-		this.physics.add.collider(spells, enemies, this.hit);
+		this.physics.add.collider(spells, enemies, this.hit, undefined, this);
 
 		// startSceneActionScript (prefab fields)
 		startSceneActionScript.sceneKey = "Planning";
@@ -159,47 +159,15 @@ class Arena extends Phaser.Scene {
 
 	/** @type {Phaser.Tilemaps.TilemapLayer} */
 	wall;
-	/** @type {Skeleton} */
-	skeleton;
 	/** @type {Phaser.Tilemaps.TilemapLayer} */
 	wall_1;
-	/** @type {Door} */
-	arcadesprite_1;
-	/** @type {Door} */
-	arcadesprite;
-	/** @type {Door} */
-	arcadesprite_2;
-	/** @type {Door} */
-	arcadesprite_3;
-	/** @type {Door} */
-	arcadesprite_4;
-	/** @type {Door} */
-	arcadesprite_5;
-	/** @type {Door} */
-	arcadesprite_6;
-	/** @type {Door} */
-	arcadesprite_7;
 	/** @type {Player} */
 	player;
-	/** @type {SpellCastScript} */
-	spellCastScript;
-	/** @type {Phaser.Input.Keyboard.Key} */
-	upKey;
-	/** @type {Phaser.Input.Keyboard.Key} */
-	leftKey;
-	/** @type {Phaser.Input.Keyboard.Key} */
-	rightKey;
-	/** @type {Phaser.Input.Keyboard.Key} */
-	downKey;
-	/** @type {Phaser.Tilemaps.Tilemap} */
-	newmap;
-	/** @type {Phaser.Input.Keyboard.Key} */
-	spaceKey;
-	/** @type {Array<Skeleton|Opossum|Eagle>} */
+	/** @type {Array<Opossum|Eagle>} */
 	enemyTypes;
 	/** @type {Array<any>} */
 	enemies;
-	/** @type {Door[]} */
+	/** @type {Array<any>} */
 	doorGroup1;
 	/** @type {Array<any>} */
 	spells;
@@ -211,9 +179,9 @@ class Arena extends Phaser.Scene {
   EnemyTypes = this.enemyTypes;
   create() {
     this.editorCreate();
-    let castingSpell = "fireball";
-    this.spaceKey.on("down", () => this.spellCastScript.cast(castingSpell, this.player));
-    // this.spaceKey.on("down", () => this.castSpell(castingSpell));
+    let castingSpell = "Fireball";
+    // this.spaceKey.on("down", () => this.spellCastScript.cast(castingSpell, this.player));
+    this.spaceKey.on("down", () => this.castSpell(castingSpell));
 
     this.initColliders();
 
@@ -326,7 +294,7 @@ class Arena extends Phaser.Scene {
 		this.player.health -= 1;
     console.log("Player health: " + this.player.health);
   }
-  
+
   castSpell(spellType) {
     let spell;
     const spellSpeed = 300;
@@ -410,27 +378,30 @@ class Arena extends Phaser.Scene {
 
     this.spells.push(spell); // Add the spell to your spells array or group.
   }
-
+ 
 
   hit(projectile, object) {
+    console.log(projectile, 'test 2');
+
     let castingSpell = this.player;
-    console.log(this);
-    const spell = this.spellCastScript.getSpellBySpriteKey(projectile.anims.currentAnim.key);
-    if (!spell) return;
-  
+    console.log(this, 'test 4');
+    // const spell = this.getSpellBySpriteKey(projectile.anims.currentAnim.key);
+    // console.log(spell, 'test 3');
+    // if (!spell) return;
+
     // Always play the hit animation for the projectile.
-    projectile.play(spell.hitAnimation);
+    projectile.play('HittingFire_Ball');
     projectile.setVelocity(0);
-  
-    // Destroy the enemy immediately if the object is of type Enemy.
-    if (object.isEnemy) {
-      object.destroy();
-    }
-  
+
     // After the hit animation completes, destroy the projectile.
     projectile.once('animationcomplete', () => {
         projectile.destroy();
     });
+    // Destroy the enemy immediately if the object is of type Enemy.
+    if (object.isEnemy) {
+      object.destroy();
+    }
+
   }
   spellHit(spell, object, spellType) {
     switch (spellType) {

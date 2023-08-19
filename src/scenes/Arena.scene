@@ -14,24 +14,13 @@
             "id": "0ed3ab32-386b-4f96-9395-41fdc9ea59c2",
             "label": "wall",
             "scope": "CLASS",
+            "components": [],
             "tilemapId": "fdf63718-c76f-4418-a9d1-6b90d3187ce8",
             "layerName": "wall-1",
             "tilesets": [
                 "Tileset - wall 2",
                 "Tileset-Terrain-old prison"
             ]
-        },
-        {
-            "prefabId": "e3ae1e22-0b1e-4681-b99c-e1e030eb4b6f",
-            "id": "24ba1262-2c4a-4308-8ece-7be115742297",
-            "unlock": [
-                "x",
-                "y"
-            ],
-            "label": "skeleton",
-            "scope": "CLASS",
-            "x": 995,
-            "y": 419
         },
         {
             "prefabId": "dc8d8561-bce8-49fe-8272-6db97851c196",
@@ -41,6 +30,7 @@
                 "y"
             ],
             "label": "opossum",
+            "components": [],
             "x": 479,
             "y": 390
         },
@@ -52,6 +42,7 @@
                 "y"
             ],
             "label": "eagle",
+            "components": [],
             "x": 235,
             "y": 351
         },
@@ -60,124 +51,13 @@
             "id": "6f67dc01-d1ef-4110-840c-9c78f118c50e",
             "label": "wall_1",
             "scope": "CLASS",
+            "components": [],
             "tilemapId": "fdf63718-c76f-4418-a9d1-6b90d3187ce8",
             "layerName": "wall-2",
             "tilesets": [
                 "Tileset - wall 2",
                 "Tileset-Terrain-old prison"
             ]
-        },
-        {
-            "prefabId": "f4ba72ec-0a7b-4e3b-9843-d8bb716f692f",
-            "id": "c593cb78-9e25-468d-89fc-573d0c16de64",
-            "unlock": [
-                "x",
-                "y",
-                "visible"
-            ],
-            "label": "arcadesprite_1",
-            "scope": "CLASS",
-            "x": 426,
-            "y": 3070,
-            "visible": true
-        },
-        {
-            "prefabId": "f4ba72ec-0a7b-4e3b-9843-d8bb716f692f",
-            "id": "4b46a7ce-af30-4ada-9b7c-9d194d5ee714",
-            "unlock": [
-                "x",
-                "y",
-                "visible"
-            ],
-            "label": "arcadesprite",
-            "scope": "CLASS",
-            "x": 891,
-            "y": 3070,
-            "visible": true
-        },
-        {
-            "prefabId": "f4ba72ec-0a7b-4e3b-9843-d8bb716f692f",
-            "id": "5ac3008c-d107-4412-8898-f20ce7441cc0",
-            "unlock": [
-                "x",
-                "y",
-                "visible"
-            ],
-            "label": "arcadesprite_2",
-            "scope": "CLASS",
-            "x": 1376,
-            "y": 3070,
-            "visible": true
-        },
-        {
-            "prefabId": "f4ba72ec-0a7b-4e3b-9843-d8bb716f692f",
-            "id": "e3f00a1a-d320-45b6-b9ac-1ea1f984ca6e",
-            "unlock": [
-                "x",
-                "y",
-                "visible"
-            ],
-            "label": "arcadesprite_3",
-            "scope": "CLASS",
-            "x": 1819,
-            "y": 3070,
-            "visible": true
-        },
-        {
-            "prefabId": "f4ba72ec-0a7b-4e3b-9843-d8bb716f692f",
-            "id": "553d4ceb-1a9d-44c1-a3dd-9c8aaf8f5626",
-            "unlock": [
-                "x",
-                "y",
-                "visible"
-            ],
-            "label": "arcadesprite_4",
-            "scope": "CLASS",
-            "x": 2250,
-            "y": 3069,
-            "visible": true
-        },
-        {
-            "prefabId": "f4ba72ec-0a7b-4e3b-9843-d8bb716f692f",
-            "id": "08049d5f-3ab8-4a8d-9224-293c72236960",
-            "unlock": [
-                "x",
-                "y",
-                "visible"
-            ],
-            "label": "arcadesprite_5",
-            "scope": "CLASS",
-            "x": 2776,
-            "y": 3070,
-            "visible": true
-        },
-        {
-            "prefabId": "f4ba72ec-0a7b-4e3b-9843-d8bb716f692f",
-            "id": "88c14424-f645-4737-ab05-cf7dadd02270",
-            "unlock": [
-                "x",
-                "y",
-                "visible"
-            ],
-            "label": "arcadesprite_6",
-            "scope": "CLASS",
-            "x": 3299,
-            "y": 3070,
-            "visible": true
-        },
-        {
-            "prefabId": "f4ba72ec-0a7b-4e3b-9843-d8bb716f692f",
-            "id": "0b157f6f-a067-4a6d-81f1-1ca12a3c16d7",
-            "unlock": [
-                "x",
-                "y",
-                "visible"
-            ],
-            "label": "arcadesprite_7",
-            "scope": "CLASS",
-            "x": 3753,
-            "y": 3070,
-            "visible": true
         },
         {
             "prefabId": "2bdd30b0-e379-4943-9d6b-ed6cb2ba5b0a",
@@ -188,76 +68,12 @@
             ],
             "label": "player",
             "scope": "CLASS",
-            "x": 907,
-            "y": 3266
-        },
-        {
-            "prefabId": "2d3f9249-6fcd-4c7d-bd2f-77fa616af7e8",
-            "id": "ed92b14f-e137-4779-bdda-285875a4fc50",
-            "unlock": [
-                "sceneKey"
-            ],
-            "label": "startSceneActionScript",
-            "sceneKey": "Planning"
-        },
-        {
-            "prefabId": "0a608d2e-cda9-43f8-9f57-8b3d4b35368e",
-            "id": "c2a0cf94-c11d-46a4-93bf-c5c60a7529b4",
-            "label": "spellCastScript",
-            "scope": "CLASS"
+            "components": [],
+            "x": 2058,
+            "y": 823
         }
     ],
     "plainObjects": [
-        {
-            "id": "0612b134-c75e-407d-99bd-20f2536adfb4",
-            "type": "Keyboard.Key",
-            "label": "upKey",
-            "keyCode": "UP"
-        },
-        {
-            "id": "f3900ef6-8801-446f-bda1-b6933f41aadb",
-            "type": "Keyboard.Key",
-            "label": "leftKey",
-            "keyCode": "LEFT"
-        },
-        {
-            "id": "75ccb9b5-879d-4abd-a67e-5fc3188dfd3c",
-            "type": "Keyboard.Key",
-            "label": "rightKey",
-            "keyCode": "RIGHT"
-        },
-        {
-            "id": "a668b6f3-5382-4621-a3dc-4ca58c6da531",
-            "type": "Keyboard.Key",
-            "label": "downKey",
-            "keyCode": "DOWN"
-        },
-        {
-            "id": "7dc62e01-edf4-4080-81d9-6befb92ace97",
-            "type": "Collider",
-            "label": "playerWall",
-            "scope": "METHOD",
-            "object1": "player",
-            "object2": "wall_1"
-        },
-        {
-            "id": "21dbc255-7d6e-4077-be6c-98dd06a61d95",
-            "type": "Collider",
-            "label": "collider",
-            "scope": "LOCAL",
-            "object1": "enemies",
-            "object2": "player",
-            "collideCallback": "this.damage",
-            "callbackContext": "this"
-        },
-        {
-            "id": "ac58fbcb-a1eb-4b48-a00e-d095f80fad76",
-            "type": "Collider",
-            "label": "enemies",
-            "scope": "LOCAL",
-            "object1": "enemies",
-            "object2": "enemies"
-        },
         {
             "id": "fdf63718-c76f-4418-a9d1-6b90d3187ce8",
             "type": "Tilemap",
@@ -273,43 +89,13 @@
                     "imageKey": "Tileset-Terrain-old prison"
                 }
             ]
-        },
-        {
-            "id": "e493b99d-415a-4d5b-bbb8-8a0f090de228",
-            "type": "Collider",
-            "label": "playerVsDoor",
-            "scope": "LOCAL",
-            "object1": "player",
-            "object2": "arcadesprite_1"
-        },
-        {
-            "id": "dbfcb854-4e29-43c6-8746-f2516d4caf8f",
-            "type": "Collider",
-            "label": "enemiesVsWalls",
-            "scope": "LOCAL",
-            "object1": "enemies",
-            "object2": "wall_1"
-        },
-        {
-            "id": "982986b8-ae90-4a2f-b275-68dc943d6b1f",
-            "type": "Keyboard.Key",
-            "label": "spaceKey"
-        },
-        {
-            "id": "e7268299-4b2a-46d9-9a4a-22bef0582ad2",
-            "type": "Collider",
-            "label": "spellVsEnemies",
-            "scope": "LOCAL",
-            "object1": "spells",
-            "object2": "enemies",
-            "collideCallback": "this.hit"
         }
     ],
     "meta": {
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 4
+        "version": 3
     },
     "lists": [
         {
